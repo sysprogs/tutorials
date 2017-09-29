@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPlatformTest", "MultiPlatformTest.vcxproj", "{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android_Cmdline = Debug|Android_Cmdline
+		Debug|Embedded = Debug|Embedded
+		Debug|Linux = Debug|Linux
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Android_Cmdline = Release|Android_Cmdline
+		Release|Embedded = Release|Embedded
+		Release|Linux = Release|Linux
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|Android_Cmdline.ActiveCfg = Debug|Android_Cmdline
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|Android_Cmdline.Build.0 = Debug|Android_Cmdline
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|Embedded.ActiveCfg = Debug|Embedded
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|Embedded.Build.0 = Debug|Embedded
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|Linux.ActiveCfg = Debug|Linux
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|Linux.Build.0 = Debug|Linux
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|x64.ActiveCfg = Debug|x64
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|x64.Build.0 = Debug|x64
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|x86.ActiveCfg = Debug|Win32
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Debug|x86.Build.0 = Debug|Win32
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|Android_Cmdline.ActiveCfg = Release|Android_Cmdline
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|Android_Cmdline.Build.0 = Release|Android_Cmdline
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|Embedded.ActiveCfg = Release|Embedded
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|Embedded.Build.0 = Release|Embedded
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|Linux.ActiveCfg = Release|Linux
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|Linux.Build.0 = Release|Linux
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|x64.ActiveCfg = Release|x64
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|x64.Build.0 = Release|x64
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|x86.ActiveCfg = Release|Win32
+		{3DC67E57-2C5A-455F-AD10-6586A7C9AD97}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

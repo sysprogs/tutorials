@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConfigurationName>Debug</ConfigurationName>
+  <Project xsi:type="com.visualgdb.project.android">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>MinGWWindowsSlash</PathStyle>
+    </CustomSourceDirectories>
+    <AndroidProjectPath>$(ProjectDir)</AndroidProjectPath>
+  </Project>
+  <Build xsi:type="com.visualgdb.build.android">
+    <AndroidPlatform>android-19</AndroidPlatform>
+    <IsDebugConfiguration>true</IsDebugConfiguration>
+    <DoNotEditAndroidManifest>false</DoNotEditAndroidManifest>
+    <JNIOnlyBuild>false</JNIOnlyBuild>
+    <AdditionalDirectoriesToDeleteOnClean>bin;obj</AdditionalDirectoriesToDeleteOnClean>
+    <DeleteANTFilesOnClean>false</DeleteANTFilesOnClean>
+    <CustomActions />
+  </Build>
+  <Debug xsi:type="com.visualgdb.debug.android">
+    <AdditionalStartupCommands />
+    <AdditionalGDBSettings>
+      <Features>
+        <DisableAutoDetection>false</DisableAutoDetection>
+        <UseFrameParameter>false</UseFrameParameter>
+        <SimpleValuesFlagSupported>false</SimpleValuesFlagSupported>
+        <ListLocalsSupported>false</ListLocalsSupported>
+        <ByteLevelMemoryCommandsAvailable>false</ByteLevelMemoryCommandsAvailable>
+        <ThreadInfoSupported>false</ThreadInfoSupported>
+        <PendingBreakpointsSupported>false</PendingBreakpointsSupported>
+        <SupportTargetCommand>false</SupportTargetCommand>
+        <ReliableBreakpointNotifications>false</ReliableBreakpointNotifications>
+      </Features>
+      <EnableSmartStepping>false</EnableSmartStepping>
+      <FilterSpuriousStoppedNotifications>false</FilterSpuriousStoppedNotifications>
+      <ForceSingleThreadedMode>false</ForceSingleThreadedMode>
+      <UseAppleExtensions>false</UseAppleExtensions>
+      <CanAcceptCommandsWhileRunning>false</CanAcceptCommandsWhileRunning>
+      <MakeLogFile>false</MakeLogFile>
+      <IgnoreModuleEventsWhileStepping>true</IgnoreModuleEventsWhileStepping>
+      <UseRelativePathsOnly>false</UseRelativePathsOnly>
+      <ExitAction>KillApp</ExitAction>
+      <DisableDisassembly>false</DisableDisassembly>
+      <ExamineMemoryWithXCommand>false</ExamineMemoryWithXCommand>
+      <StepIntoNewInstanceEntry>main</StepIntoNewInstanceEntry>
+      <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
+      <DisableSignals>false</DisableSignals>
+      <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+      <EnableNonStopMode>false</EnableNonStopMode>
+    </AdditionalGDBSettings>
+    <LaunchGDBSettings xsi:type="GDBLaunchParametersAndroid" />
+    <GenerateCtrlBreakInsteadOfCtrlC>false</GenerateCtrlBreakInsteadOfCtrlC>
+    <UseDefaultInstallDir>false</UseDefaultInstallDir>
+    <RemotePort>5039</RemotePort>
+    <LocalPort>5039</LocalPort>
+    <GDBServerStartupTimeout>10000</GDBServerStartupTimeout>
+    <AdditionalGDBServerStartupDelay>0</AdditionalGDBServerStartupDelay>
+    <DoubleSlashWorkaround>false</DoubleSlashWorkaround>
+    <AlreadyRunningDecision>Ask</AlreadyRunningDecision>
+    <ShowLogCat>true</ShowLogCat>
+    <EnableThreadNameWatcher>true</EnableThreadNameWatcher>
+    <AppProcess>AutoDetect</AppProcess>
+    <StandaloneExeSettings>
+      <LaunchMode>NewInstance</LaunchMode>
+      <DeploymentDirectory>/data/local/tmp</DeploymentDirectory>
+      <StartGDBServerAsRoot>false</StartGDBServerAsRoot>
+    </StandaloneExeSettings>
+    <SharedLibraryBreakpointWorkaroundMode>AutoDetect</SharedLibraryBreakpointWorkaroundMode>
+    <EnableRunAsWorkaround>false</EnableRunAsWorkaround>
+  </Debug>
+  <CustomBuild>
+    <PreSyncActions />
+    <PreBuildActions />
+    <PostBuildActions />
+    <PreCleanActions />
+    <PostCleanActions />
+  </CustomBuild>
+  <CustomDebug>
+    <PreDebugActions />
+    <PostDebugActions />
+    <DebugStopActions />
+    <BreakMode>Default</BreakMode>
+  </CustomDebug>
+  <CustomShortcuts>
+    <Shortcuts />
+    <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
+  </CustomShortcuts>
+  <UserDefinedVariables />
+  <CodeSense>
+    <Enabled>Unknown</Enabled>
+    <ExtraSettings>
+      <HideErrorsInSystemHeaders>true</HideErrorsInSystemHeaders>
+      <SupportLightweightReferenceAnalysis>false</SupportLightweightReferenceAnalysis>
+    </ExtraSettings>
+    <CodeAnalyzerSettings>
+      <Enabled>false</Enabled>
+    </CodeAnalyzerSettings>
+  </CodeSense>
+</VisualGDBProjectSettings2>

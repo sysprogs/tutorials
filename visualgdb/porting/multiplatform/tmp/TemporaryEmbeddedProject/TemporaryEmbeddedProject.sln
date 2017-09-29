@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemporaryEmbeddedProject", "TemporaryEmbeddedProject.vcxproj", "{F03F4977-B6E6-45D6-B9CF-0F17E37B64CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F03F4977-B6E6-45D6-B9CF-0F17E37B64CC}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{F03F4977-B6E6-45D6-B9CF-0F17E37B64CC}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{F03F4977-B6E6-45D6-B9CF-0F17E37B64CC}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{F03F4977-B6E6-45D6-B9CF-0F17E37B64CC}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
