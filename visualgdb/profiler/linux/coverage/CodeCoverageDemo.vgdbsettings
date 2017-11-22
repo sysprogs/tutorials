@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<VisualGDBCommonSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TestFrameworkID>com.sysprogs.unittest.googletest</TestFrameworkID>
+  <TestFrameworkSubdirectory>TestFramework</TestFrameworkSubdirectory>
+  <TestFrameworkSettings>
+    <Entries>
+      <KeyValue>
+        <Key>com.sysprogs.testsettings.timeout</Key>
+        <Value>1800</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.tests.shortnames</Key>
+        <Value>0</Value>
+      </KeyValue>
+    </Entries>
+  </TestFrameworkSettings>
+</VisualGDBCommonSettings>

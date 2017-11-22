@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{20c3b1e2-36f2-45db-9769-3480837ff09b}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{ed75d90c-714c-4aa5-bee9-d14fdd4619b9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{fbcd3447-d02c-4e94-94d8-d54bdf197678}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Test Framework">
+      <UniqueIdentifier>{c5bbc6a9-d500-427d-b49b-ac56c317d63f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Test Framework">
+      <UniqueIdentifier>{b6fa02b1-23f9-47d7-893f-945d70f21bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{06e7838f-cdea-47d9-b9e0-bc0b60b200a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CodeCoverageDemo.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCoverageDemoTests.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-death-test.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-filepath.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-port.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-printers.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-test-part.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-typed-test.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest.cc">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\Platforms\SysprogsTestHooks.cpp">
+      <Filter>Source files\Test Framework</Filter>
+    </ClCompile>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-death-test.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-message.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-param-test.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\custom\gtest-printers.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-spi.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-test-part.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-typed-test.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\custom\gtest.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest_pred_impl.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest_prod.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-death-test-internal.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-filepath.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-internal.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-linked_ptr.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-param-util-generated.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-param-util.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-port-arch.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\custom\gtest-port.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-string.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-tuple.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-type-util.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-internal-inl.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\Platforms\SysprogsTestHooks.h">
+      <Filter>Header files\Test Framework</Filter>
+    </ClInclude>
+    <None Include="CodeCoverageDemo-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="CodeCoverageDemo-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

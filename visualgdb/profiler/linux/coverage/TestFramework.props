@@ -1,0 +1,16 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<TestFrameworkPath Condition="'$(TestFrameworkPath)' == ''">$(TESTFW_BASE)/com.sysprogs.unittest.googletest</TestFrameworkPath>
+		<TestFrameworkSubdirectory Condition="'$(TestFrameworkSubdirectory)' == ''">TestFramework</TestFrameworkSubdirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<AdditionalIncludeDirectories>TestFramework/include;TestFramework;TestFramework/Platforms;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalLibraryNames>pthread;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+		</Link>
+	</ItemDefinitionGroup>
+</Project>

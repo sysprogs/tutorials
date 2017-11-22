@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>14.0</VCProjectVersion>
+    <ProjectGuid>{CC600464-2D9A-4E08-8046-D66F7A3BC35F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUToolchainPrefix />
+    <GNUCompilerType>GCC</GNUCompilerType>
+    <GenerateCoverageReports>true</GenerateCoverageReports>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <GNUToolchainPrefix />
+    <GNUCompilerType>GCC</GNUCompilerType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <TestFrameworkPropertyListFile>$(ProjectDir)TestFramework.props</TestFrameworkPropertyListFile>
+    <RemoteBuildHost>kubuntu17vm</RemoteBuildHost>
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+    <ToolchainVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <TestFrameworkPropertyListFile>$(ProjectDir)TestFramework.props</TestFrameworkPropertyListFile>
+    <RemoteBuildHost>kubuntu17vm</RemoteBuildHost>
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+    <ToolchainVersion />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="CodeCoverageDemo.cpp" />
+    <ClCompile Include="CodeCoverageDemoTests.cpp" />
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-death-test.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-filepath.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-port.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-printers.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-test-part.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-typed-test.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest.cc">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\Platforms\SysprogsTestHooks.cpp">
+      <GenerateCoverageReports Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</GenerateCoverageReports>
+    </ClCompile>
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-death-test.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-message.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-param-test.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\custom\gtest-printers.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-spi.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-test-part.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest-typed-test.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\custom\gtest.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest_pred_impl.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\gtest_prod.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-death-test-internal.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-filepath.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-internal.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-linked_ptr.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-param-util-generated.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-param-util.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-port-arch.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\custom\gtest-port.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-string.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-tuple.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\include\gtest\internal\gtest-type-util.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\src\gtest-internal-inl.h" />
+    <ClInclude Include="$(TESTFW_BASE)\com.sysprogs.unittest.googletest\Platforms\SysprogsTestHooks.h" />
+    <None Include="CodeCoverageDemo-Debug.vgdbsettings" />
+    <None Include="CodeCoverageDemo-Release.vgdbsettings" />
+  </ItemGroup>
+</Project>

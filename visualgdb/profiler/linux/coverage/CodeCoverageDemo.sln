@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeCoverageDemo", "CodeCoverageDemo.vcxproj", "{CC600464-2D9A-4E08-8046-D66F7A3BC35F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC600464-2D9A-4E08-8046-D66F7A3BC35F}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{CC600464-2D9A-4E08-8046-D66F7A3BC35F}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{CC600464-2D9A-4E08-8046-D66F7A3BC35F}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{CC600464-2D9A-4E08-8046-D66F7A3BC35F}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
