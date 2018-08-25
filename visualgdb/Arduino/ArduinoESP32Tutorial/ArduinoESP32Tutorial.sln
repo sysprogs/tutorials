@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ArduinoESP32Tutorial", "ArduinoESP32Tutorial.vgdbproj", "{3D4572BC-78A4-402D-B6C5-A97CCBABC755}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|SparkFun ESP32 Thing = Debug|SparkFun ESP32 Thing
+		Release|SparkFun ESP32 Thing = Release|SparkFun ESP32 Thing
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D4572BC-78A4-402D-B6C5-A97CCBABC755}.Debug|SparkFun ESP32 Thing.ActiveCfg = Debug|SparkFun ESP32 Thing
+		{3D4572BC-78A4-402D-B6C5-A97CCBABC755}.Debug|SparkFun ESP32 Thing.Build.0 = Debug|SparkFun ESP32 Thing
+		{3D4572BC-78A4-402D-B6C5-A97CCBABC755}.Release|SparkFun ESP32 Thing.ActiveCfg = Release|SparkFun ESP32 Thing
+		{3D4572BC-78A4-402D-B6C5-A97CCBABC755}.Release|SparkFun ESP32 Thing.Build.0 = Release|SparkFun ESP32 Thing
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E70F7B64-723F-476C-A9E8-B600944850B9}
+	EndGlobalSection
+EndGlobal
