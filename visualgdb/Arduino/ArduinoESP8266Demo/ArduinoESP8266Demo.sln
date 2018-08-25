@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ArduinoESP8266Demo", "ArduinoESP8266Demo.vgdbproj", "{2B78B7FC-7B34-4AED-AA3C-61F993E66E3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|NodeMCU 0 9 (ESP-12 Module) = Debug|NodeMCU 0 9 (ESP-12 Module)
+		Release|NodeMCU 0 9 (ESP-12 Module) = Release|NodeMCU 0 9 (ESP-12 Module)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B78B7FC-7B34-4AED-AA3C-61F993E66E3C}.Debug|NodeMCU 0 9 (ESP-12 Module).ActiveCfg = Debug|NodeMCU 0 9 (ESP-12 Module)
+		{2B78B7FC-7B34-4AED-AA3C-61F993E66E3C}.Debug|NodeMCU 0 9 (ESP-12 Module).Build.0 = Debug|NodeMCU 0 9 (ESP-12 Module)
+		{2B78B7FC-7B34-4AED-AA3C-61F993E66E3C}.Release|NodeMCU 0 9 (ESP-12 Module).ActiveCfg = Release|NodeMCU 0 9 (ESP-12 Module)
+		{2B78B7FC-7B34-4AED-AA3C-61F993E66E3C}.Release|NodeMCU 0 9 (ESP-12 Module).Build.0 = Release|NodeMCU 0 9 (ESP-12 Module)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60D45814-8671-455B-B3CB-5987C0754613}
+	EndGlobalSection
+EndGlobal
