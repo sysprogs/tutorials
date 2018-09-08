@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ArduinoDueDemo", "ArduinoDueDemo.vgdbproj", "{0375B447-80C0-4866-A819-B4C99A31C772}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Arduino Due (Native USB Port) = Debug|Arduino Due (Native USB Port)
+		Release|Arduino Due (Native USB Port) = Release|Arduino Due (Native USB Port)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0375B447-80C0-4866-A819-B4C99A31C772}.Debug|Arduino Due (Native USB Port).ActiveCfg = Debug|Arduino Due (Native USB Port)
+		{0375B447-80C0-4866-A819-B4C99A31C772}.Debug|Arduino Due (Native USB Port).Build.0 = Debug|Arduino Due (Native USB Port)
+		{0375B447-80C0-4866-A819-B4C99A31C772}.Release|Arduino Due (Native USB Port).ActiveCfg = Release|Arduino Due (Native USB Port)
+		{0375B447-80C0-4866-A819-B4C99A31C772}.Release|Arduino Due (Native USB Port).Build.0 = Release|Arduino Due (Native USB Port)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27626250-C24D-412A-928B-18A84265AE5F}
+	EndGlobalSection
+EndGlobal
