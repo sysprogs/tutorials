@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "CMakeDebugger", "CMakeDebugger.vgdbcmake", "{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{E7AB9CF5-EE04-47C9-929E-B3A6E8BFE09E}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8BA0E3E-BD4F-4ED5-991E-682A7A3F672E}
+	EndGlobalSection
+EndGlobal
