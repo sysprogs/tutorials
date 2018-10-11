@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\QtProjectItems.xml"/>
+  </ItemGroup>
+
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(ClCompile.PreprocessorDefinitions);=/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/arm-linux-gnueabihf;.;=/usr/include/arm-linux-gnueabihf/qt5;=/usr/include/arm-linux-gnueabihf/qt5/QtWidgets;=/usr/include/arm-linux-gnueabihf/qt5/QtGui;=/usr/include/arm-linux-gnueabihf/qt5/QtCore;$(IntDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);_REENTRANT;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB</PreprocessorDefinitions>
+      <PositionIndependentCode>true</PositionIndependentCode>
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories);=/usr/X11R6/lib64</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames);Qt5Widgets;Qt5Gui;Qt5Core;GLESv2;pthread</AdditionalLibraryNames>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+  
+  <PropertyGroup>
+    <ClCompileDependsOn>$(ClCompileDependsOn);InvokeQtTools</ClCompileDependsOn>
+    <BuildCppObjectListDependsOn>$(BuildCppObjectListDependsOn);InvokeQtTools</BuildCppObjectListDependsOn>
+  </PropertyGroup>
+  <Target Name="InvokeQtTools" DependsOnTargets="PrepareForBuild;BeginRemoteBuild">
+	<GenericGNUTool 
+		Sources="@(QtHeaderFile)" 
+		ToolPath="$(ToolchainDir)\Qt\v5"
+		ToolchainPrefix=""
+		ExtraPath="$(GNUToolchainExtraPath)"
+		VisualGDBSettingsFile="$(VisualGDBSettingsFile)"
+		TargetPath="$(TargetPath)"
+		ToolExeNameBase="moc"
+		ResponseFileTag="moc"
+		PrimaryOutput="$(IntDir)moc_%(QtHeaderFile.FileName).cpp"
+		CommandFormat="-DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I$(ToolchainDir)/sysroot/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/arm-linux-gnueabihf -IC:/tutorials/visualgdb/Linux/QtMSBuild-Cross -I$(ToolchainDir)/sysroot/usr/include/arm-linux-gnueabihf/qt5 -I$(ToolchainDir)/sysroot/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I$(ToolchainDir)/sysroot/usr/include/arm-linux-gnueabihf/qt5/QtGui -I$(ToolchainDir)/sysroot/usr/include/arm-linux-gnueabihf/qt5/QtCore -I$(ToolchainDir)/include/c++/6 -I$(ToolchainDir)/include/c++/6/backward -Ic:/sysgcc/raspberry/lib/gcc/arm-linux-gnueabihf/6/include -Ic:/sysgcc/raspberry/lib/gcc/arm-linux-gnueabihf/6/include-fixed -I$(ToolchainDir)/include -I$(ToolchainDir)/include/arm-linux-gnueabihf/c++/6 -I$(ToolchainDir)/sysroot/usr/include/arm-linux-gnueabihf -I$(ToolchainDir)/sysroot/usr/include"
+		NonRSPArguments="$^ -o $@"
+		AdditionalOptions=""
+		FastUpToDateCheckDatabaseFile="$(FastUpToDateCheckDatabaseFile)"
+		RepeatForEachSource="true"
+		RemoteBuildMakefile="$(RemoteBuildMakefile)"
+	/>           
+	<GenericGNUTool Condition="'@(UserInterfaceFile)'!=''"
+		Sources="@(UserInterfaceFile)" 
+		ToolPath="$(ToolchainDir)\Qt\v5"
+		ToolchainPrefix=""
+		ExtraPath="$(GNUToolchainExtraPath)"
+		VisualGDBSettingsFile="$(VisualGDBSettingsFile)"
+		TargetPath="$(TargetPath)"
+		ToolExeNameBase="uic"
+		ResponseFileTag="uic"
+		PrimaryOutput="$(IntDir)ui_%(UserInterfaceFile.FileName).h"
+		NonRSPArguments="$^ -o $@"
+		CommandFormat=" "
+		AdditionalOptions=""
+		FastUpToDateCheckDatabaseFile="$(FastUpToDateCheckDatabaseFile)"
+		RepeatForEachSource="true"
+		RemoteBuildMakefile="$(RemoteBuildMakefile)"
+	/>
+
+    <ItemGroup>
+      <ClCompile Include="$(IntDir)moc_%(QtHeaderFile.FileName).cpp"/>
+    </ItemGroup>
+  </Target>
+
+</Project>

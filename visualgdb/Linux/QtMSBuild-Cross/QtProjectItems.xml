@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectSchemaDefinitions
+    xmlns="http://schemas.microsoft.com/build/2009/properties">
+
+    <ContentType
+        Name="UserInterfaceFile"
+        DisplayName="UI file"
+        ItemType="UserInterfaceFile">
+    </ContentType>
+
+    <ContentType
+        Name="QtHeaderFile"
+        DisplayName="Qt Header"
+        ItemType="QtHeaderFile">
+    </ContentType>
+
+    <ItemType Name="UserInterfaceFile" DisplayName="User Interface File"/>
+    <ItemType Name="QtHeaderFile" DisplayName="Qt Header File"/>
+
+    <FileExtension Name=".ui" ContentType="UserInterfaceFile"/>
+</ProjectSchemaDefinitions>
