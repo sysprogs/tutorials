@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticStackAnalyzerDemo", "StaticStackAnalyzerDemo.vcxproj", "{5518083B-1FCE-4405-A5DE-93A8A7225D89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5518083B-1FCE-4405-A5DE-93A8A7225D89}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{5518083B-1FCE-4405-A5DE-93A8A7225D89}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{5518083B-1FCE-4405-A5DE-93A8A7225D89}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{5518083B-1FCE-4405-A5DE-93A8A7225D89}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB8491A5-00D4-481A-BAE0-BDAC6D0B8D11}
+	EndGlobalSection
+EndGlobal

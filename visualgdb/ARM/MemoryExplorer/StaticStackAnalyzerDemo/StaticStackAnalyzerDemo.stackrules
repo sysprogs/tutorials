@@ -1,0 +1,6 @@
+#This file stores explicit relations between functions
+#Format:
+#<function>:[<optional stack size override>]
+#<tab><called function>:[<optional stack usage at the time of call>]
+LED_Thread2
+	UseStack
