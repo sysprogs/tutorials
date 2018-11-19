@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LEDBlink", "LEDBlink.vcxproj", "{490D17EB-D7BE-4677-920A-CF7A38D3E576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{490D17EB-D7BE-4677-920A-CF7A38D3E576}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{490D17EB-D7BE-4677-920A-CF7A38D3E576}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{490D17EB-D7BE-4677-920A-CF7A38D3E576}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{490D17EB-D7BE-4677-920A-CF7A38D3E576}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1356B837-5BB4-4632-9980-245F46BE8AFA}
+	EndGlobalSection
+EndGlobal

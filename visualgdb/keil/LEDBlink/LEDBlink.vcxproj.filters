@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{d9e6e30d-7a35-4fdb-b058-20469da989de}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{4fc97723-7766-4b0a-9864-26c8f1fcfe00}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{824f93ce-d8e5-4bb9-807b-21fc8d858816}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{a13f44ff-9861-4478-ae78-2b286e0eeb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{c58223fa-a5d4-4765-8f76-24428c79cdb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{0600d220-2a8d-4850-9166-b25772a700d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Startup">
+      <UniqueIdentifier>{8f92e121-4dff-44ad-a6d3-62a150f5032c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{15b57b96-f09e-45a3-bab8-64e1f4cd8296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Startup">
+      <UniqueIdentifier>{35b3fc19-f76e-4b1f-817f-3ddde69d63a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\STM32Cube Framework">
+      <UniqueIdentifier>{c5d06321-134b-47c2-bf68-de471c3ec71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{562132e2-f4d5-4f8d-813a-37d87dce0774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LED">
+      <UniqueIdentifier>{540657a4-3cca-4f09-89a2-61d3ac0eb5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\LED">
+      <UniqueIdentifier>{78aa52c0-be03-40ab-9ef7-c480a9aa8ca0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="LEDBlink-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="LEDBlink-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s">
+      <Filter>Source files\Device-specific files\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c">
+      <Filter>Source files\Device-specific files\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClInclude Include="RTE/RTE_Components.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\CMSIS\Driver\Config\RTE_Device.h">
+      <Filter>Header files\Device-specific files\STM32Cube Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h">
+      <Filter>Header files\Device-specific files\STM32Cube Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h">
+      <Filter>Header files\Device-specific files\STM32Cube HAL</Filter>
+    </ClInclude>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\MDK\Boards\ST\STM32F4-Discovery\Common\LED_F4Discovery.c">
+      <Filter>Source files\Device-specific files\LED</Filter>
+    </ClCompile>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\MDK-Middleware\7.7.0\Board\Board_LED.h">
+      <Filter>Header files\Device-specific files\LED</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
