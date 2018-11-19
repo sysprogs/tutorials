@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+  <ToolchainVersion>
+    <GCC>6.x</GCC>
+    <Revision>1</Revision>
+  </ToolchainVersion>
+  <BspID>KEIL:Keil/STM32F4xx_DFP</BspID>
+  <BspVersion>2.13.0</BspVersion>
+  <McuID>STM32F407VG</McuID>
+  <MCUDefinitionFile>CMSIS/SVD/STM32F40x.svd</MCUDefinitionFile>
+  <MCUProperties>
+    <Entries />
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>mcu.mak</MCUMakFile>
+  <ReferencedFrameworks />
+  <FrameworkProperties>
+    <Entries>
+      <KeyValue>
+        <Key>KEILCOMP:Board Support</Key>
+        <Value>STM32F4-Discovery</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Compiler</Key>
+        <Value>ARM Compiler</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:File System</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Graphics</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Network</Key>
+        <Value>MDK-Pro Net_v6</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:USB</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:CMSIS/CORE</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/Startup</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/Common</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube Framework/Classic</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/Cortex</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/RCC</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/PWR</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/GPIO</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:LED</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:CMSIS/RTOS2/Keil RTX5/Source</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:CMSIS/RTOS/Keil RTX5</Key>
+        <Value>1</Value>
+      </KeyValue>
+    </Entries>
+  </FrameworkProperties>
+  <TestFrameworkProperties>
+    <Entries />
+  </TestFrameworkProperties>
+</EmbeddedProfile>

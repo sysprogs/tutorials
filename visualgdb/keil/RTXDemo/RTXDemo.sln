@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTXDemo", "RTXDemo.vcxproj", "{435AF036-789D-48B7-A7B2-2B3DCDA98613}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{435AF036-789D-48B7-A7B2-2B3DCDA98613}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{435AF036-789D-48B7-A7B2-2B3DCDA98613}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{435AF036-789D-48B7-A7B2-2B3DCDA98613}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{435AF036-789D-48B7-A7B2-2B3DCDA98613}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39D8D118-7745-42BC-A6A2-02F34A563CBA}
+	EndGlobalSection
+EndGlobal

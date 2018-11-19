@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{317465f9-4c8f-42f5-b7fa-e880637ea730}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{94f7b952-c344-4a3d-9121-d8a23725ee75}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{c97e5cc3-b301-4522-a3b2-10251c838356}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{90a22de0-ec5a-466f-b4f6-74ec02a5bc6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{982f3725-fa50-43b5-84d5-f9ca448f0c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{a134bbc5-1162-4093-8b31-ddc75edb6db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\RTOS">
+      <UniqueIdentifier>{bc975c4d-fce5-47ca-90fe-b49800226612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\RTOS2">
+      <UniqueIdentifier>{d8635e2f-053c-44e5-b94b-417994aca6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Startup">
+      <UniqueIdentifier>{e179a363-e12d-4761-a32e-f74a4868a3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{328a0bfb-8169-4f10-acac-3bb56bb75297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LED">
+      <UniqueIdentifier>{744acf9b-b0c4-46c6-a1f4-40aaed502971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\RTOS">
+      <UniqueIdentifier>{1cd497b6-1c2f-45d8-8a1a-7b3adbdae57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\RTOS2">
+      <UniqueIdentifier>{4c98cec7-71fb-4ab2-a343-104f514fa3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Startup">
+      <UniqueIdentifier>{13dd86c2-946a-48be-9bab-b8530bead7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\STM32Cube Framework">
+      <UniqueIdentifier>{7ae75965-5a86-4421-b5d7-9fb52f2ef9db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{395be5db-a4d5-4c0e-8692-315aabbfcf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\LED">
+      <UniqueIdentifier>{d7ddb92f-ec20-4bf1-9656-cdcdf23b492c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="RTXDemo-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="RTXDemo-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_hal_msp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_it.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Library\cmsis_os1.c">
+      <Filter>Source files\Device-specific files\RTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Config\RTX_Config.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_kernel.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_thread.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_delay.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_timer.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_evflags.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_mutex.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_semaphore.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_memory.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_mempool.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_msgqueue.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_system.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_evr.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\ARM\irq_cm4f.s">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\Source\os_systick.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s">
+      <Filter>Source files\Device-specific files\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c">
+      <Filter>Source files\Device-specific files\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\MDK\Boards\ST\STM32F4-Discovery\Common\LED_F4Discovery.c">
+      <Filter>Source files\Device-specific files\LED</Filter>
+    </ClCompile>
+    <ClInclude Include="RTE/RTE_Components.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="stm32f4xx_it.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Include1\cmsis_os.h">
+      <Filter>Header files\Device-specific files\RTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Include\rtx_os.h">
+      <Filter>Header files\Device-specific files\RTOS2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Config\RTX_Config.h">
+      <Filter>Header files\Device-specific files\RTOS2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\Include\cmsis_os2.h">
+      <Filter>Header files\Device-specific files\RTOS2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\CMSIS\Driver\Config\RTE_Device.h">
+      <Filter>Header files\Device-specific files\STM32Cube Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h">
+      <Filter>Header files\Device-specific files\STM32Cube Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h">
+      <Filter>Header files\Device-specific files\STM32Cube HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\MDK-Middleware\7.7.0\Board\Board_LED.h">
+      <Filter>Header files\Device-specific files\LED</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
