@@ -43,6 +43,9 @@
     <Link>
       <ProduceRelocationRecords>true</ProduceRelocationRecords>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;OS_DYNAMIC_MEM_SIZE=16384</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
   </ItemGroup>

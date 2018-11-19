@@ -48,11 +48,13 @@ int main(void) {
     LED_Initialize();
     
     const osThreadAttr_t thread1_attr = {
-        .name = "Thread 1"
+        .name = "Thread 1",
+        .stack_size = 4096,
     };
  
     const osThreadAttr_t thread2_attr = {
-        .name = "Thread 2"
+        .name = "Thread 2",
+        .stack_size = 4096,
     };
  
     osKernelInitialize();                  // Initialize CMSIS-RTOS

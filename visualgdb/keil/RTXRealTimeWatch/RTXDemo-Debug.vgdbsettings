@@ -131,7 +131,7 @@
       </StackVerifier>
       <RealTimeWatch>
         <SupportRTOSAnalysis>true</SupportRTOSAnalysis>
-        <SupportFunctionInstrumentation>false</SupportFunctionInstrumentation>
+        <SupportFunctionInstrumentation>true</SupportFunctionInstrumentation>
         <MeasureOverhead>true</MeasureOverhead>
       </RealTimeWatch>
       <InstrumentedFunctions>
