@@ -14,6 +14,7 @@
 #include <SysprogsProfiler.h>
 
 osMutexId_t g_Mutex;
+osSemaphoreId_t g_Semaphore;
 
 void ExclusiveWait(int delay)
 {
@@ -26,10 +27,8 @@ void Thread1Body(void *argument)
 {
     for (;;)
     {
-        LED_On(0);
-        ExclusiveWait(100);
-        LED_Off(0);
-        ExclusiveWait(100);
+        osSemaphoreAcquire(g_Semaphore, osWaitForever);
+        osDelay(10);
     }
 }
 
@@ -37,10 +36,9 @@ void Thread2Body(void *argument)
 {
     for (;;)
     {
-        LED_On(1);
-        ExclusiveWait(200);
-        LED_Off(1);
-        ExclusiveWait(200);
+        for (int i = 0; i < 10; i++)
+            osSemaphoreRelease(g_Semaphore);
+        osDelay(200);
     }
 }
  
@@ -50,9 +48,10 @@ void thread_switch_helper()
 }
 
 int main(void) {
-    
     osMutexAttr_t mutexAttr = { .name = "TestMutex" };
     g_Mutex = osMutexNew(&mutexAttr);
+    osSemaphoreAttr_t semaphoreAttr = { .name = "TestSemaphore" };
+    g_Semaphore = osSemaphoreNew(1000, 0, &semaphoreAttr);
     
     InitializeInstrumentingProfiler();
  
