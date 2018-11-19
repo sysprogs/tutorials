@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<SysprogsProfilerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Embedded>
+    <Instrumentation>
+      <InstrumentNewFunctions>true</InstrumentNewFunctions>
+      <ExplicitEndOfFLASH>0</ExplicitEndOfFLASH>
+      <ExplicitEndOfRAM>0</ExplicitEndOfRAM>
+      <ReportingThreshold>0</ReportingThreshold>
+    </Instrumentation>
+    <Mode>Instrumentation</Mode>
+  </Embedded>
+  <SessionFileDirectory>C:\tutorials\visualgdb\keil\InstrumentingProfilerDemo\ProfilingReports\RTXDemo</SessionFileDirectory>
+  <SessionName>11/19/2018 1:55:32 PM</SessionName>
+</SysprogsProfilerSettings>
