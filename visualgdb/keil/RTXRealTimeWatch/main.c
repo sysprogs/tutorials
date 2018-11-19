@@ -13,14 +13,23 @@
  
 #include <SysprogsProfiler.h>
 
+osMutexId_t g_Mutex;
+
+void ExclusiveWait(int delay)
+{
+    osMutexAcquire(g_Mutex, osWaitForever);
+    osDelay(delay);
+    osMutexRelease(g_Mutex);
+}
+
 void Thread1Body(void *argument)
 {
     for (;;)
     {
         LED_On(0);
-        osDelay(100);
+        ExclusiveWait(100);
         LED_Off(0);
-        osDelay(100);
+        ExclusiveWait(100);
     }
 }
 
@@ -29,9 +38,9 @@ void Thread2Body(void *argument)
     for (;;)
     {
         LED_On(1);
-        osDelay(200);
+        ExclusiveWait(200);
         LED_Off(1);
-        osDelay(200);
+        ExclusiveWait(200);
     }
 }
  
@@ -41,6 +50,10 @@ void thread_switch_helper()
 }
 
 int main(void) {
+    
+    osMutexAttr_t mutexAttr = { .name = "TestMutex" };
+    g_Mutex = osMutexNew(&mutexAttr);
+    
     InitializeInstrumentingProfiler();
  
     // System Initialization
