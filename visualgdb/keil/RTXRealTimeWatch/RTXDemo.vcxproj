@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{435AF036-789D-48B7-A7B2-2B3DCDA98613}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
+    <BSP_VERSION>2.13.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+    <ToolchainVersion>6.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+    <ToolchainVersion>6.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link>
+      <ProduceRelocationRecords>true</ProduceRelocationRecords>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="mcu.props" />
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <None Include="RTXDemo-Debug.vgdbsettings" />
+    <None Include="RTXDemo-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="stm32f4xx_hal_msp.c" />
+    <ClCompile Include="stm32f4xx_it.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Library\cmsis_os1.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Config\RTX_Config.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_kernel.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_thread.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_delay.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_timer.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_evflags.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_mutex.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_semaphore.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_memory.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_mempool.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_msgqueue.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_system.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_evr.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Source\ARM\irq_cm4f.s" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\Source\os_systick.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c" />
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\MDK\Boards\ST\STM32F4-Discovery\Common\LED_F4Discovery.c" />
+    <ClInclude Include="RTE/RTE_Components.h" />
+    <ClInclude Include="stm32f4xx_it.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Include1\cmsis_os.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Include\rtx_os.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Config\RTX_Config.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\ARM\CMSIS\5.4.0\CMSIS\RTOS2\Include\cmsis_os2.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\CMSIS\Driver\Config\RTE_Device.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h" />
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\MDK-Middleware\7.7.0\Board\Board_LED.h" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\ProfilerRTOS_RTX.c" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h" />
+  </ItemGroup>
+</Project>
