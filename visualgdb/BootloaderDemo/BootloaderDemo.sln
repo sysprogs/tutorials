@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bootloader", "Bootloader\Bootloader.vcxproj", "{7E2D2F91-9E14-47C6-A4B9-5AB1A32AAF42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainApplication", "MainApplication\MainApplication.vcxproj", "{9E6F9FF9-BE78-43C0-9178-B0A22E3EC7B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E2D2F91-9E14-47C6-A4B9-5AB1A32AAF42}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{7E2D2F91-9E14-47C6-A4B9-5AB1A32AAF42}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{7E2D2F91-9E14-47C6-A4B9-5AB1A32AAF42}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{7E2D2F91-9E14-47C6-A4B9-5AB1A32AAF42}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{9E6F9FF9-BE78-43C0-9178-B0A22E3EC7B2}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{9E6F9FF9-BE78-43C0-9178-B0A22E3EC7B2}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{9E6F9FF9-BE78-43C0-9178-B0A22E3EC7B2}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{9E6F9FF9-BE78-43C0-9178-B0A22E3EC7B2}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D29981E-8979-47B9-8CCA-C34054C93999}
+	EndGlobalSection
+EndGlobal
