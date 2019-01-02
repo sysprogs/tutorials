@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkerScriptDemo", "LinkerScriptDemo.vcxproj", "{B76E4D68-3ECB-4CFD-AB33-F10074794B00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B76E4D68-3ECB-4CFD-AB33-F10074794B00}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{B76E4D68-3ECB-4CFD-AB33-F10074794B00}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{B76E4D68-3ECB-4CFD-AB33-F10074794B00}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{B76E4D68-3ECB-4CFD-AB33-F10074794B00}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8E3EA20-BF7C-4CC6-A61C-26658FB9FE08}
+	EndGlobalSection
+EndGlobal
