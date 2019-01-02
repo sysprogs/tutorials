@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "SharedRepositoryDemo", "SharedRepositoryDemo.vgdbproj", "{3807BBD9-6AA3-4193-857E-659CF08C386B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|DISCO_F407VG = Debug|DISCO_F407VG
+		Release|DISCO_F407VG = Release|DISCO_F407VG
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3807BBD9-6AA3-4193-857E-659CF08C386B}.Debug|DISCO_F407VG.ActiveCfg = Debug|DISCO_F407VG
+		{3807BBD9-6AA3-4193-857E-659CF08C386B}.Debug|DISCO_F407VG.Build.0 = Debug|DISCO_F407VG
+		{3807BBD9-6AA3-4193-857E-659CF08C386B}.Release|DISCO_F407VG.ActiveCfg = Release|DISCO_F407VG
+		{3807BBD9-6AA3-4193-857E-659CF08C386B}.Release|DISCO_F407VG.Build.0 = Release|DISCO_F407VG
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B850F3D7-31A3-47BD-9193-EA910EF7DA77}
+	EndGlobalSection
+EndGlobal
