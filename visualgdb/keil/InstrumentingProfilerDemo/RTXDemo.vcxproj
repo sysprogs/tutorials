@@ -50,6 +50,14 @@
       <PreprocessorDefinitions>DEBUG=1;OS_DYNAMIC_MEM_SIZE=16384;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <Link>
+      <ProduceRelocationRecords>true</ProduceRelocationRecords>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;OS_DYNAMIC_MEM_SIZE=16384;OS_STACK_SIZE=4096;OS_IDLE_THREAD_STACK_SIZE=4096;OS_IDLE_THREAD_STACK_SIZE=4096</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

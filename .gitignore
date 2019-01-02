@@ -41,3 +41,5 @@ CodeDB
 VisualGDBCache
 *.vc.db
 *.old
+/visualgdb/keil/InstrumentingProfilerDemo/ProfilingReports/RTXDemo
+/visualgdb/keil/SamplingProfilerDemo/ProfilingReports/RTXDemo
