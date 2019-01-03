@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{bb917806-9227-4075-9e22-4353dc906c0c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{1741d879-d1e9-49bb-a421-241d2669837f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{15f1d3c7-7575-49b6-afbb-fd2ff2e1009e}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Shared sources">
+      <UniqueIdentifier>{2bc9a7f2-e055-45b2-b8f5-0b25f04cac3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{4108a09f-f50b-4f2e-8926-1f7ff734c808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\lpuart_adapter">
+      <UniqueIdentifier>{594315c8-b5b8-4b6b-8a9f-3208bddd5790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\lists">
+      <UniqueIdentifier>{bb50416d-c64a-45d4-88f0-dd170c1d90b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\serial_manager">
+      <UniqueIdentifier>{bc9c9a43-5cb4-42fb-be2f-c7a9621d55c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\serial_manager_uart">
+      <UniqueIdentifier>{5939812a-2842-4f98-95d9-5ab1085e804b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\debug_console">
+      <UniqueIdentifier>{dedfe774-bb46-4e87-9db4-9e8ed13390e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\assert">
+      <UniqueIdentifier>{d19721ae-914f-4ebd-9c41-402b101c14fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\lpuart">
+      <UniqueIdentifier>{3d3daaa1-7131-493a-bf7b-ebbaa22ddeca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\gpio">
+      <UniqueIdentifier>{25c60f9f-a076-445d-84b3-e8cf82da558a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\clock">
+      <UniqueIdentifier>{79cbc9ff-6192-49e6-a8d1-3b202b85c68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\xip_board">
+      <UniqueIdentifier>{400a1a40-a4a7-4fe8-b38b-bff83e6a00da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\xip_device">
+      <UniqueIdentifier>{47cf78f8-e319-4442-919f-39ae5528dbb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\MIMXRT1052_CMSIS">
+      <UniqueIdentifier>{38dc0e12-a7ab-4698-a3c0-100f3ff90900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\MIMXRT1052_startup">
+      <UniqueIdentifier>{933304d3-c7a9-4a10-9526-704bd53d9f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{9c6cd9bd-9b42-4b18-90ac-4f1303f38e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\lpuart_adapter">
+      <UniqueIdentifier>{ef89672e-5430-4ef9-abb4-115e146ac2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\lists">
+      <UniqueIdentifier>{d8e1314f-b1aa-4a60-a70d-a1dee15a8d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\serial_manager">
+      <UniqueIdentifier>{847d79f3-e213-4278-9049-6118198ec249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\serial_manager_uart">
+      <UniqueIdentifier>{fa61769e-4ca7-403e-a0b3-7cfb3eebac1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\debug_console">
+      <UniqueIdentifier>{9ea49bc0-8c90-499e-bd65-e9c5833181db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_common">
+      <UniqueIdentifier>{4419a8d0-6f66-49ed-8516-fed47d823dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_core_cm7">
+      <UniqueIdentifier>{fa1f7af3-6eea-4672-9f8f-d48717ddd5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\lpuart">
+      <UniqueIdentifier>{f8470b7f-2659-471d-b227-83946b41b700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\iomuxc">
+      <UniqueIdentifier>{12c30802-835d-483b-b6d5-33e388dbf38a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\gpio">
+      <UniqueIdentifier>{5a284c18-30e1-4a61-a4d2-def885323ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\clock">
+      <UniqueIdentifier>{65c82fa2-35cd-482f-a8d9-dfc152317e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\xip_board">
+      <UniqueIdentifier>{7e608cba-9778-4a32-8675-147ffe52f4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\xip_device">
+      <UniqueIdentifier>{489b3f24-7042-424d-9b1e-4ce83b468e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\MIMXRT1052_CMSIS">
+      <UniqueIdentifier>{a3f412b3-87b3-45cd-89e9-6a6dc7dbe13c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{1ee9fa69-d678-4e00-b8c2-52ca935318df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="board.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="clock_config.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="pin_mux.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="gpio_led_output.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\components\uart\lpuart_adapter.c">
+      <Filter>Source files\Device-specific files\lpuart_adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\lists\generic_list.c">
+      <Filter>Source files\Device-specific files\lists</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_manager.c">
+      <Filter>Source files\Device-specific files\serial_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.c">
+      <Filter>Source files\Device-specific files\serial_manager_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\str\fsl_str.c">
+      <Filter>Source files\Device-specific files\debug_console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\debug_console\fsl_debug_console.c">
+      <Filter>Source files\Device-specific files\debug_console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\fsl_assert.c">
+      <Filter>Source files\Device-specific files\assert</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_lpuart.c">
+      <Filter>Source files\Device-specific files\lpuart</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_gpio.c">
+      <Filter>Source files\Device-specific files\gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_clock.c">
+      <Filter>Source files\Device-specific files\clock</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_flexspi_nor_config.c">
+      <Filter>Source files\Device-specific files\xip_board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_sdram_ini_dcd.c">
+      <Filter>Source files\Device-specific files\xip_board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\xip\fsl_flexspi_nor_boot.c">
+      <Filter>Source files\Device-specific files\xip_device</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\system_MIMXRT1052.c">
+      <Filter>Source files\Device-specific files\MIMXRT1052_CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\gcc\startup_MIMXRT1052.S">
+      <Filter>Source files\Device-specific files\MIMXRT1052_startup</Filter>
+    </ClCompile>
+    <ClInclude Include="board.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="clock_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="pin_mux.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\uart\uart.h">
+      <Filter>Header files\Device-specific files\lpuart_adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\lists\generic_list.h">
+      <Filter>Header files\Device-specific files\lists</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_manager.h">
+      <Filter>Header files\Device-specific files\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.h">
+      <Filter>Header files\Device-specific files\serial_manager_uart</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\str\fsl_str.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\debug_console\fsl_debug_console.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\debug_console\fsl_debug_console_conf.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_compiler.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_version.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv7.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mbl.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mml.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_math.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_iccarm.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv8.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_cm7.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_core_cm7</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_lpuart.h">
+      <Filter>Header files\Device-specific files\lpuart</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_iomuxc.h">
+      <Filter>Header files\Device-specific files\iomuxc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_gpio.h">
+      <Filter>Header files\Device-specific files\gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_clock.h">
+      <Filter>Header files\Device-specific files\clock</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_flexspi_nor_config.h">
+      <Filter>Header files\Device-specific files\xip_board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_sdram_ini_dcd.h">
+      <Filter>Header files\Device-specific files\xip_board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\xip\fsl_flexspi_nor_boot.h">
+      <Filter>Header files\Device-specific files\xip_device</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\fsl_device_registers.h">
+      <Filter>Header files\Device-specific files\MIMXRT1052_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\MIMXRT1052.h">
+      <Filter>Header files\Device-specific files\MIMXRT1052_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\MIMXRT1052_features.h">
+      <Filter>Header files\Device-specific files\MIMXRT1052_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\system_MIMXRT1052.h">
+      <Filter>Header files\Device-specific files\MIMXRT1052_CMSIS</Filter>
+    </ClInclude>
+    <None Include="IMXRTDemo-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="IMXRTDemo-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

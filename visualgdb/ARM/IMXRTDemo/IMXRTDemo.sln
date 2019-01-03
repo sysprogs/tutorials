@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IMXRTDemo", "IMXRTDemo.vcxproj", "{43CEC460-16E0-4F85-9E49-193055B8E207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43CEC460-16E0-4F85-9E49-193055B8E207}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{43CEC460-16E0-4F85-9E49-193055B8E207}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{43CEC460-16E0-4F85-9E49-193055B8E207}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{43CEC460-16E0-4F85-9E49-193055B8E207}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50FDF218-A479-41D3-89C8-B04127A7C407}
+	EndGlobalSection
+EndGlobal

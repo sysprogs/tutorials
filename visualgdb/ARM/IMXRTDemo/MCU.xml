@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+  <ToolchainVersion>
+    <GCC>7.2.0</GCC>
+    <GDB>8.0.1</GDB>
+    <Revision>3</Revision>
+  </ToolchainVersion>
+  <BspID>com.sysprogs.imported.ksdk2x.MIMXRT1052xxxxB</BspID>
+  <BspVersion>2.5.0</BspVersion>
+  <McuID>MIMXRT1052DVL6B</McuID>
+  <MCUProperties>
+    <Entries>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.arm.floatmode</Key>
+        <Value>-mfloat-abi=hard</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.imported.ksdk2x.linker_script</Key>
+        <Value>devices/MIMXRT1052/gcc/MIMXRT1052xxxxx_flexspi_nor.ld</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.toolchainoptions.arm.libctype</Key>
+        <Value>--specs=nano.specs</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.toolchainoptions.arm.libnosys</Key>
+        <Value>--specs=nosys.specs</Value>
+      </KeyValue>
+    </Entries>
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>mcu.mak</MCUMakFile>
+  <ReferencedFrameworks>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.igpio.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.clock.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.common.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.device.MIMXRT1052_CMSIS.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.utility.debug_console.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.component.lpuart_adapter.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.component.serial_manager.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.component.serial_manager_uart.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.lpuart.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.component.lists.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.device.MIMXRT1052_startup.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.iomuxc.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.utilities.assert.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.xip_device.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.xip_board.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.Include_core_cm7.MIMXRT1052</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.Include_common.MIMXRT1052</string>
+  </ReferencedFrameworks>
+  <FrameworkProperties>
+    <Entries />
+  </FrameworkProperties>
+  <TestFrameworkProperties>
+    <Entries />
+  </TestFrameworkProperties>
+</EmbeddedProfile>

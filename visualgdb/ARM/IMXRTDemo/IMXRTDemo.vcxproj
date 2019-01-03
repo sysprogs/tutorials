@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{43CEC460-16E0-4F85-9E49-193055B8E207}</ProjectGuid>
+    <BSP_ID>com.sysprogs.imported.ksdk2x.MIMXRT1052xxxxB</BSP_ID>
+    <BSP_VERSION>2.5.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>drivers;device;utilities;component\uart;component\serial_manager;component\lists;startup;xip;CMSIS;C:\MCUXpresso\imxrt\SDK_2.5.0_EVKB-IMXRT1050/boards/evkbimxrt1050/driver_examples/gpio/led_output;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;CPU_MIMXRT1052DVL6B;SDK_DEBUGCONSOLE=1;PRINTF_FLOAT_ENABLE=0;SCANF_FLOAT_ENABLE=0;PRINTF_ADVANCED_ENABLE=0;SCANF_ADVANCED_ENABLE=0;XIP_EXTERNAL_FLASH=1;XIP_BOOT_HEADER_ENABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript>../../../../MCUXpresso/imxrt/SDK_2.5.0_EVKB-IMXRT1050/devices/MIMXRT1052/gcc/MIMXRT1052xxxxx_ram.ld</LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>drivers;device;utilities;component\uart;component\serial_manager;component\lists;startup;xip;CMSIS;C:\MCUXpresso\imxrt\SDK_2.5.0_EVKB-IMXRT1050/boards/evkbimxrt1050/driver_examples/gpio/led_output;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;CPU_MIMXRT1052DVL6B;SDK_DEBUGCONSOLE=1;PRINTF_FLOAT_ENABLE=0;SCANF_FLOAT_ENABLE=0;PRINTF_ADVANCED_ENABLE=0;SCANF_ADVANCED_ENABLE=0;XIP_EXTERNAL_FLASH=1;XIP_BOOT_HEADER_ENABLE=1</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="board.c" />
+    <ClCompile Include="clock_config.c" />
+    <ClCompile Include="pin_mux.c" />
+    <ClCompile Include="gpio_led_output.c" />
+    <None Include="mcu.props" />
+    <ClCompile Include="$(BSP_ROOT)\components\uart\lpuart_adapter.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\lists\generic_list.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_manager.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\str\fsl_str.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\debug_console\fsl_debug_console.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\fsl_assert.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_lpuart.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_clock.c" />
+    <ClCompile Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_flexspi_nor_config.c" />
+    <ClCompile Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_sdram_ini_dcd.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\xip\fsl_flexspi_nor_boot.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\system_MIMXRT1052.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\MIMXRT1052\gcc\startup_MIMXRT1052.S" />
+    <ClInclude Include="board.h" />
+    <ClInclude Include="clock_config.h" />
+    <ClInclude Include="pin_mux.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\uart\uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\lists\generic_list.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_manager.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\str\fsl_str.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\debug_console\fsl_debug_console.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\utilities\debug_console\fsl_debug_console_conf.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_gcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mbl.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_common_tables.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_const_structs.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_math.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_iccarm.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv8.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_cm7.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_lpuart.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_iomuxc.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\drivers\fsl_clock.h" />
+    <ClInclude Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_flexspi_nor_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\boards\evkbimxrt1050\xip\evkbimxrt1050_sdram_ini_dcd.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\xip\fsl_flexspi_nor_boot.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\fsl_device_registers.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\MIMXRT1052.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\MIMXRT1052_features.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\MIMXRT1052\system_MIMXRT1052.h" />
+    <None Include="IMXRTDemo-Debug.vgdbsettings" />
+    <None Include="IMXRTDemo-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>
