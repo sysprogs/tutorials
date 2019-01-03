@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<MCUDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RegisterSets>
+    <HardwareRegisterSet>
+      <UserFriendlyName>CP15 registers</UserFriendlyName>
+      <Registers>
+        <HardwareRegister>
+          <Name>IDCODE</Name>
+          <SizeInBits>32</SizeInBits>
+          <Extension>
+			<QueryCommand>mon cp15 0,0,0,0</QueryCommand>
+			<QueryRegex>Reading CP15 register \([^=]+ = (0x[0-9a-fA-F]+)\)</QueryRegex>
+			<SetFormat>mon cp15 0,0,0,0 = 0x{0:x}</SetFormat>
+		  </Extension>
+		</HardwareRegister>
+
+      </Registers>
+    </HardwareRegisterSet>
+  </RegisterSets>
+</MCUDefinition>
