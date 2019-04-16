@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{39f93a3b-afb3-4545-90ab-77c503e5dde9}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{d004813d-3381-4a2e-9e90-292bf7e25aba}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{be84e750-ab71-45b2-85b7-a674f8916baf}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Shared sources">
+      <UniqueIdentifier>{eb9f6a2e-f0fe-42cb-91b3-57983186b908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Shared sources\Common files">
+      <UniqueIdentifier>{6dd8b3b0-701c-418b-a866-925bbae3b72a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{d4a14461-c05a-4982-8f04-b4b87b477cd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\SDK">
+      <UniqueIdentifier>{e8a7bf04-ae01-4475-85c6-991a37a4f1b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Common">
+      <UniqueIdentifier>{a2398453-8883-4bae-9b6f-482ea3116c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{e201ffb4-d92f-468f-821c-48bed982b510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\SDK">
+      <UniqueIdentifier>{f4f03385-19cc-448e-ba72-dac3d629a4b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Common">
+      <UniqueIdentifier>{2821451c-392d-4fa7-86bf-64296a34d918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{2c349f5b-27ab-41ed-8ac4-d420bc0086dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="pinmux.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="cc3200.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\StartupFiles\startup_gcc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\adc.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\aes.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\camera.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\cpu.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\crc.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\des.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\flash.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\gpio.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\hwspinlock.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\i2c.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\i2s.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\interrupt.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\pin.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\prcm.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\sdhost.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\shamd5.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\spi.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\systick.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\timer.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\uart.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\udma.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\utils.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\wdt.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\spi_drv.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\uart_drv.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\dma_hal.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\gpio_hal.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\hw_timer32.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\interrupt_hal.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\rtc_hal.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\spi_hal.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\uart_hal.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\util64.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\framework\pm\cc_pm.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\framework\timer\cc_timer.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\soc\cc_io_park.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\soc\cc_pm_ops.c">
+      <Filter>Source files\Device-specific files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\button_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\gpio_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\i2c_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\i2s_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\network_common.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\network_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\timer_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\uart_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\udma_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\utils_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\wdt_if.c">
+      <Filter>Source files\Device-specific files\Common</Filter>
+    </ClCompile>
+    <ClInclude Include="pinmux.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOSConfig.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\adc.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\aes.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\camera.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\cpu.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\crc.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\debug.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\des.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\flash.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\gpio.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\hwspinlock.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\i2c.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\i2s.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\interrupt.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\pin.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\prcm.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\rom.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\rom_map.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\rom_patch.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\sdhost.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\shamd5.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\spi.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\systick.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\timer.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\uart.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\udma.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\utils.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\version.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\wdt.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\asmdefs.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_adc.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_aes.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_apps_config.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_apps_rcm.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_camera.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_common_reg.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_des.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_dthe.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_flash_ctrl.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_gpio.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_gprcm.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_hib1p2.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_hib3p3.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_i2c.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_ints.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_mcasp.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_mcspi.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_memmap.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_mmchs.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_nvic.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_ocp_shared.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_shamd5.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_stack_die_ctrl.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\hw_timer.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_types.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_uart.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_udma.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_wdt.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\spi_drv.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\uart_drv.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\dma_hal.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\gpio_hal.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\hw_timer32.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\interrupt_hal.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\rtc_hal.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\spi_hal.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\uart_hal.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\util64.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\framework\pm\cc_pm.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\framework\pm\cc_types.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\framework\timer\cc_timer.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\soc\cc_io_park.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\soc\cc_pm_ops.h">
+      <Filter>Header files\Device-specific files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\button_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\common.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\gpio_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\i2c_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\i2s_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\network_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\timer_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\uart_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\udma_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\utils_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\wdt_if.h">
+      <Filter>Header files\Device-specific files\Common</Filter>
+    </ClInclude>
+    <None Include="TestProject-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="TestProject-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="cc3200.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{5B56F0F2-2FB5-4E09-AF34-23426D8C247C}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.ti.cc3200</BSP_ID>
+    <BSP_VERSION>3.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)cc3200.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)cc3200.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pinmux.cpp" />
+    <None Include="cc3200.props" />
+    <ClCompile Include="$(BSP_ROOT)\StartupFiles\startup_gcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\adc.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\aes.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\camera.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\cpu.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\crc.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\des.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\flash.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\hwspinlock.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\i2c.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\i2s.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\interrupt.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\pin.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\prcm.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\sdhost.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\shamd5.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\spi.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\systick.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\timer.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\udma.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\utils.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\driverlib\wdt.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\spi_drv.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\uart_drv.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\dma_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\gpio_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\hw_timer32.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\interrupt_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\rtc_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\spi_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\uart_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\driver\hal\util64.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\framework\pm\cc_pm.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\framework\timer\cc_timer.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\soc\cc_io_park.c" />
+    <ClCompile Include="$(BSP_ROOT)\SDK\middleware\soc\cc_pm_ops.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\button_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\gpio_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\i2c_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\i2s_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\network_common.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\network_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\timer_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\uart_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\udma_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\utils_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\wdt_if.c" />
+    <ClInclude Include="pinmux.h" />
+    <ClInclude Include="FreeRTOSConfig.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\aes.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\camera.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\cpu.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\crc.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\debug.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\des.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\flash.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\hwspinlock.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\i2c.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\i2s.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\interrupt.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\pin.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\prcm.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\rom.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\rom_map.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\rom_patch.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\sdhost.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\shamd5.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\spi.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\systick.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\timer.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\udma.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\utils.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\version.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\driverlib\wdt.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\asmdefs.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_aes.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_apps_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_apps_rcm.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_camera.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_common_reg.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_des.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_dthe.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_flash_ctrl.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_gprcm.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_hib1p2.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_hib3p3.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_i2c.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_ints.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_mcasp.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_mcspi.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_memmap.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_mmchs.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_nvic.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_ocp_shared.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_shamd5.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_stack_die_ctrl.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\hw_timer.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_udma.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\inc\hw_wdt.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\spi_drv.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\uart_drv.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\dma_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\gpio_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\hw_timer32.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\interrupt_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\rtc_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\spi_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\uart_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\driver\hal\util64.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\framework\pm\cc_pm.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\framework\pm\cc_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\framework\timer\cc_timer.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\soc\cc_io_park.h" />
+    <ClInclude Include="$(BSP_ROOT)\SDK\middleware\soc\cc_pm_ops.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\button_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\common.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\gpio_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\i2c_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\i2s_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\network_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\timer_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\uart_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\udma_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\utils_if.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\wdt_if.h" />
+    <None Include="TestProject-Debug.vgdbsettings" />
+    <None Include="TestProject-Release.vgdbsettings" />
+    <None Include="cc3200.xml" />
+  </ItemGroup>
+</Project>

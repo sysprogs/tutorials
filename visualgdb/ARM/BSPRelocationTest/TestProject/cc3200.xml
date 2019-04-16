@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+  <ToolchainVersion>
+    <GCC>7.2.0</GCC>
+    <GDB>8.0.1</GDB>
+    <Revision>3</Revision>
+  </ToolchainVersion>
+  <BspID>com.sysprogs.arm.ti.cc3200</BspID>
+  <BspVersion>3.0</BspVersion>
+  <McuID>XCC3200JR</McuID>
+  <MCUDefinitionFile>DeviceDefinitions/CC_3200.xml</MCUDefinitionFile>
+  <MCUProperties>
+    <Entries>
+      <KeyValue>
+        <Key>com.sysprogs.toolchainoptions.arm.libctype</Key>
+        <Value>--specs=nano.specs</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.toolchainoptions.arm.libnosys</Key>
+        <Value>--specs=nosys.specs</Value>
+      </KeyValue>
+    </Entries>
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>cc3200.mak</MCUMakFile>
+  <ReferencedFrameworks>
+    <string>com.sysprogs.arm.ti.cc3200.sdk</string>
+    <string>com.sysprogs.arm.ti.cc3200.common</string>
+  </ReferencedFrameworks>
+  <FrameworkProperties>
+    <Entries />
+  </FrameworkProperties>
+  <TestFrameworkProperties>
+    <Entries />
+  </TestFrameworkProperties>
+</EmbeddedProfile>
