@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImportTroubleshootingDemo", "ImportTroubleshootingDemo.vcxproj", "{BCB267FC-887E-456F-9AD6-886F803DB99A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCB267FC-887E-456F-9AD6-886F803DB99A}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{BCB267FC-887E-456F-9AD6-886F803DB99A}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{BCB267FC-887E-456F-9AD6-886F803DB99A}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{BCB267FC-887E-456F-9AD6-886F803DB99A}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A8961E9-BEC8-484B-87FA-81182DB563B6}
+	EndGlobalSection
+EndGlobal

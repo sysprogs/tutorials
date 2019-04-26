@@ -13,10 +13,10 @@ extern "C" {
  
 void Thread1Body(void *argument)
 {
-		int bigvar[4096];
+	int bigvar[4096];
     for (;;)
     {
-				bigvar[4095] = 0;
+		bigvar[4095] = 0;
         LED_On(0);
         osDelay(100);
         LED_Off(0);
