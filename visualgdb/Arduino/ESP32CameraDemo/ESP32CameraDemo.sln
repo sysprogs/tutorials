@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ESP32CameraDemo", "ESP32CameraDemo.vgdbproj", "{57EFE75C-A9BF-47DC-93C5-B864AF8401D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ESP32_Wrover_Module = Debug|ESP32_Wrover_Module
+		Release|ESP32_Wrover_Module = Release|ESP32_Wrover_Module
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57EFE75C-A9BF-47DC-93C5-B864AF8401D2}.Debug|ESP32_Wrover_Module.ActiveCfg = Debug|ESP32_Wrover_Module
+		{57EFE75C-A9BF-47DC-93C5-B864AF8401D2}.Debug|ESP32_Wrover_Module.Build.0 = Debug|ESP32_Wrover_Module
+		{57EFE75C-A9BF-47DC-93C5-B864AF8401D2}.Release|ESP32_Wrover_Module.ActiveCfg = Release|ESP32_Wrover_Module
+		{57EFE75C-A9BF-47DC-93C5-B864AF8401D2}.Release|ESP32_Wrover_Module.Build.0 = Release|ESP32_Wrover_Module
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B1FC720-D697-4828-8059-BA7A90497520}
+	EndGlobalSection
+EndGlobal
