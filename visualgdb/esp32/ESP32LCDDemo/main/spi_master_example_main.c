@@ -401,6 +401,7 @@ static void display_pretty_colors(spi_device_handle_t spi)
             //background. We can go on to calculate the next line set as long as we do not
             //touch line[sending_line]; the SPI sending process is still reading from that.
         }
+
     }
 }
 
@@ -514,6 +515,8 @@ static void DownloadAndDisplay(spi_device_handle_t spi)
                 }
                 free(decoded);
             }
+
+            vTaskDelay(5000 / portTICK_RATE_MS);
         }
     }
 }
