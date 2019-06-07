@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "Camera", "Camera.vgdbproj", "{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{0B04F4FB-FF9D-434D-A459-0D07B6658DA3}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3213C8DA-E1F4-4A01-84F0-AEFECB791DF3}
+	EndGlobalSection
+EndGlobal
