@@ -47,9 +47,9 @@
     </Connection>
     <LastConnectionTime>0</LastConnectionTime>
     <EchoTypedCharacters>false</EchoTypedCharacters>
-    <ClearContentsWhenReconnecting>false</ClearContentsWhenReconnecting>
+    <ClearContentsWhenReconnecting>true</ClearContentsWhenReconnecting>
     <ReconnectAutomatically>false</ReconnectAutomatically>
-    <DisplayMode>ASCII</DisplayMode>
+    <DisplayMode>HEX</DisplayMode>
     <Colors>
       <Background>
         <Alpha>255</Alpha>
@@ -84,7 +84,7 @@
     </Colors>
     <HexSettings>
       <MaximumBytesPerLine>16</MaximumBytesPerLine>
-      <ShowTextView>true</ShowTextView>
+      <ShowTextView>false</ShowTextView>
       <BreaksAroundEcho>true</BreaksAroundEcho>
       <AutoSend>true</AutoSend>
       <SendAsHex>true</SendAsHex>
