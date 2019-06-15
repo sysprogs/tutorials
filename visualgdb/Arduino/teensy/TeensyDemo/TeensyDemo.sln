@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "TeensyDemo", "TeensyDemo.vgdbproj", "{895D1C35-FB04-4589-BEE6-84A371EB0D33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Teensy_3 6 = Debug|Teensy_3 6
+		Release|Teensy_3 6 = Release|Teensy_3 6
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895D1C35-FB04-4589-BEE6-84A371EB0D33}.Debug|Teensy_3 6.ActiveCfg = Debug|Teensy_3 6
+		{895D1C35-FB04-4589-BEE6-84A371EB0D33}.Debug|Teensy_3 6.Build.0 = Debug|Teensy_3 6
+		{895D1C35-FB04-4589-BEE6-84A371EB0D33}.Release|Teensy_3 6.ActiveCfg = Release|Teensy_3 6
+		{895D1C35-FB04-4589-BEE6-84A371EB0D33}.Release|Teensy_3 6.Build.0 = Release|Teensy_3 6
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FDFCE47-90D3-4BFC-9B47-97B92B4076F4}
+	EndGlobalSection
+EndGlobal
