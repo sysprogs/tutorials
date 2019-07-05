@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{94cb470d-b915-4c2b-820b-460f0adfa9de}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{086b7c95-20e5-441b-b42e-e7152ee682bd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{243c367b-7e80-4e09-8a48-0f05c2b143db}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Core">
+      <UniqueIdentifier>{4ac0e7d9-84ce-4a4b-8c94-d6fc33d5c507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Core\Inc">
+      <UniqueIdentifier>{cfa28819-a0f4-490e-8fc8-18093a965d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Core\Src">
+      <UniqueIdentifier>{8c2f3b40-a6b0-4d97-8c5f-f6c1b5b82e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\STM32_WPAN">
+      <UniqueIdentifier>{4c456648-6061-4bc5-b444-ac288aa76e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\STM32_WPAN\App">
+      <UniqueIdentifier>{14a5129c-f531-4028-b683-26f1d799e4df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\STM32_WPAN\Target">
+      <UniqueIdentifier>{ecac185e-3290-465d-a8dd-058348ca7be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Shared sources">
+      <UniqueIdentifier>{f1980c3e-2a45-4ffd-8023-de49695aa5e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{5056549d-a2cd-42ac-a6be-0915a3a536e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core">
+      <UniqueIdentifier>{c05a6f65-14a7-4c4d-84c9-fe9d8f0691cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core\Inc">
+      <UniqueIdentifier>{51167947-224a-419a-8345-714cbafeb86f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core\Src">
+      <UniqueIdentifier>{c1dc1318-6587-45d7-8eb3-84be875fdb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\STM32_WPAN">
+      <UniqueIdentifier>{1e7df0ff-1c47-49d3-92b0-36c3bd8f42a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\STM32_WPAN\App">
+      <UniqueIdentifier>{44e95b57-8232-414f-b34e-27803b124243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\STM32_WPAN\Target">
+      <UniqueIdentifier>{e0927938-7d90-41fb-abca-cc0531008e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{23407ac6-1607-4cb3-aeae-3ffec2259e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{51794ea3-cc3b-4d17-98f8-00837f447e99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt">
+      <Filter>Source files</Filter>
+    </None>
+    <None Include="stm32wb55xx_flash_cm4.ld">
+      <Filter>Source files</Filter>
+    </None>
+    <ClCompile Include="Core\Src\app_entry.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\hw_lpm.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\hw_timerserver.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\hw_uart.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\main.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\stm32wbxx_it.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\system_stm32wbxx.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\App\app_ble.c">
+      <Filter>Source files\STM32_WPAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\App\p2p_server_app.c">
+      <Filter>Source files\STM32_WPAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\Target\hw_ipcc.c">
+      <Filter>Source files\STM32_WPAN\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\BSP\P-NUCLEO-WB55.USBDongle\stm32wbxx_usb_dongle.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_usb.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Core\Src\usbd_core.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\p2p_stm.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\svc_ctl.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_gap_aci.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_gatt_aci.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_hal_aci.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_hci_le.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_l2cap_aci.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\osal.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_if.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\vcp\usbd_conf.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\vcp\usbd_desc.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\vcp\vcp.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\dbg_trace.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\lpm.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\otp.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\scheduler.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_list.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_queue.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <None Include="stm32wb.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\StartupFiles\startup_stm32wb55xx_cm4.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClInclude Include="Core\Inc\app_common.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\app_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\app_entry.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\hw_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\main.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\stm32wbxx_hal_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\stm32wbxx_it.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\utilities_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\vcp_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\app_ble.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\ble_conf.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\ble_dbg_conf.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\p2p_server_app.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <None Include="PeripheralProject-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="PeripheralProject-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32wb.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>
