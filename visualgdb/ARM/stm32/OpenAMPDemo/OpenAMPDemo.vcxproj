@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6F56AE15-B35A-4898-BE64-56C6AC30CB0D}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32mp1</BSP_ID>
+    <BSP_VERSION>2019.06</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32mp1.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32mp1.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link>
+      <LinkerScript>stm32mp15xx_m4.ld</LinkerScript>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>Inc;$(BSP_ROOT)/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/OpenAMP/virtual_driver;$(BSP_ROOT)/VendorSamples/MP1/Drivers/BSP/STM32MP15xx_DISCO;$(BSP_ROOT)/STM32MP1xxxx/STM32MP1xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32MP1xxxx/STM32MP1xx_HAL_Driver/Inc/Legacy;$(BSP_ROOT)/STM32MP1xxxx/CMSIS_HAL/Device/ST/STM32MP1xx/Include;$(BSP_ROOT)/STM32MP1xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/OpenAMP/virtual_driver;$(BSP_ROOT)/STM32MP1xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;CORE_CM4;__LOG_TRACE_IO_;STM32MP157Cxx</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <Link>
+      <LinkerScript>stm32mp15xx_m4.ld</LinkerScript>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>Inc;$(BSP_ROOT)/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/OpenAMP/virtual_driver;$(BSP_ROOT)/VendorSamples/MP1/Drivers/BSP/STM32MP15xx_DISCO;$(BSP_ROOT)/STM32MP1xxxx/STM32MP1xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32MP1xxxx/STM32MP1xx_HAL_Driver/Inc/Legacy;$(BSP_ROOT)/STM32MP1xxxx/CMSIS_HAL/Device/ST/STM32MP1xx/Include;$(BSP_ROOT)/STM32MP1xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/OpenAMP/virtual_driver;$(BSP_ROOT)/STM32MP1xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;CORE_CM4;__LOG_TRACE_IO_;STM32MP157Cxx</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <None Include="stm32mp15xx_m4.ld" />
+    <ClCompile Include="syscalls.c" />
+    <None Include="Remoteproc\fw_cortex_m4.sh" />
+    <None Include="Remoteproc\README" />
+    <ClCompile Include="Src\lock_resource.c" />
+    <ClCompile Include="Src\log.c" />
+    <ClCompile Include="Src\main.c" />
+    <ClCompile Include="Src\mbox_ipcc.c" />
+    <ClCompile Include="Src\openamp.c" />
+    <ClCompile Include="Src\rsc_table.c" />
+    <ClCompile Include="Src\stm32mp1xx_hal_msp.c" />
+    <ClCompile Include="Src\stm32mp1xx_it.c" />
+    <ClCompile Include="Src\system_stm32mp1xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\MP1\Drivers\BSP\STM32MP15xx_DISCO\stm32mp15xx_disco.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\virtual_driver\virt_uart.c" />
+    <None Include="stm32mp1.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\StartupFiles\startup_stm32mp15xx.c" />
+    <None Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\virtio\CMakeLists.txt" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\libmetal_device.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\dma.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\libmetal_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\libmetal_io.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\libmetal_log.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\libmetal_shmem.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\version.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\condition.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\device.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\init.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\io.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\irq.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\shmem.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\time.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\cortexm\sys.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\remoteproc\elf_loader.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\remoteproc\remoteproc.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\remoteproc\remoteproc_virtio.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\remoteproc\rsc_table_parser.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\rpmsg\rpmsg.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\rpmsg\rpmsg_virtio.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\virtio\virtio.c" />
+    <ClCompile Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\virtio\virtqueue.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_adc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_adc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_cec.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_cortex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_crc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_crc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_cryp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_cryp_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dac.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dac_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dcmi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dfsdm.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dfsdm_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dma.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_dma_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_exti.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_fdcan.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_hash.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_hash_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_hsem.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_i2c.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_i2c_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_ipcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_lptim.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_mdios.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_mdma.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_pwr.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_pwr_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_qspi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_rcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_rcc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_rng.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_sai.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_sai_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_sd.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_sd_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_smbus.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_spdifrx.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_spi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_spi_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_tim.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_tim_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_uart_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_usart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_usart_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Src\stm32mp1xx_hal_wwdg.c" />
+    <ClInclude Include="Inc\lock_resource.h" />
+    <ClInclude Include="Inc\log.h" />
+    <ClInclude Include="Inc\main.h" />
+    <ClInclude Include="Inc\mbox_ipcc.h" />
+    <ClInclude Include="Inc\openamp.h" />
+    <ClInclude Include="Inc\openamp_conf.h" />
+    <ClInclude Include="Inc\rsc_table.h" />
+    <ClInclude Include="Inc\stm32mp15xx_disco_conf.h" />
+    <ClInclude Include="Inc\stm32mp1xx_hal_conf.h" />
+    <ClInclude Include="Inc\stm32mp1xx_it.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\alloc.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\assert.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\processor\x86_64\atomic.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\cache.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\condition.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\config.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\processor\x86_64\cpu.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\device.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\dma.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\io.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\irq.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\list.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\log.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\mutex.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\shmem.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\sleep.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\spinlock.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\system\generic\cortexm\sys.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\time.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\utilities.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\libmetal\lib\include\metal\version.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\elf_loader.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\open_amp.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\remoteproc.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\remoteproc_loader.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\remoteproc_virtio.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\rpmsg.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\rpmsg_retarget.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\rpmsg_virtio.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\rsc_table_parser.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\virtio.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\virtio_ring.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\include\openamp\virtqueue.h" />
+    <ClInclude Include="$(BSP_ROOT)\OpenAMP\open-amp\lib\rpmsg\rpmsg_internal.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_adc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_cec.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_cortex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_crc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_crc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_cryp.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_cryp_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dac.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dac_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dcmi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_def.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dfsdm.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dfsdm_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dma.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_dma_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_exti.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_fdcan.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_gpio_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_hash.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_hash_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_hsem.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_i2c.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_i2c_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_ipcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_lptim.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_mdios.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_mdma.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_pwr.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_pwr_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_qspi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_rcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_rcc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_rng.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_sai.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_sai_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_sd.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_sd_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_smbus.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_spdifrx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_spi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_spi_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_tim.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_tim_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_uart_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_usart.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_usart_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\stm32mp1xx_hal_wwdg.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\STM32MP1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\cmsis_armcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\cmsis_armclang.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\cmsis_compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\cmsis_gcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\cmsis_iccarm.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\cmsis_version.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_armv8mbl.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_armv8mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm0.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm0plus.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm23.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm3.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm33.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_cm7.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_sc000.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\core_sc300.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\mpu_armv7.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\mpu_armv8.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Include\tz_context.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\RTE_Components.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp151axx_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp151cxx_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp153axx_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp153cxx_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp157axx_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp157cxx_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\stm32mp1xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\Device\ST\STM32MP1xx\Include\system_stm32mp1xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32MP1xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h" />
+    <None Include="OpenAMPDemo-Debug.vgdbsettings" />
+    <None Include="OpenAMPDemo-Release.vgdbsettings" />
+    <None Include="stm32mp1.xml" />
+  </ItemGroup>
+</Project>
