@@ -50,7 +50,6 @@ IPCC_HandleTypeDef hipcc;
 VIRT_UART_HandleTypeDef huart0;
 VIRT_UART_HandleTypeDef huart1;
 
-__IO FlagStatus VirtUart0RxMsg = RESET;
 uint8_t VirtUart0ChannelBuffRx[MAX_BUFFER_SIZE];
 uint16_t VirtUart0ChannelRxSize = 0;
 
@@ -70,6 +69,31 @@ void VIRT_UART1_RxCpltCallback(VIRT_UART_HandleTypeDef *huart);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 /* USER CODE END 0 */
+
+size_t ReadLineFromVirtualUART(char *pBuffer, size_t maxSize)
+{
+    OPENAMP_check_for_message();
+
+    int pos = 0;
+    for (pos = 0; pos < VirtUart0ChannelRxSize; pos++)
+    {
+        if (VirtUart0ChannelBuffRx[pos] == '\n')
+        {
+            size_t todo = pos;
+            if (todo >= maxSize)
+                todo = maxSize - 1;
+            memcpy(pBuffer, VirtUart0ChannelBuffRx, todo);
+            pBuffer[todo] = 0;
+
+            pos++;
+            memmove(VirtUart0ChannelBuffRx, VirtUart0ChannelBuffRx + pos, VirtUart0ChannelRxSize - pos);
+            VirtUart0ChannelRxSize -= pos;
+            return pos - 1;
+        }
+    }
+
+    return 0;
+}
 
 /**
   * @brief  The application entry point.
@@ -142,22 +166,33 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  __HAL_RCC_GPIOH_CLK_ENABLE();
+  GPIO_InitTypeDef GPIO_InitStructure;
+
+  GPIO_InitStructure.Pin = GPIO_PIN_7;
+
+  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStructure.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOH, &GPIO_InitStructure);
+
+  uint32_t toggleTime;
+  uint32_t period = 1000;
+
+  char buf[64];
+
   while (1)
   {
+      if (HAL_GetTick() >= toggleTime)
+      {
+          HAL_GPIO_TogglePin(GPIOH, GPIO_PIN_7);
+          toggleTime = HAL_GetTick() + period;
+      }
 
-    OPENAMP_check_for_message();
-
-    /* USER CODE END WHILE */
-    if (VirtUart0RxMsg) {
-      VirtUart0RxMsg = RESET;
-      VIRT_UART_Transmit(&huart0, VirtUart0ChannelBuffRx, VirtUart0ChannelRxSize);
-    }
-
-    if (VirtUart1RxMsg) {
-      VirtUart1RxMsg = RESET;
-      VIRT_UART_Transmit(&huart1, VirtUart1ChannelBuffRx, VirtUart1ChannelRxSize);
-    }
-    /* USER CODE BEGIN 3 */
+      if (ReadLineFromVirtualUART(buf, sizeof(buf)))
+      {
+          period = atoi(buf);
+      }
   }
   /* USER CODE END 3 */
 }
@@ -292,15 +327,18 @@ static void MX_IPCC_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
 void VIRT_UART0_RxCpltCallback(VIRT_UART_HandleTypeDef *huart)
 {
-
     log_info("Msg received on VIRTUAL UART0 channel:  %s \n\r", (char *) huart->pRxBuffPtr);
 
-    /* copy received msg in a variable to sent it back to master processor in main infinite loop*/
-    VirtUart0ChannelRxSize = huart->RxXferSize < MAX_BUFFER_SIZE? huart->RxXferSize : MAX_BUFFER_SIZE-1;
-    memcpy(VirtUart0ChannelBuffRx, huart->pRxBuffPtr, VirtUart0ChannelRxSize);
-    VirtUart0RxMsg = SET;
+    size_t todo = MAX_BUFFER_SIZE - VirtUart0ChannelRxSize - 1;
+    if (todo > huart->RxXferSize)
+        todo = huart->RxXferSize;
+
+    memcpy(VirtUart0ChannelBuffRx + VirtUart0ChannelRxSize, huart->pRxBuffPtr, todo);
+    VirtUart0ChannelRxSize += todo;
+    VirtUart0ChannelBuffRx[VirtUart0ChannelRxSize] = 0;
 }
 
 void VIRT_UART1_RxCpltCallback(VIRT_UART_HandleTypeDef *huart)
