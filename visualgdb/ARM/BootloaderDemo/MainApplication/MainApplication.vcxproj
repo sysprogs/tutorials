@@ -40,10 +40,12 @@
     <GNUConfigurationType>Debug</GNUConfigurationType>
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
     <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+    <ExtensionsToDeleteOnClean>*.o;*.dep;*.tlog;*.rsp;$(TargetName).bin;*.ihex;*.map;*.S;*.E;*.msbuild-mak;*.alldeps;*.remotedir</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
     <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+    <ExtensionsToDeleteOnClean>*.o;*.dep;*.tlog;*.rsp;$(TargetName).bin;*.ihex;*.map;*.S;*.E;*.msbuild-mak;*.alldeps;*.remotedir</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
