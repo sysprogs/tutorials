@@ -1,0 +1,12 @@
+CustomStaticLibrary
+	match			register_static_library()
+	priority		1000
+	props			custom.prop
+	statements		custom.stmt
+	spelling_regex	Static(.*)
+	
+CustomSharedLibrary
+	match			register_shared_library()
+	priority		1000
+	props			shared.prop
+	statements		custom.stmt

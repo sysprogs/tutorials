@@ -10,9 +10,12 @@ add_executable(CustomCMakeTargetDemo CustomCMakeTargetDemo.cpp)
 target_link_libraries(CustomCMakeTargetDemo "${LIBRARIES_FROM_REFERENCES}")
 
 
-register_static_library(Library1 Library1.cpp)
+register_static_library(Library1 Library1.cpp Source.cpp)
 register_static_library(Library2 Library2.cpp)
-set_static_library_cflags(Library1 -DTESTMACRO)
+set_static_library_cflags(Library2 -DTESTMACRO)
+set_static_library_cflags(Library1 -DTESTMACRO -gdwarf-4 -Wall -Wextra -Wpedantic)
 
-register_shared_library(NAME Library3 SOURCES Library3.cpp CFLAGS -DTESTMACRO)
+register_shared_library(NAME Library3
+	SOURCES Library3.cpp Source.cpp
+	CFLAGS "-DTESTMACRO -IMyIncludeDir")
 register_shared_library(NAME Library4 SOURCES Library4.cpp)

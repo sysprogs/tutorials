@@ -1,0 +1,7 @@
+@internal
+	target.decl: register_shared_library()
+	target.name = target.decl.NAME
+	target.sources = target.decl.SOURCES
+	self.cflags = target.decl.CFLAGS
+
+%include $(VISUALGDB_DIR)\rules\PropertyEngine\common\cflags.prop

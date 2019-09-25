@@ -1,0 +1,14 @@
+register_static_library()
+	from: register_static_library()
+	format: register_static_library(@*)
+	subformat: %name @sources
+
+set_static_library_cflags()
+	from: register_static_library().file
+	format: set_static_library_cflags(%target @*)
+	insert: after register_static_library()
+	
+register_shared_library()
+	from: register_shared_library()
+	format: register_shared_library(@*)
+	groups: !NAME SOURCES !CFLAGS

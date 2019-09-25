@@ -70,12 +70,14 @@
         <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
+      <TargetSpecificSettings />
       <DeploymentDirectory>/tmp</DeploymentDirectory>
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
       <ProjectGUID>8892fe70-344c-4055-abd9-05e4efaedf9b</ProjectGUID>
       <VirtualFolders />
       <ConfigurationNameCase>Upper</ConfigurationNameCase>
       <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
+      <CustomTargetDefinitionDirectory>TargetDefinitions</CustomTargetDefinitionDirectory>
     </ProjectModeSettings>
   </Build>
   <CustomBuild>
@@ -96,6 +98,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -108,6 +111,8 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
+  <Configurations />
+  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.remote">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>
