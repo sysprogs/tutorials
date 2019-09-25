@@ -1,9 +1,9 @@
-function(register_static_library NAME FILES)
-	add_library(Static${NAME} ${FILES})
+function(register_static_library NAME)
+	add_library(Static${NAME} ${ARGN})
 endfunction(register_static_library)
 
-function(set_static_library_cflags NAME FLAGS)
-	target_compile_options(Static${NAME} PRIVATE ${FLAGS})
+function(set_static_library_cflags NAME)
+	target_compile_options(Static${NAME} PRIVATE ${ARGN})
 endfunction(set_static_library_cflags)
 
 function(register_shared_library)
