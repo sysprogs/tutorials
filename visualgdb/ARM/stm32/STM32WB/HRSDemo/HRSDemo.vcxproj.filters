@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{5e50440c-2a86-4ce7-bd03-def03b9fd06c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{9bf193a9-b3f3-4292-a2ed-1168ca300709}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{60e08d14-bc3a-45c3-90c5-96f9f5ff7caf}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Core">
+      <UniqueIdentifier>{ba172098-62cd-410d-b9bb-ace8288c5d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Core\Inc">
+      <UniqueIdentifier>{fa235642-4b77-43d9-9628-29f94f963f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Core\Src">
+      <UniqueIdentifier>{2aaa80cf-0b14-479a-ad34-4476c6252db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\STM32_WPAN">
+      <UniqueIdentifier>{836c239f-61d8-4965-8701-614f6822dcdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\STM32_WPAN\App">
+      <UniqueIdentifier>{918474c4-9998-4c61-82b3-060bfd6754d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\STM32_WPAN\Target">
+      <UniqueIdentifier>{431c9054-306d-482f-9439-993ca76bf905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{d1f52a16-9a79-4b36-82e0-2019bfc5c5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE">
+      <UniqueIdentifier>{095c4a0d-d6aa-4da2-886e-cbeb5706eabe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Thread">
+      <UniqueIdentifier>{03639182-5656-4fa7-899e-fd7bba97f409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Board">
+      <UniqueIdentifier>{68169cca-dbf4-4dd9-832e-680f9ec9e465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Utilities">
+      <UniqueIdentifier>{a0f97fae-3adf-42d2-9767-f5184ca504a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\OpenThread">
+      <UniqueIdentifier>{c13153e8-8764-4d8a-a3b2-abb9962ed461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\HAL">
+      <UniqueIdentifier>{3b209a37-009f-4645-b459-79b4c7d743c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LL">
+      <UniqueIdentifier>{f0a6a2b3-c138-4d7d-9423-e42306d83992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core">
+      <UniqueIdentifier>{7a7b2e86-44a3-4fee-9413-6e3242a961bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core\Inc">
+      <UniqueIdentifier>{182cddc1-7b31-4d64-8d84-b2eed7b2632c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core\Src">
+      <UniqueIdentifier>{dc3b3128-6d9f-42a4-a42c-e8981f7a0463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\STM32_WPAN">
+      <UniqueIdentifier>{d419705b-8240-4d5b-8afb-2070802b3e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\STM32_WPAN\App">
+      <UniqueIdentifier>{c9694c77-0060-4fc2-be58-d8fde69bc3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\STM32_WPAN\Target">
+      <UniqueIdentifier>{e2d9c2d6-f7ae-4031-bc7b-34a26fc6a8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{8f02d465-4fe9-41bd-b5b3-226efe613ed7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE">
+      <UniqueIdentifier>{8c3d8964-cc89-4038-b232-b38d8624da70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Thread">
+      <UniqueIdentifier>{dd6b6d2d-58d4-41d6-85d9-12f142506ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Board">
+      <UniqueIdentifier>{977242e8-6c8d-4587-8d73-69273610213c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Utilities">
+      <UniqueIdentifier>{a8df6bfc-e1c5-444e-950c-243e972aec77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\OpenThread">
+      <UniqueIdentifier>{2fd21153-fc24-47c0-970d-bf1adb790742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\HAL">
+      <UniqueIdentifier>{f022db93-bd4d-4afc-89c8-ac0e33662c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\LL">
+      <UniqueIdentifier>{338f0ecb-4616-467d-b399-a52b17284797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{101d1432-8e7c-49e9-9a43-66ed12fbe098}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".extSettings">
+      <Filter>Source files</Filter>
+    </None>
+    <None Include="BLE_HeartRate.ioc">
+      <Filter>Source files</Filter>
+    </None>
+    <None Include="readme.txt">
+      <Filter>Source files</Filter>
+    </None>
+    <ClCompile Include="Core\Src\app_entry.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\hw_lpm.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\hw_timerserver.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\hw_uart.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\main.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\stm32wbxx_hal_msp.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\stm32wbxx_it.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Src\system_stm32wbxx.c">
+      <Filter>Source files\Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\App\app_ble.c">
+      <Filter>Source files\STM32_WPAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\App\dis_app.c">
+      <Filter>Source files\STM32_WPAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\App\hrs_app.c">
+      <Filter>Source files\STM32_WPAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="STM32_WPAN\Target\hw_ipcc.c">
+      <Filter>Source files\STM32_WPAN\Target</Filter>
+    </ClCompile>
+    <None Include="stm32wb.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\StartupFiles\startup_stm32wb55xx_cm4.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\dis.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\hrs.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\svc_ctl.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_gap_aci.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_gatt_aci.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_hal_aci.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_hci_le.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_l2cap_aci.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\osal.c">
+      <Filter>Source files\Device-specific files\BLE</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\lhci\lhci.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_if.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_thread_hci.c">
+      <Filter>Source files\Device-specific files\BLE Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\BSP\P-NUCLEO-WB55.Nucleo\stm32wbxx_nucleo.c">
+      <Filter>Source files\Device-specific files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\dbg_trace.c">
+      <Filter>Source files\Device-specific files\BLE Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\lpm.c">
+      <Filter>Source files\Device-specific files\BLE Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\otp.c">
+      <Filter>Source files\Device-specific files\BLE Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\scheduler.c">
+      <Filter>Source files\Device-specific files\BLE Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_list.c">
+      <Filter>Source files\Device-specific files\BLE Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_queue.c">
+      <Filter>Source files\Device-specific files\BLE Utilities</Filter>
+    </ClCompile>
+    <None Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\Release_Notes.html">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </None>
+    <None Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\STM32WB55xx_OpenThread_API_User_Manual.chm">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\channel_manager.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\channel_monitor.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\child_supervision.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\coap.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\commissioner.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\crypto.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\dataset.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\dataset_ftd.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\dhcp6_client.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\dhcp6_server.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\diag.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\dns.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\icmp6.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\instance.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\ip6.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\jam_detection.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\joiner.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\link.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\link_raw.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\message.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\netdata.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\network_time.cpp">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\openthread.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\openthread_api_wb.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\radio.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\server.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\tasklet.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\thread.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\thread_ftd.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\udp.c">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </ClCompile>
+    <None Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\Makefile.am">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </None>
+    <None Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\_htmresc\mini-st.css">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </None>
+    <None Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\_htmresc\st_logo.png">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </None>
+    <None Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\_htmresc\ThreadLayers.png">
+      <Filter>Source files\Device-specific files\OpenThread</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_comp.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_exti.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_hsem.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_irda.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lcd.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pka.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_qspi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_sai.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_sai_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_smartcard.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_smartcard_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_smbus.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tsc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_usart.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_usart_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_wwdg.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_adc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_comp.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_crc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_crs.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_dma.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_exti.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_gpio.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_i2c.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_lptim.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_lpuart.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_pka.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_pwr.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rcc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rng.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_rtc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_spi.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_tim.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_usart.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_usb.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_utils.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClInclude Include="Core\Inc\app_common.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\app_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\app_entry.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\hw_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\main.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\stm32wbxx_hal_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\stm32wbxx_it.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Inc\utilities_conf.h">
+      <Filter>Header files\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\app_ble.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\ble_conf.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\ble_dbg_conf.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\dis_app.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="STM32_WPAN\App\hrs_app.h">
+      <Filter>Header files\STM32_WPAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\ble.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\blesvc\dis.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\blesvc\hrs.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\blesvc\svc_ctl.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_gap.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_gap_aci.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_gatt_aci.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_gatt_server.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_hal.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_hal_aci.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_hci_le.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_l2cap_aci.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_status.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\ble_types.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\hci_const.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\link_layer.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\sm.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Inc\core\uuid.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\common_blesvc.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_bufsize.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_const.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_defs.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\compiler.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\hal_types.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\osal.h">
+      <Filter>Header files\Device-specific files\BLE</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\hw.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\conf\tl_conf_template.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\conf\vcp_conf_template.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\lhci\lhci.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\shci\shci.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\mbox_def.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mac_802_15_4.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_thread_hci.h">
+      <Filter>Header files\Device-specific files\BLE Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\BSP\P-NUCLEO-WB55.Nucleo\stm32wbxx_nucleo.h">
+      <Filter>Header files\Device-specific files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\dbg_trace.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\lpm.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\otp.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\scheduler.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_list.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_queue.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\utilities_common.h">
+      <Filter>Header files\Device-specific files\BLE Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\openthread_api_config_concurrent.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\openthread_api_config_ftd.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\openthread_api_config_mtd.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\openthread_api_wb.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\core\openthread_api\stm32wbxx_core_interface_def.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread-config-android.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread-windows-config.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\border_router.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\channel_manager.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\channel_monitor.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\child_supervision.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\cli.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\coap.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\commissioner.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\config.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\crypto.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\dataset.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\dataset_ftd.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\dhcp6_client.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\dhcp6_server.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\diag.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\dns.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\error.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\icmp6.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\instance.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\ip6.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\jam_detection.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\joiner.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\link.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\link_raw.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\message.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\ncp.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\netdata.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\network_time.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\server.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\tasklet.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\thread.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\thread_ftd.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\udp.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\alarm-micro.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\alarm-milli.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\ble.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\debug_uart.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\logging-windows.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\logging.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\memory.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\messagepool.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\misc.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\radio.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\random.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\settings.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\spi-slave.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\time.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\toolchain.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\thread\openthread\stack\include\openthread\platform\uart.h">
+      <Filter>Header files\Device-specific files\OpenThread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_comp.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cortex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_def.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_exti.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_hsem.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_ipcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_irda.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_irda_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_iwdg.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_lcd.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_lptim.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pcd.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pcd_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pka.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_qspi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rng.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_sai.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_sai_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_smartcard.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_smartcard_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_smbus.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_spi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_spi_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_tim.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_tim_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_tsc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_usart.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_usart_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_wwdg.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Device\ST\STM32WBxx\Include\stm32wbxx.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Device\ST\STM32WBxx\Include\system_stm32wbxx.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\arm_math.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_armcc_V6.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm0.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm0plus.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm3.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm4.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm7.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cmFunc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cmInstr.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cmSimd.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_sc000.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_sc300.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_adc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_bus.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_comp.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_cortex.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_crc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_crs.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_dma.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_dmamux.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_exti.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_gpio.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_hsem.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_i2c.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_ipcc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_iwdg.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_lptim.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_lpuart.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_pka.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_pwr.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rcc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rng.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_rtc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_spi.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_system.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_tim.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_usart.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_usb.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_utils.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_wwdg.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <None Include="HRSDemo-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="HRSDemo-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32wb.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

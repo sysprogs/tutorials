@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ESP32LyratJTAGDemo", "ESP32LyratJTAGDemo.vgdbproj", "{95B392D1-F148-4DE7-9873-3A27ADFA3D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95B392D1-F148-4DE7-9873-3A27ADFA3D80}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{95B392D1-F148-4DE7-9873-3A27ADFA3D80}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{95B392D1-F148-4DE7-9873-3A27ADFA3D80}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{95B392D1-F148-4DE7-9873-3A27ADFA3D80}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9885B4D-00F0-4772-9936-4A2788466412}
+	EndGlobalSection
+EndGlobal

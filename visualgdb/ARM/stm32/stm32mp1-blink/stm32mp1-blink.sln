@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stm32mp1-blink", "stm32mp1-blink.vcxproj", "{85A0B762-10E9-4CA4-9CAD-2B18E28ECFCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85A0B762-10E9-4CA4-9CAD-2B18E28ECFCE}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{85A0B762-10E9-4CA4-9CAD-2B18E28ECFCE}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{85A0B762-10E9-4CA4-9CAD-2B18E28ECFCE}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{85A0B762-10E9-4CA4-9CAD-2B18E28ECFCE}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66B6F419-BB9B-465C-BC24-77F8AD99E77A}
+	EndGlobalSection
+EndGlobal

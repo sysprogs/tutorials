@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{2DE9230F-42AD-4A4D-9F37-A8821A4BC65D}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32wb</BSP_ID>
+    <BSP_VERSION>2019.06</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32wb.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32wb.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+    <TargetExt>.elf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>7.2.0/8.0.1/r3</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link>
+      <LinkerScript>stm32wb55xx_flash_cm4.ld</LinkerScript>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Inc/core;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Src/core;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN;$(BSP_ROOT)/STM32WBxxxx/CMSIS_HAL/Device/ST/STM32WBxx/Include;$(BSP_ROOT)/STM32WBxxxx/STM32WBxx_HAL_Driver/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Inc/blesvc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/utilities;$(BSP_ROOT)/STM32WBxxxx/CMSIS_HAL/Include;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/shci;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble;Core/Inc;STM32_WPAN/App;$(BSP_ROOT)/STM32WBxxxx/BSP/P-NUCLEO-WB55.USBDongle;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/vcp;$(BSP_ROOT)/STM32WBxxxx/STM32_USB_Device_Library/Class/CDC/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_USB_Device_Library/Core/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/vcp;$(BSP_ROOT)/STM32WBxxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;USE_STM32WBXX_USB_DONGLE;CORE_CM4;USE_HAL_DRIVER;STM32WB55xx</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <Link>
+      <LinkerScript>stm32wb55xx_flash_cm4.ld</LinkerScript>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Inc/core;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Src/core;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN;$(BSP_ROOT)/STM32WBxxxx/CMSIS_HAL/Device/ST/STM32WBxx/Include;$(BSP_ROOT)/STM32WBxxxx/STM32WBxx_HAL_Driver/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble/core/Inc/blesvc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/utilities;$(BSP_ROOT)/STM32WBxxxx/CMSIS_HAL/Include;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/shci;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/ble;Core/Inc;STM32_WPAN/App;$(BSP_ROOT)/STM32WBxxxx/BSP/P-NUCLEO-WB55.USBDongle;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/vcp;$(BSP_ROOT)/STM32WBxxxx/STM32_USB_Device_Library/Class/CDC/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_USB_Device_Library/Core/Inc;$(BSP_ROOT)/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/vcp;$(BSP_ROOT)/STM32WBxxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;USE_STM32WBXX_USB_DONGLE;CORE_CM4;USE_HAL_DRIVER;STM32WB55xx</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <None Include="stm32wb55xx_flash_cm4.ld" />
+    <ClCompile Include="Core\Src\app_entry.c" />
+    <ClCompile Include="Core\Src\hw_lpm.c" />
+    <ClCompile Include="Core\Src\hw_timerserver.c" />
+    <ClCompile Include="Core\Src\hw_uart.c" />
+    <ClCompile Include="Core\Src\main.c" />
+    <ClCompile Include="Core\Src\stm32wbxx_it.c" />
+    <ClCompile Include="Core\Src\system_stm32wbxx.c" />
+    <ClCompile Include="STM32_WPAN\App\app_ble.c" />
+    <ClCompile Include="STM32_WPAN\App\p2p_server_app.c" />
+    <ClCompile Include="STM32_WPAN\Target\hw_ipcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\BSP\P-NUCLEO-WB55.USBDongle\stm32wbxx_usb_dongle.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_usb.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Core\Src\usbd_core.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\p2p_stm.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\blesvc\svc_ctl.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_gap_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_gatt_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_hal_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_hci_le.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\ble_l2cap_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\Src\core\osal.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\vcp\usbd_conf.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\vcp\usbd_desc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\vcp\vcp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\dbg_trace.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\lpm.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\otp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\scheduler.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_list.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_queue.c" />
+    <None Include="stm32wb.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\StartupFiles\startup_stm32wb55xx_cm4.c" />
+    <ClInclude Include="Core\Inc\app_common.h" />
+    <ClInclude Include="Core\Inc\app_conf.h" />
+    <ClInclude Include="Core\Inc\app_entry.h" />
+    <ClInclude Include="Core\Inc\hw_conf.h" />
+    <ClInclude Include="Core\Inc\main.h" />
+    <ClInclude Include="Core\Inc\stm32wbxx_hal_conf.h" />
+    <ClInclude Include="Core\Inc\stm32wbxx_it.h" />
+    <ClInclude Include="Core\Inc\utilities_conf.h" />
+    <ClInclude Include="Core\Inc\vcp_conf.h" />
+    <ClInclude Include="STM32_WPAN\App\app_ble.h" />
+    <ClInclude Include="STM32_WPAN\App\ble_conf.h" />
+    <ClInclude Include="STM32_WPAN\App\ble_dbg_conf.h" />
+    <ClInclude Include="STM32_WPAN\App\p2p_server_app.h" />
+    <None Include="PeripheralProject-Debug.vgdbsettings" />
+    <None Include="PeripheralProject-Release.vgdbsettings" />
+    <None Include="stm32wb.xml" />
+  </ItemGroup>
+</Project>
