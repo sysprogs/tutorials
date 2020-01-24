@@ -1,0 +1,2 @@
+idf_component_register(SRCS test_AnotherComponent.cpp
+	REQUIRES unity AnotherComponent)
