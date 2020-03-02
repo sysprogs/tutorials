@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{953d1c32-179b-4dcb-bd66-29f9b600035c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{ef822b38-716c-4f31-8d53-5491d724acd5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{13d784a7-c321-49b8-9cee-7a43a6453ba7}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Shared sources">
+      <UniqueIdentifier>{0ac7bdb8-caf3-45f5-9140-ec0c495864ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{d312cb2e-f421-40f8-a185-f7d7d0f0848d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{5eeb026b-d543-4ede-8541-f1fa0da81474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{ad90ec5d-c7c5-438f-878d-675f5e290473}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt">
+      <Filter>Source files</Filter>
+    </None>
+    <ClCompile Include="syscalls.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Src\system_stm32h7xx.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CM7\Src\main_cm7.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CM7\Src\stm32h7xx_it.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Src\mbox_hsem.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Src\openamp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Src\rsc_table.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Drivers\BSP\STM32H747I-Discovery\stm32h747i_discovery.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\condition.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\device.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\init.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\io.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\irq.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\log.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\shmem.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\cortexm\sys.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\time.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\remoteproc\remoteproc_virtio.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\rpmsg\rpmsg.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\rpmsg\rpmsg_virtio.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\virtio\virtio.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\virtio\virtqueue.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\generic_device.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\generic_init.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\generic_io.c">
+      <Filter>Source files\Shared sources</Filter>
+    </ClCompile>
+    <None Include="stm32.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\StartupFiles\startup_stm32h747xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <None Include="OpenAMPDemo_M7-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="OpenAMPDemo_M7-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

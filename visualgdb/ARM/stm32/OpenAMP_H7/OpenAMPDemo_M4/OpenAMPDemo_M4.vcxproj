@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{1873A666-9B19-4B4B-9183-1C8BA19D2C3E}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>2019.12</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link>
+      <LinkerScript>STM32H747XIHx_FLASH_CM4.ld</LinkerScript>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>CM4/Inc/;Common/Inc/;Common/Inc/openamp/;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include;$(BSP_ROOT)/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/VendorSamples/H7/Utilities/Log;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;CORE_CM4;VIRTIO_SLAVE_ONLY;NO_ATOMIC_64_SUPPORT;METAL_MAX_DEVICE_REGIONS=2;METAL_INTERNAL;RPMSG_BUFFER_SIZE=100;STM32H747xx</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <Link>
+      <LinkerScript>STM32H747XIHx_FLASH_CM4.ld</LinkerScript>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>CM4/Inc/;Common/Inc/;Common/Inc/openamp/;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include;$(BSP_ROOT)/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/VendorSamples/H7/Utilities/Log;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;CORE_CM4;VIRTIO_SLAVE_ONLY;NO_ATOMIC_64_SUPPORT;METAL_MAX_DEVICE_REGIONS=2;METAL_INTERNAL;RPMSG_BUFFER_SIZE=100;STM32H747xx</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <ClCompile Include="syscalls.c" />
+    <ClCompile Include="Common\Src\system_stm32h7xx.c" />
+    <ClCompile Include="CM4\Src\main_cm4.c" />
+    <ClCompile Include="CM4\Src\stm32h7xx_it.c" />
+    <ClCompile Include="Common\Src\mbox_hsem.c" />
+    <ClCompile Include="Common\Src\openamp.c" />
+    <ClCompile Include="Common\Src\rsc_table.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Drivers\BSP\STM32H747I-Discovery\stm32h747i_discovery.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\condition.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\device.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\init.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\io.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\irq.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\log.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\shmem.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\cortexm\sys.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\time.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\remoteproc\remoteproc_virtio.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\rpmsg\rpmsg.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\rpmsg\rpmsg_virtio.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\virtio\virtio.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\open-amp\lib\virtio\virtqueue.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\generic_device.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\generic_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\generic_io.c" />
+    <None Include="stm32.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\StartupFiles\startup_stm32h747xx.c" />
+    <None Include="OpenAMPDemo_M4-Debug.vgdbsettings" />
+    <None Include="OpenAMPDemo_M4-Release.vgdbsettings" />
+    <None Include="stm32.xml" />
+  </ItemGroup>
+</Project>
