@@ -32,7 +32,10 @@ TEST(DataProcessingTestGroup, SineTest)
         CHECK_EQUAL(done, done2);
 
         for (int i = 0; i < (done / sizeof(buf1[0])); i++)
-            CHECK_EQUAL(buf2[i], sinf(buf1[i]));
+        {
+            float error = fabsf(buf2[i] - sinf(buf1[i]));
+            CHECK(error < 0.001F);
+        }
 
         total += done;
         g_Progress = total;
