@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "I2CMaster", "I2CMaster.vcxproj", "{8306DECD-F97B-4892-81A9-4AC8386EDE8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8306DECD-F97B-4892-81A9-4AC8386EDE8D}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{8306DECD-F97B-4892-81A9-4AC8386EDE8D}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{8306DECD-F97B-4892-81A9-4AC8386EDE8D}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{8306DECD-F97B-4892-81A9-4AC8386EDE8D}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0280FE88-777C-4F6E-85F4-D92334036572}
+	EndGlobalSection
+EndGlobal
