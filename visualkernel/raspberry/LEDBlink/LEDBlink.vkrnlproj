@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Project xsi:type="com.visualgdb.project.linux.kernel">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>Unknown</PathStyle>
+    </CustomSourceDirectories>
+    <KernelDebugHost>
+      <HostName>raspberrypi</HostName>
+      <Transport>SSH</Transport>
+      <UserName>pi</UserName>
+    </KernelDebugHost>
+    <BuildHost>
+      <HostName>ubuntu19vm</HostName>
+      <Transport>SSH</Transport>
+      <UserName>testuser</UserName>
+    </BuildHost>
+    <MainSourceTransferCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <RemoteHost>
+        <HostName>ubuntu19vm</HostName>
+        <Transport>SSH</Transport>
+        <UserName>testuser</UserName>
+      </RemoteHost>
+      <LocalDirectory>$(ProjectDir)</LocalDirectory>
+      <RemoteDirectory>/tmp/VisualGDB/$(ProjectDirUnixStyle)</RemoteDirectory>
+      <FileMasks>
+        <string>*.cpp</string>
+        <string>*.h</string>
+        <string>*.hpp</string>
+        <string>*.c</string>
+        <string>*.cc</string>
+        <string>*.cxx</string>
+        <string>*.mak</string>
+        <string>Makefile</string>
+        <string>*.txt</string>
+        <string>*.cmake</string>
+      </FileMasks>
+      <TransferNewFilesOnly>true</TransferNewFilesOnly>
+      <IncludeSubdirectories>true</IncludeSubdirectories>
+      <DeleteDisappearedFiles>false</DeleteDisappearedFiles>
+      <ApplyGlobalExclusionList>true</ApplyGlobalExclusionList>
+    </MainSourceTransferCommand>
+    <SkipBuildIfNoSourceFilesChanged>false</SkipBuildIfNoSourceFilesChanged>
+    <IgnoreFileTransferErrors>false</IgnoreFileTransferErrors>
+    <ProjectModeSettings>
+      <ProjectGUID>ae1b4616-f8fa-481f-9390-829f922af01c</ProjectGUID>
+      <GroupSourcesByTypes>true</GroupSourcesByTypes>
+      <GroupSourcesByPaths>true</GroupSourcesByPaths>
+      <GroupModulesByPaths>true</GroupModulesByPaths>
+    </ProjectModeSettings>
+  </Project>
+  <Build xsi:type="com.visualgdb.build.linux.kernel.module">
+    <BuildLogMode xsi:nil="true" />
+    <VerboseBuild>false</VerboseBuild>
+    <MakeFilePathRelativeToSourceDir>Makefile</MakeFilePathRelativeToSourceDir>
+    <MakeCommandTemplate>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>make</Command>
+      <BackgroundMode xsi:nil="true" />
+    </MakeCommandTemplate>
+    <KernelHeaderDirectory>/opt/KernelCache/4.19.113-v7l+_0.kernel/source</KernelHeaderDirectory>
+    <IntelliSenseMode>Ask</IntelliSenseMode>
+    <KernelVersion>
+      <Release>4.19.113-v7l+</Release>
+      <Version>#1 SMP Fri Apr 3 13:50:43 PDT 2020</Version>
+    </KernelVersion>
+    <CrossCompilationSettings>
+      <Architecture>arm</Architecture>
+      <Prefix>/opt/KernelCache/4.19.113-v7l+_0.kernel/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-</Prefix>
+    </CrossCompilationSettings>
+  </Build>
+  <CustomBuild>
+    <PreSyncActions />
+    <PreBuildActions />
+    <PostBuildActions />
+    <PreCleanActions />
+    <PostCleanActions />
+  </CustomBuild>
+  <CustomDebug>
+    <PreDebugActions />
+    <PostDebugActions />
+    <DebugStopActions />
+    <BreakMode>Default</BreakMode>
+  </CustomDebug>
+  <CustomShortcuts>
+    <Shortcuts />
+    <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
+  </CustomShortcuts>
+  <UserDefinedVariables />
+  <CodeSense>
+    <Enabled>Unknown</Enabled>
+    <ExtraSettings>
+      <HideErrorsInSystemHeaders>true</HideErrorsInSystemHeaders>
+      <SupportLightweightReferenceAnalysis>true</SupportLightweightReferenceAnalysis>
+      <CheckForClangFormatFiles>true</CheckForClangFormatFiles>
+      <FormattingEngine xsi:nil="true" />
+    </ExtraSettings>
+    <CodeAnalyzerSettings>
+      <Enabled>false</Enabled>
+    </CodeAnalyzerSettings>
+  </CodeSense>
+  <Debug xsi:type="com.visualgdb.debug.linux.kernel">
+    <AdditionalStartupCommands />
+    <AdditionalGDBSettings>
+      <Features>
+        <DisableAutoDetection>false</DisableAutoDetection>
+        <UseFrameParameter>false</UseFrameParameter>
+        <SimpleValuesFlagSupported>false</SimpleValuesFlagSupported>
+        <ListLocalsSupported>false</ListLocalsSupported>
+        <ByteLevelMemoryCommandsAvailable>false</ByteLevelMemoryCommandsAvailable>
+        <ThreadInfoSupported>false</ThreadInfoSupported>
+        <PendingBreakpointsSupported>false</PendingBreakpointsSupported>
+        <SupportTargetCommand>false</SupportTargetCommand>
+        <ReliableBreakpointNotifications>false</ReliableBreakpointNotifications>
+      </Features>
+      <EnableSmartStepping>true</EnableSmartStepping>
+      <FilterSpuriousStoppedNotifications>false</FilterSpuriousStoppedNotifications>
+      <ForceSingleThreadedMode>false</ForceSingleThreadedMode>
+      <UseAppleExtensions>false</UseAppleExtensions>
+      <CanAcceptCommandsWhileRunning>false</CanAcceptCommandsWhileRunning>
+      <MakeLogFile>false</MakeLogFile>
+      <IgnoreModuleEventsWhileStepping>true</IgnoreModuleEventsWhileStepping>
+      <UseRelativePathsOnly>true</UseRelativePathsOnly>
+      <ExitAction>None</ExitAction>
+      <DisableDisassembly>false</DisableDisassembly>
+      <ExamineMemoryWithXCommand>false</ExamineMemoryWithXCommand>
+      <StepIntoNewInstanceEntry>main</StepIntoNewInstanceEntry>
+      <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
+      <DisableSignals>false</DisableSignals>
+      <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+      <EnableNonStopMode>false</EnableNonStopMode>
+      <MaxBreakpointLimit>0</MaxBreakpointLimit>
+      <EnableVerboseMode>true</EnableVerboseMode>
+    </AdditionalGDBSettings>
+    <GenerateCtrlBreakInsteadOfCtrlC>false</GenerateCtrlBreakInsteadOfCtrlC>
+    <RunGDBWithSUDO>false</RunGDBWithSUDO>
+    <DeploymentDirectory>/tmp</DeploymentDirectory>
+    <KernelConnection xsi:type="com.visualgdb.debug.linux.kernel.connection.edp">
+      <DebugMethod>
+        <ID>com.sysprogs.arm.openocd</ID>
+        <InterfaceID>olimex-arm-usb-ocd-h</InterfaceID>
+        <InterfaceSerialNumber>OLZ6HS42</InterfaceSerialNumber>
+      </DebugMethod>
+      <CheckInterfaceDrivers>true</CheckInterfaceDrivers>
+    </KernelConnection>
+    <SessionSettings>
+      <EnumerateModulesOnStart>true</EnumerateModulesOnStart>
+      <DetectModuleLoadEvents>true</DetectModuleLoadEvents>
+      <HookPrintk>false</HookPrintk>
+      <EnableDebugHelper>true</EnableDebugHelper>
+      <DebugHangingMachine>false</DebugHangingMachine>
+      <DetectKernelLoadOffset>true</DetectKernelLoadOffset>
+      <SymbolSettings>
+        <AutoLoadSymbolsForMainModule>true</AutoLoadSymbolsForMainModule>
+        <InTreeModuleMode>LoadNone</InTreeModuleMode>
+        <AutoLoadInTreeSymbolsOnModuleLoad>true</AutoLoadInTreeSymbolsOnModuleLoad>
+      </SymbolSettings>
+      <DelayedSymbolLoadingWorkaround>false</DelayedSymbolLoadingWorkaround>
+      <StopOnModuleEvents>false</StopOnModuleEvents>
+    </SessionSettings>
+  </Debug>
+</VisualGDBProjectSettings2>
