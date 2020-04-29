@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<CMakeTargetTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>Sample Custom Target Template</Name>
+	<FileNameBase>MyCustomTarget</FileNameBase>
+	<CMakeStatementTemplate>register_static_library($$TARGETNAME$$ $$TARGETSOURCES$$)</CMakeStatementTemplate>
+	<SourceFileTemplates>
+		<string>$$TARGETNAME$$.cpp</string>
+	</SourceFileTemplates>
+	<ExtraFileTemplates>
+		<string>$$TARGETNAME$$.h</string>
+	</ExtraFileTemplates>
+	<Icon>wizard.png</Icon>
+</CMakeTargetTemplate>
