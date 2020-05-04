@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{495DB28C-C924-4695-9F2E-64E0314E5DBD}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.rs14100</BSP_ID>
+    <BSP_VERSION>1.1.3</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)rs14100.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)rs14100.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="rsi_ap_start.c" />
+    <None Include="rs14100.props" />
+    <ClCompile Include="$(BSP_ROOT)\common\board\src\rsi_board.c" />
+    <ClCompile Include="$(BSP_ROOT)\common\chip\src\rsi_ps_ram_func.c" />
+    <ClCompile Include="$(BSP_ROOT)\common\chip\src\rsi_system_config.c" />
+    <ClCompile Include="$(BSP_ROOT)\common\chip\src\system_RS1xxxx.c" />
+    <ClCompile Include="$(BSP_ROOT)\DeviceDefinition\startup_RS1xxxx.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\USART.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\USBH.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\common\rsi_common_apis.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\common\rsi_device_init_apis.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\common\rsi_wisemcu_hardware_setup.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\crypto\rsi_crypto.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_bootup_config.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_hal_mcu_m4.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_hal_mcu_platform_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_hal_mcu_timer.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\os\free_rtos\rsi_os_wrapper.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\puf\rsi_puf.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_apis_non_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_apis_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_events_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_hal_mcu_m4_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_nwk_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_pkt_mgmt_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_queue_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_scheduler_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_socket_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_utils_rom.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\wlan\rsi_wlan_apis.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_dhcp_user_class.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_dns.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_firmware_upgradation.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_ftp.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_http_client.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mdnsd.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mqtt_client.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_multicast.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_ota_fw_up.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_pop3_client.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_raw_data.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_smtp_client.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_sntp_client.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_web_socket.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\http_server\rsi_http_server.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\http_server\rsi_json_handlers.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mdnsd_records\rsi_mdnsd_records.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTClient.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTT_wrappers.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTConnectClient.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTDeserializePublish.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTFormat.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTPacket.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTSerializePublish.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTSubscribeClient.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTUnsubscribeClient.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\socket\rsi_socket.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_bt_ble.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_common.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_device_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_driver.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_driver_event_handlers.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_events.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_iap.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_nwk.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_os_none.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_pkt_mgmt.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_queue.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_scheduler.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_setregion_countryinfo.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_timer.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_utils.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_wlan.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_zb.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_zb_utility.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_frame_rd_wr.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_iface_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_mem_rd_wr.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_reg_rd_wr.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_frame_rd_wr.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_functs.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_iface_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_mem_rd_wr.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_reg_rd_wr.c" />
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\uart\rsi_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\aux_reference_volt_config.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_adc.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_cci.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_comparator.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_crc.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_ct.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_cts.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_dac.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_efuse.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_egpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_fim.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_fim_filterScalar.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_gpdma.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_ir.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_opamp.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_pwm.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_qei.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_qspi.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_rng.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_sdioh.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_sdmem.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_sio.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_smih.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_timers.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_udma.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_vad.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_wurx.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_bod.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_ipmu.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_pll.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_power_save.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_processor_sensor.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_rtc.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_temp_sensor.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_time_period.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_ulpss_clk.c" />
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_wwdt.c" />
+    <ClInclude Include="rsi_wlan_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\board\inc\rsi_board.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\base_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\RS1xxxx.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_chip.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_error.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_ps_ram_func.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_system_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\system_RS1xxxx.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\cmsis_version.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cm4_simd.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cmFunc.h" />
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cmInstr.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_Common.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\USART.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_ETH.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_ETH_MAC.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_ETH_PHY.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_Flash.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_NAND.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_USART.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_USBH.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\config\RTE_Components.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\config\RTE_Device.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\base_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rs9116.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rsi_api.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rsi_m4.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rsi_reg_spi.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_ant.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_ble.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_ble_apis.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bootup_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_apis.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_common.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_common_apis.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_sbc_codec.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_sdp.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_common.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_common_apis.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_crypto.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_data_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_driver.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_error.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_events.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_hid.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_iap.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_mac_api.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_mac_interface.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_nwk.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_os.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_pkt_mgmt.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_puf.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_qspi_defines.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_queue.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_scheduler.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_sdio.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_setregion_countryinfo.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_socket.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_spi_cmd.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_spi_intf.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_timer.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_user.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_utils.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wisemcu_hardware_setup.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_apis.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_common_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_defines.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_non_rom.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_api.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_frames.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_interfaces.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_apis_rom.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_dhcp_user_class.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_firmware_upgradation.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_http_client.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mdnsd.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mqtt_client.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_multicast.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_pop3_client.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_smtp_client.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_sntp_client.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_web_socket.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\http_server\rsi_json_handlers.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mdnsd_records\rsi_mdnsd_records.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTClient.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTT_wrappers.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTConnect.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTFormat.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTPacket.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTPublish.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTSubscribe.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTUnsubscribe.h" />
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\StackTrace.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\aux_reference_volt_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\clock_update.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_cci.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_comparator.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_crc.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_ct.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_cts.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_dac.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_efuse.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_egpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_fim.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_gpdma.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_ir.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_opamp.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_pwm.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_qei.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_qspi.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_qspi_proto.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_rng.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_rpdma.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_sdioh.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_sdmem.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_sio.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_smih.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_timers.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_udma.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_vad.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_wurx.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_packing.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_clks.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_crc.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_ct.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_efuse.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_egpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_fim.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_gpdma.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_power_save.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_pwm.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_qspi.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_rng.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_table_RS1xxxx.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_timer.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_udma.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_ulpss_clk.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_bod.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_ds_timer.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_ipmu.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_pll.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_pmu.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_power_save.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_processor_sensor.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_reg_spi.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_retention.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_rtc.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_temp_sensor.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_time_period.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_ulpss_clk.h" />
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_wwdt.h" />
+    <None Include="RS14100Demo-Debug.vgdbsettings" />
+    <None Include="RS14100Demo-Release.vgdbsettings" />
+    <None Include="rs14100.xml" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp" />
+    <ClCompile Include="$(EFP_BASE)\Profiler\ProfilerRTOS_FreeRTOS.c" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h" />
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{3dcfe292-2d57-4a71-bb90-628987edc322}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{80e3cb95-2339-4705-a5e5-4d5870d4ca1a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{85b1b6ad-f429-433b-a6be-4dc43b151e7c}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{5b6901ad-0cf4-4e74-8c17-cca10c0b52f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\CMSIS Drivers">
+      <UniqueIdentifier>{ab4f3e9a-8512-4a49-b0e2-28db1d5a94d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Wireless Interfaces">
+      <UniqueIdentifier>{67ee6be3-e1de-4dca-ba3e-831d5c7d11fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Network Protocols">
+      <UniqueIdentifier>{9ee27c42-77b8-4831-a4ef-efd0307e157f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Wireless Drivers">
+      <UniqueIdentifier>{b41633e0-1b5c-4a02-a586-90cf81f519f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Peripheral Drivers">
+      <UniqueIdentifier>{08b893a6-c982-40c6-9728-c5ade7347452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\System-Level APIs">
+      <UniqueIdentifier>{d4eb0890-a09d-4be4-ab4e-f0569bd0bf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{35a973b2-5113-4027-9634-4d1c9a8aff44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS Drivers">
+      <UniqueIdentifier>{68b2955e-48e7-4864-9f7f-71741d72587e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Wireless Interfaces">
+      <UniqueIdentifier>{f815106d-10f8-41e0-9d2f-259db0b04e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Network Protocols">
+      <UniqueIdentifier>{5bff21ae-2f0f-47f3-adac-d9f2832b35f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Peripheral Drivers">
+      <UniqueIdentifier>{2f4d866a-18d9-4aec-ad2c-acf6035c33b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\ROM Drivers">
+      <UniqueIdentifier>{4b40d9a5-988c-4170-86e9-5fdbacd98354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\System-Level APIs">
+      <UniqueIdentifier>{5efcd89c-7d3c-4178-b80e-1b51f0fdb382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{c3164668-3a0b-4942-8736-e90f1c138850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Semihosting/Profiler">
+      <UniqueIdentifier>{4131ef1a-7f4a-4e6a-9f97-b6130d936bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Semihosting/Profiler">
+      <UniqueIdentifier>{659a0a69-4a8e-4bee-ac98-51fba15e19ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rsi_ap_start.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="rs14100.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\common\board\src\rsi_board.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\common\chip\src\rsi_ps_ram_func.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\common\chip\src\rsi_system_config.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\common\chip\src\system_RS1xxxx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\DeviceDefinition\startup_RS1xxxx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\USART.c">
+      <Filter>Source files\Device-specific files\CMSIS Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\USBH.c">
+      <Filter>Source files\Device-specific files\CMSIS Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\common\rsi_common_apis.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\common\rsi_device_init_apis.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\common\rsi_wisemcu_hardware_setup.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\crypto\rsi_crypto.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_bootup_config.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_hal_mcu_m4.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_hal_mcu_platform_init.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\src\rsi_hal_mcu_timer.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\os\free_rtos\rsi_os_wrapper.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\puf\rsi_puf.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_apis_non_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_apis_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_events_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_hal_mcu_m4_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_nwk_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_pkt_mgmt_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_queue_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_scheduler_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_socket_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_utils_rom.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\wlan\rsi_wlan_apis.c">
+      <Filter>Source files\Device-specific files\Wireless Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_dhcp_user_class.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_dns.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_firmware_upgradation.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_ftp.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_http_client.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mdnsd.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mqtt_client.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_multicast.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_ota_fw_up.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_pop3_client.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_raw_data.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_smtp_client.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_sntp_client.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_web_socket.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\http_server\rsi_http_server.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\http_server\rsi_json_handlers.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mdnsd_records\rsi_mdnsd_records.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTClient.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTT_wrappers.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTConnectClient.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTDeserializePublish.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTFormat.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTPacket.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTSerializePublish.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTSubscribeClient.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTUnsubscribeClient.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\nwk\socket\rsi_socket.c">
+      <Filter>Source files\Device-specific files\Network Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_bt_ble.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_common.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_device_init.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_driver.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_driver_event_handlers.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_events.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_iap.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_nwk.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_os_none.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_pkt_mgmt.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_queue.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_scheduler.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_setregion_countryinfo.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_timer.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_utils.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_wlan.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_zb.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\rsi_zb_utility.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_frame_rd_wr.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_iface_init.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_mem_rd_wr.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\sdio\rsi_sdio_reg_rd_wr.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_frame_rd_wr.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_functs.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_iface_init.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_mem_rd_wr.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\spi\rsi_spi_reg_rd_wr.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Wireless_Library\driver\intf\uart\rsi_uart.c">
+      <Filter>Source files\Device-specific files\Wireless Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\aux_reference_volt_config.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_adc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_cci.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_comparator.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_crc.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_ct.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_cts.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_dac.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_efuse.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_egpio.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_fim.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_fim_filterScalar.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_gpdma.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_ir.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_opamp.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_pwm.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_qei.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_qspi.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_rng.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_sdioh.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_sdmem.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_sio.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_smih.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_timers.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_udma.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_vad.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\driver\src\rsi_wurx.c">
+      <Filter>Source files\Device-specific files\Peripheral Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_bod.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_ipmu.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_pll.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_power_save.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_processor_sensor.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_rtc.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_temp_sensor.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_time_period.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_ulpss_clk.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\src\rsi_wwdt.c">
+      <Filter>Source files\Device-specific files\System-Level APIs</Filter>
+    </ClCompile>
+    <ClInclude Include="rsi_wlan_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\board\inc\rsi_board.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\base_types.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\RS1xxxx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_chip.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_error.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_ps_ram_func.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\rsi_system_config.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\chip\inc\system_RS1xxxx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\cmsis_version.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cm4.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cm4_simd.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cmFunc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\common\cmsis\core_cmInstr.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_Common.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\USART.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_ETH.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_ETH_MAC.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_ETH_PHY.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_Flash.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_NAND.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_USART.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\CMSIS\Driver\Include\Driver_USBH.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\config\RTE_Components.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\cmsis_driver\config\RTE_Device.h">
+      <Filter>Header files\Device-specific files\CMSIS Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\base_types.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rs9116.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rsi_api.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rsi_m4.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\hal_WiSeMcu\inc\rsi_reg_spi.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_ant.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_ble.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_ble_apis.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bootup_config.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_apis.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_common.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_common_apis.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_sbc_codec.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_bt_sdp.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_common.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_common_apis.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_crypto.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_data_types.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_driver.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_error.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_events.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_hal.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_hid.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_iap.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_mac_api.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_mac_interface.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_nwk.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_os.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_pkt_mgmt.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_puf.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_qspi_defines.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_queue.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_scheduler.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_sdio.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_setregion_countryinfo.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_socket.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_spi_cmd.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_spi_intf.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_timer.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_uart.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_user.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_utils.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wisemcu_hardware_setup.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_apis.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_common_config.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_defines.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_wlan_non_rom.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_api.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_frames.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_interfaces.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\include\rsi_zb_types.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\rom\rsi_apis_rom.h">
+      <Filter>Header files\Device-specific files\Wireless Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_dhcp_user_class.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_firmware_upgradation.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_http_client.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mdnsd.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_mqtt_client.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_multicast.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_pop3_client.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_smtp_client.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_sntp_client.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\rsi_web_socket.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\http_server\rsi_json_handlers.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mdnsd_records\rsi_mdnsd_records.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTClient.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTT_wrappers.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTConnect.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTFormat.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTPacket.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTPublish.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTSubscribe.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\MQTTUnsubscribe.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Wireless_Library\nwk\applications\mqtt_client\src\MQTTPacket\src\StackTrace.h">
+      <Filter>Header files\Device-specific files\Network Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\aux_reference_volt_config.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\clock_update.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_adc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_cci.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_comparator.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_crc.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_ct.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_cts.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_dac.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_efuse.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_egpio.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_fim.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_gpdma.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_ir.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_opamp.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_pwm.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_qei.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_qspi.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_qspi_proto.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_rng.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_rpdma.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_sdioh.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_sdmem.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_sio.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_smih.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_timers.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_udma.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_vad.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\driver\inc\rsi_wurx.h">
+      <Filter>Header files\Device-specific files\Peripheral Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_packing.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_clks.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_crc.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_ct.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_efuse.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_egpio.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_fim.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_gpdma.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_power_save.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_pwm.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_qspi.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_rng.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_table_RS1xxxx.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_timer.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_udma.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\rom_driver\inc\rsi_rom_ulpss_clk.h">
+      <Filter>Header files\Device-specific files\ROM Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_bod.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_ds_timer.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_ipmu.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_pll.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_pmu.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_power_save.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_processor_sensor.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_reg_spi.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_retention.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_rtc.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_temp_sensor.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_time_period.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_ulpss_clk.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Peripheral_Library\systemlevel\inc\rsi_wwdt.h">
+      <Filter>Header files\Device-specific files\System-Level APIs</Filter>
+    </ClInclude>
+    <None Include="RS14100Demo-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="RS14100Demo-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="rs14100.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(EFP_BASE)\Profiler\ProfilerRTOS_FreeRTOS.c">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
