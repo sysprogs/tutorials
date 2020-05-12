@@ -10,6 +10,8 @@ TEST_GROUP(DataProcessingTestGroup)
 
 uint32_t g_Progress;
 
+#include <algorithm>
+
 TEST(DataProcessingTestGroup, SineTest)
 {
     auto hInputs = TRMCreateFile("inputs.dat", sfmOpenReadOnly);
@@ -19,29 +21,43 @@ TEST(DataProcessingTestGroup, SineTest)
     CHECK(hInputs != 0);
     CHECK(hOutputs != 0);
 
-    float buf1[1024], buf2[1024];
+    char workArea1[4096], workArea2[4096];
+    auto hInputsBurst = TRMBeginReadBurst(hInputs, workArea1, sizeof(workArea1));
+    auto hOutputsBurst = TRMBeginReadBurst(hOutputs, workArea2, sizeof(workArea2));
 
     for (;;)
     {
-        ssize_t done = TRMReadFile(hInputs, buf1, sizeof(buf1));
-        CHECK(done >= 0);
-        if (!done)
-            break;
+        size_t done1, done2;
+        
+        float *pBuf1 = (float *)TRMBeginReadFileCached(hInputsBurst, &done1, 1);
+        float *pBuf2 = (float *)TRMBeginReadFileCached(hOutputsBurst, &done2, 1);
 
-        ssize_t done2 = TRMReadFile(hOutputs, buf2, done);
-        CHECK_EQUAL(done, done2);
-
-        for (int i = 0; i < (done / sizeof(buf1[0])); i++)
+        if (!pBuf1 || !pBuf2)
         {
-            float error = fabsf(buf2[i] - sinf(buf1[i]));
+            CHECK(!pBuf1 && !pBuf2);
+            break;
+        }
+
+        size_t todo = std::min(done1, done2);
+        CHECK(todo > 0);
+
+        for (int i = 0; i < (todo / sizeof(*pBuf1)); i++)
+        {
+            float error = fabsf(pBuf2[i] - sinf(pBuf1[i]));
             CHECK(error < 0.001F);
         }
 
-        total += done;
+        TRMEndReadFileCached(hInputsBurst, pBuf1, todo);
+        TRMEndReadFileCached(hOutputsBurst, pBuf2, todo);
+
+        total += todo;
         g_Progress = total;
     }
 
     CHECK(total >= 1024 * 1024);
+    TRMEndReadBurst(hInputsBurst);
+    TRMEndReadBurst(hOutputsBurst);
+    
     TRMCloseFile(hInputs);
     TRMCloseFile(hOutputs);
 }

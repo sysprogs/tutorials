@@ -15,7 +15,20 @@ volatile float g_Arg;
 volatile float g_Sin;
 volatile float g_Cos;
 
-int main(void)
+struct LinkedListNode
+{
+    int Value;
+    LinkedListNode *Next;
+
+    LinkedListNode(int value)
+    {
+        Value = value;
+        Next = nullptr;
+    }
+};
+
+int
+main(void)
 {
     HAL_Init();
     __GPIOD_CLK_ENABLE();
@@ -27,8 +40,18 @@ int main(void)
     GPIO_InitStructure.Pin = GPIO_PIN_12;
     HAL_GPIO_Init(GPIOD, &GPIO_InitStructure);
 
+    LinkedListNode nodes[] = {0, 1, 2, 3 };
+
+    for (int i = 1; i < sizeof(nodes) / sizeof(nodes[0]); i++)
+        nodes[i - 1].Next = &nodes[i];
+
+    volatile static LinkedListNode *s_pRootNode = nullptr;
+    int index = 0;
+
     for (g_Arg = 0;; g_Arg += 0.01F)
     {
+        s_pRootNode = &nodes[index++ % (sizeof(nodes) / sizeof(nodes[0]))];
+
         g_Sin = sinf(g_Arg);
         g_Cos = cosf(g_Arg);
 
