@@ -2,93 +2,54 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source files">
-      <UniqueIdentifier>{8e837afa-b5af-4a95-93ee-3c185d1849e3}</UniqueIdentifier>
+      <UniqueIdentifier>{7bf45a1b-89bb-40a8-932f-3da600ea7259}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header files">
-      <UniqueIdentifier>{2578ca3c-2b07-4750-9dea-e10c5b4e4353}</UniqueIdentifier>
+      <UniqueIdentifier>{bf30920f-f018-4116-9fdd-722a5d414d76}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource files">
-      <UniqueIdentifier>{e4890347-dc09-4b6a-aff6-31b5d37ee4ea}</UniqueIdentifier>
+      <UniqueIdentifier>{a0801acb-197f-40b1-856b-a9ccb9c56f45}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Source files\Device-specific files">
-      <UniqueIdentifier>{a4d2efbc-bd92-4366-8a10-62b6fe00e857}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source files\Device-specific files\Semihosting/Profiler">
-      <UniqueIdentifier>{55111dc3-ac47-4abc-841f-8910b9c9be81}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source files\Device-specific files\Test Framework">
-      <UniqueIdentifier>{669c73a2-3158-40b3-b203-f7d6dfe0aa09}</UniqueIdentifier>
+      <UniqueIdentifier>{1162b747-1106-49eb-8454-d819091878a1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files">
-      <UniqueIdentifier>{92265fe7-961e-4afd-9571-3b694bda1865}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\Device-specific files\Semihosting/Profiler">
-      <UniqueIdentifier>{ac144a3c-2762-419c-af7a-5d94f227eab6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\Device-specific files\Test Framework">
-      <UniqueIdentifier>{c26d1788-ac97-45d5-abe6-a433f3c973c7}</UniqueIdentifier>
+      <UniqueIdentifier>{4993a0c5-9f68-4893-9e7b-b72518b0b022}</UniqueIdentifier>
     </Filter>
     <Filter Include="VisualGDB settings">
-      <UniqueIdentifier>{7f0b3736-642c-4b4e-b959-39a0a1933da0}</UniqueIdentifier>
+      <UniqueIdentifier>{2d301a27-4f5e-4e87-8371-05c5437edd2a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\Device-specific files\STM32Cube HAL">
-      <UniqueIdentifier>{a6a64802-4a25-4b78-a74e-ac5138f87296}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\Device-specific files\STM32Cube HAL">
-      <UniqueIdentifier>{f8e0443c-6c64-4757-813c-16c63190c014}</UniqueIdentifier>
+      <UniqueIdentifier>{fd3432ab-db6d-405f-bc93-19e081506dcb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files\Startup">
-      <UniqueIdentifier>{ec0029cf-60b1-4fc9-a6be-25c04365dc6a}</UniqueIdentifier>
+      <UniqueIdentifier>{6a82f998-1d8d-4715-9b92-4991c1ee2287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{a7e77201-8c8a-4a31-860e-a7173874a0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Semihosting/Profiler">
+      <UniqueIdentifier>{be28300e-83df-408b-a5cc-1635c3a545db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Test Framework">
+      <UniqueIdentifier>{00025cfc-708f-482d-8c67-b3e866b61abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Semihosting/Profiler">
+      <UniqueIdentifier>{37b06da2-8ed8-4cf4-ba1f-b6df84179e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Test Framework">
+      <UniqueIdentifier>{22fcdd95-a97c-4697-a267-9ffdfb485a07}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="mcu.props">
       <Filter>Source files\Device-specific files</Filter>
     </None>
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\TinyEmbeddedTest.cpp">
-      <Filter>Source files\Device-specific files\Test Framework</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\SysprogsTestHooks.cpp">
-      <Filter>Source files\Device-specific files\Test Framework</Filter>
-    </ClCompile>
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
       <Filter>Header files\Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\TinyEmbeddedTest.h">
-      <Filter>Header files\Device-specific files\Test Framework</Filter>
-    </ClInclude>
-    <ClInclude Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\SysprogsTestHooks.h">
-      <Filter>Header files\Device-specific files\Test Framework</Filter>
     </ClInclude>
     <None Include="KeilUnitTestDemo-Debug.vgdbsettings">
       <Filter>VisualGDB settings</Filter>
@@ -99,6 +60,12 @@
     <None Include="MCU.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="RTE\Device\startup_stm32f407xx.s">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTE\Device\system_stm32f4xx.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
     <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
       <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
     </ClCompile>
@@ -132,17 +99,50 @@
     <ClInclude Include="RTE\Device\stm32f4xx_hal_conf.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files\Startup</Filter>
+    </ClInclude>
     <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h">
       <Filter>Header files\Device-specific files\STM32Cube HAL</Filter>
     </ClInclude>
-    <ClCompile Include="RTE\Device\startup_stm32f407xx.s">
-      <Filter>Source files</Filter>
+    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
     </ClCompile>
-    <ClCompile Include="RTE\Device\system_stm32f4xx.c">
-      <Filter>Source files</Filter>
+    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
     </ClCompile>
-    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
-      <Filter>Header files\Device-specific files\Startup</Filter>
+    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
+      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\TinyEmbeddedTest.cpp">
+      <Filter>Source files\Device-specific files\Test Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\SysprogsTestHooks.cpp">
+      <Filter>Source files\Device-specific files\Test Framework</Filter>
+    </ClCompile>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\TinyEmbeddedTest.h">
+      <Filter>Header files\Device-specific files\Test Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\SysprogsTestHooks.h">
+      <Filter>Header files\Device-specific files\Test Framework</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
