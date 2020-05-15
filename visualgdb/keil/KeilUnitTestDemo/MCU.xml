@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+  <ToolchainVersion>
+    <GCC>6.x</GCC>
+    <Revision>1</Revision>
+  </ToolchainVersion>
+  <BspID>KEIL:Keil/STM32F4xx_DFP</BspID>
+  <BspVersion>2.13.0</BspVersion>
+  <McuID>STM32F407VG</McuID>
+  <MCUDefinitionFile>CMSIS/SVD/STM32F40x.svd</MCUDefinitionFile>
+  <MCUProperties>
+    <Entries />
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>mcu.mak</MCUMakFile>
+  <ReferencedFrameworks>
+    <string>com.sysprogs.embedded.semihosting_and_profiler</string>
+  </ReferencedFrameworks>
+  <FrameworkProperties>
+    <Entries>
+      <KeyValue>
+        <Key>com.sysprogs.efp.semihosting.buffer_size</Key>
+        <Value>4096</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.semihosting.stdio</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.semihosting.blocking_mode</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.semihosting_driver</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.counter</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.address_validators</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.nosampling</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.debugger_check</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.rtos</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.efp.profiling.hold_interrupts</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Board Support</Key>
+        <Value>MCBSTM32F400</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Compiler</Key>
+        <Value>ARM Compiler</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:File System</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Graphics</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Network</Key>
+        <Value>MDK-Pro Net_v6</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:USB</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/Common</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:CMSIS/CORE</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube Framework/Classic</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/Cortex</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/RCC</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/PWR</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/STM32Cube HAL/GPIO</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/Startup</Key>
+        <Value>1</Value>
+      </KeyValue>
+    </Entries>
+  </FrameworkProperties>
+  <TestFrameworkID>com.sysprogs.unittest.tinyembtest</TestFrameworkID>
+  <TestFrameworkProperties>
+    <Entries>
+      <KeyValue>
+        <Key>com.sysprogs.testsettings.timeout</Key>
+        <Value>1800</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.testsettings.testendmode</Key>
+        <Value>0</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.testsettings.redirect_stdio</Key>
+        <Value>0</Value>
+      </KeyValue>
+    </Entries>
+  </TestFrameworkProperties>
+  <SyntheticFrameworkFolderNames>
+    <string>CORE</string>
+    <string>Startup</string>
+    <string>STM32Cube Framework</string>
+    <string>STM32Cube HAL</string>
+    <string>RTE</string>
+  </SyntheticFrameworkFolderNames>
+</EmbeddedProfile>
