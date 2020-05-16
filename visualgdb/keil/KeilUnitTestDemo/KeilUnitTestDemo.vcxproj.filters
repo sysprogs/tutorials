@@ -22,15 +22,6 @@
     <Filter Include="VisualGDB settings">
       <UniqueIdentifier>{2d301a27-4f5e-4e87-8371-05c5437edd2a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source files\Device-specific files\STM32Cube HAL">
-      <UniqueIdentifier>{fd3432ab-db6d-405f-bc93-19e081506dcb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\Device-specific files\Startup">
-      <UniqueIdentifier>{6a82f998-1d8d-4715-9b92-4991c1ee2287}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\Device-specific files\STM32Cube HAL">
-      <UniqueIdentifier>{a7e77201-8c8a-4a31-860e-a7173874a0ad}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source files\Device-specific files\Semihosting/Profiler">
       <UniqueIdentifier>{be28300e-83df-408b-a5cc-1635c3a545db}</UniqueIdentifier>
     </Filter>
@@ -42,6 +33,15 @@
     </Filter>
     <Filter Include="Header files\Device-specific files\Test Framework">
       <UniqueIdentifier>{22fcdd95-a97c-4697-a267-9ffdfb485a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{f463d226-824d-46db-8dbd-b35be221d28e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Startup">
+      <UniqueIdentifier>{88501cf9-6407-4210-b4db-06f0ff72704b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\STM32Cube HAL">
+      <UniqueIdentifier>{ad3fdaae-a75d-4648-b7d5-351d40dae0a7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -66,27 +66,6 @@
     <ClCompile Include="RTE\Device\system_stm32f4xx.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
-    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c">
-      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
-    </ClCompile>
     <ClInclude Include="RTE/RTE_Components.h">
       <Filter>Header files</Filter>
     </ClInclude>
@@ -98,12 +77,6 @@
     </ClInclude>
     <ClInclude Include="RTE\Device\stm32f4xx_hal_conf.h">
       <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
-      <Filter>Header files\Device-specific files\Startup</Filter>
-    </ClInclude>
-    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h">
-      <Filter>Header files\Device-specific files\STM32Cube HAL</Filter>
     </ClInclude>
     <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
       <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
@@ -144,10 +117,66 @@
     <ClInclude Include="$(TESTFW_BASE_LOCAL)\com.sysprogs.unittest.tinyembtest\SysprogsTestHooks.h">
       <Filter>Header files\Device-specific files\Test Framework</Filter>
     </ClInclude>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c">
+      <Filter>Source files\Device-specific files\STM32Cube HAL</Filter>
+    </ClCompile>
+    <ClInclude Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="$(LOCALAPPDATA)\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h">
+      <Filter>Header files\Device-specific files\STM32Cube HAL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(TOOLCHAIN_ROOT)\..\pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

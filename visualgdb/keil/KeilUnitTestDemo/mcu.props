@@ -10,7 +10,7 @@
 	<ItemDefinitionGroup>
 		<ClCompile>
 			<PreprocessorDefinitions>STM32F407xx;FAST_SEMIHOSTING_BUFFER_SIZE=4096;FAST_SEMIHOSTING_BLOCKING_MODE=1;FAST_SEMIHOSTING_STDIO_DRIVER=1;FAST_SEMIHOSTING_PROFILER_DRIVER=1;PROFILER_com_sysprogs_generated_keil_family_STM32F4_Series;_RTE_;SYSPROGS_TEST_PLATFORM_EMBEDDED;TINY_EMBEDDED_TEST_CONTEXT_RESTORE_MODE=0;TINY_EMBEDDED_TEST_HOOK_STDIO=0;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>%(ClCompile.AdditionalIncludeDirectories);$(BSP_ROOT)/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(EFP_BASE)/Profiler;$(TOOLCHAIN_ROOT)/../pack/ARM/CMSIS/5.4.0/CMSIS/Core/Include;$(TOOLCHAIN_ROOT)/../pack/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(TOOLCHAIN_ROOT)/../pack/Keil/STM32F4xx_DFP/2.13.0/Drivers/STM32F4xx_HAL_Driver/Inc;RTE;RTE\Device;$(TESTFW_BASE)/com.sysprogs.unittest.tinyembtest</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(ClCompile.AdditionalIncludeDirectories);$(BSP_ROOT)/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(EFP_BASE)/Profiler;$(LOCALAPPDATA)/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include;$(LOCALAPPDATA)/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(LOCALAPPDATA)/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/STM32F4xx_HAL_Driver/Inc;RTE;RTE\Device;$(TESTFW_BASE)/com.sysprogs.unittest.tinyembtest</AdditionalIncludeDirectories>
 			<ForcedIncludeFiles>$(EFP_BASE)/Profiler/ProfilerFreeRTOSHooks.h;%(ClCompile.ForcedIncludeFiles)</ForcedIncludeFiles>
 			<AdditionalOptions>--target=arm-arm-none-eabi %(ClCompile.AdditionalOptions)</AdditionalOptions>
 		</ClCompile>
