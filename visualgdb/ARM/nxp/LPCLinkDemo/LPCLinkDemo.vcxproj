@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{FFE5B172-9086-49EB-8215-D1252E941588}</ProjectGuid>
+    <BSP_ID>com.sysprogs.imported.ksdk2x.LPC55S69_CM33_CORE0</BSP_ID>
+    <BSP_VERSION>unknown</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CLanguageStandard>GNU99</CLanguageStandard>
+      <AdditionalIncludeDirectories>freertos/cm33_core0;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;_DEBUG=1;CPU_LPC55S69JBD100_cm33_core0=1;ARM_MATH_CM33;USB_STACK_FREERTOS;USB_STACK_FREERTOS_HEAP_SIZE=16384;USB_STACK_USE_DEDICATED_RAM=1;FSL_RTOS_FREE_RTOS;FSL_OSA_BM_TASK_ENABLE=0;FSL_OSA_BM_TIMER_CONFIG=0;SERIAL_PORT_TYPE_UART=1</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(BSP_ROOT)/boards/lpcxpresso55s69/usb_examples/usb_device_cdc_vcom/freertos/cm33_core0/armgcc/LPC55S69_cm33_core0_flash.ld</LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CLanguageStandard>GNU99</CLanguageStandard>
+      <AdditionalIncludeDirectories>freertos/cm33_core0;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;_DEBUG=1;CPU_LPC55S69JBD100_cm33_core0=1;ARM_MATH_CM33;USB_STACK_FREERTOS;USB_STACK_FREERTOS_HEAP_SIZE=16384;USB_STACK_USE_DEDICATED_RAM=1;FSL_RTOS_FREE_RTOS;FSL_OSA_BM_TASK_ENABLE=0;FSL_OSA_BM_TIMER_CONFIG=0;SERIAL_PORT_TYPE_UART=1</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(BSP_ROOT)/boards/lpcxpresso55s69/usb_examples/usb_device_cdc_vcom/freertos/cm33_core0/armgcc/LPC55S69_cm33_core0_flash.ld</LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="freertos\cm33_core0\board.c" />
+    <ClCompile Include="freertos\cm33_core0\clock_config.c" />
+    <ClCompile Include="freertos\cm33_core0\pin_mux.c" />
+    <ClCompile Include="freertos\cm33_core0\usb_device_descriptor.c" />
+    <ClCompile Include="freertos\cm33_core0\virtual_com.c" />
+    <ClCompile Include="freertos\cm33_core0\usb_device_cdc_acm.c" />
+    <ClCompile Include="freertos\cm33_core0\usb_device_class.c" />
+    <ClCompile Include="freertos\cm33_core0\usb_device_ch9.c" />
+    <None Include="mcu.props" />
+    <ClCompile Include="$(BSP_ROOT)\components\lists\generic_list.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction_free_rtos.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_manager.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\uart\usart_adapter.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core0.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\gcc\startup_LPC55S69_cm33_core0.S" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.c" />
+    <Library Include="$(BSP_ROOT)\devices\LPC55S69\gcc\libpower_hardabi.a" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\event_groups.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\list.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\queue.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\stream_buffer.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\tasks.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\timers.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\port.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\portasm.c" />
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\MemMang\heap_4.c" />
+    <ClCompile Include="$(BSP_ROOT)\middleware\usb\device\usb_device_dci.c" />
+    <ClCompile Include="$(BSP_ROOT)\middleware\usb\device\usb_device_lpcip3511.c" />
+    <ClCompile Include="$(BSP_ROOT)\middleware\usb\phy\usb_phy.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_sbrk.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_assert.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.c" />
+    <ClInclude Include="freertos\cm33_core0\board.h" />
+    <ClInclude Include="freertos\cm33_core0\clock_config.h" />
+    <ClInclude Include="freertos\cm33_core0\pin_mux.h" />
+    <ClInclude Include="freertos\cm33_core0\FreeRTOSConfig.h" />
+    <ClInclude Include="freertos\cm33_core0\usb_device_config.h" />
+    <ClInclude Include="freertos\cm33_core0\usb_device_descriptor.h" />
+    <ClInclude Include="freertos\cm33_core0\virtual_com.h" />
+    <ClInclude Include="freertos\cm33_core0\usb_device_cdc_acm.h" />
+    <ClInclude Include="freertos\cm33_core0\usb_device_class.h" />
+    <ClInclude Include="freertos\cm33_core0\usb_device_ch9.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang_ltm.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_gcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_iccarm.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv81mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mbl.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv8.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_cm33.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\tz_context.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_common_tables.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_const_structs.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_math.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\lists\generic_list.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction_config.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction_free_rtos.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_manager.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_internal.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\uart\uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\fsl_device_registers.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core0.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core0_features.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core0.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_iocon.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\FreeRTOS.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\atomic.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\deprecated_definitions.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\event_groups.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\list.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\message_buffer.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\mpu_prototypes.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\mpu_wrappers.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\portable.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\projdefs.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\queue.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\semphr.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\stack_macros.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\stream_buffer.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\task.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\timers.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\portasm.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\portmacro.h" />
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\freertos_tasks_c_additions.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\device\usb_device.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\device\usb_device_dci.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\device\usb_device_lpcip3511.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\include\usb.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\include\usb_misc.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\include\usb_spec.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\phy\usb_phy.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console_conf.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.h" />
+    <None Include="LPCLinkDemo-Debug.vgdbsettings" />
+    <None Include="LPCLinkDemo-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

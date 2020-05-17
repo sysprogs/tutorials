@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{515b55c4-7760-4289-8510-04d5d3170bd1}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{0a945b9a-faeb-42aa-b5f4-31d1fb84c0b0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{5695bb3e-5777-4b91-a5bc-604123521122}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Shared sources">
+      <UniqueIdentifier>{1689cb96-88c0-48ab-b9d3-d781e29be3ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{ed0cf904-96f3-42db-a18d-d643e9387d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\lists">
+      <UniqueIdentifier>{6cc3423e-597e-44e9-8c7c-7c0ab91bf35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\osa">
+      <UniqueIdentifier>{00735f1b-a9ed-4e73-9458-0204b8a74e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\serial_manager">
+      <UniqueIdentifier>{205f2205-dde8-4ddb-867b-603145d3685d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\serial_manager_uart">
+      <UniqueIdentifier>{d2e2ca20-a6b0-42a6-9e50-51b582f69708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\usart_adapter">
+      <UniqueIdentifier>{2ede8b11-401b-4222-a4e9-9e9380826bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LPC55S69_CMSIS">
+      <UniqueIdentifier>{da78a0d7-9694-4857-b64e-9ebbe65a334f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LPC55S69_startup">
+      <UniqueIdentifier>{3763c985-ce72-4226-8b58-7b302db0c3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\clock">
+      <UniqueIdentifier>{5dbbd548-f860-4421-9930-26b63e30efcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\common0">
+      <UniqueIdentifier>{e6b30c0f-96e1-4f10-8646-61569a84f348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\flexcomm">
+      <UniqueIdentifier>{48e8c15a-2caf-4b46-ab62-7f2019522c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\usart0">
+      <UniqueIdentifier>{1d51aed3-8b0c-4f76-9739-dc30283b7600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\gpio">
+      <UniqueIdentifier>{7e7c8082-808c-4a57-8bc1-3d688a30b83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\power">
+      <UniqueIdentifier>{2e5b14f0-bec0-41e1-ba6f-f76d9e177f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\reset">
+      <UniqueIdentifier>{5047f31c-4d9c-4cbe-b911-83beac24190a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Amazon FreeRTOS kernel">
+      <UniqueIdentifier>{3b436f67-4159-4618-9526-d236de7457b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\cm33_nonsecure_port">
+      <UniqueIdentifier>{63c02c57-b6fb-4198-8ed5-b6fe244434fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Amazon FreeRTOS heap 4">
+      <UniqueIdentifier>{abcb0328-2891-48a0-b3ff-4e6ac8ae521b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\common driver">
+      <UniqueIdentifier>{cfa84d2e-f9d7-4399-a8a7-1ed160070ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\ip3511fs driver(FS)">
+      <UniqueIdentifier>{1b8a3a33-b416-4472-b9f6-c94eaf592830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\phy">
+      <UniqueIdentifier>{f80d1cf6-f988-407d-86b1-174015322174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\misc_utilities">
+      <UniqueIdentifier>{6da2edaf-1e85-420e-bb01-8a28031ee19f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\assert">
+      <UniqueIdentifier>{f598c151-09b8-4f10-9ee5-a0a6105d1de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\debug_console">
+      <UniqueIdentifier>{bffdced7-821c-473f-84ec-b3f68bbee200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{92a73fa2-d854-466d-aac1-880935488ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_common">
+      <UniqueIdentifier>{4ce3c070-9e3c-4e5d-af8b-ece87ef7e800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_core_cm33">
+      <UniqueIdentifier>{f00aab11-6714-46a6-830f-b4134d230616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_dsp">
+      <UniqueIdentifier>{1380dd84-937b-4c14-bdbc-483412aef982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\lists">
+      <UniqueIdentifier>{d06b04f9-08c7-49fb-a089-d872207f785c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\osa">
+      <UniqueIdentifier>{92d70705-1f3e-476f-8880-d778ef3b874e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\serial_manager">
+      <UniqueIdentifier>{2aef447b-e368-421f-8fdc-205196f42034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\serial_manager_uart">
+      <UniqueIdentifier>{99e465c9-2e7a-4320-9034-a0405d454cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\usart_adapter">
+      <UniqueIdentifier>{6e76ab56-934c-4f88-997f-2dd62929ece2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\LPC55S69_CMSIS">
+      <UniqueIdentifier>{9d9417c8-b37c-46fc-a893-4497e31429d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\clock">
+      <UniqueIdentifier>{ad8d2e81-ad28-431e-92bf-a810e78850cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\common0">
+      <UniqueIdentifier>{d817c2bc-6407-4d45-b964-fc1cafa33b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\flexcomm">
+      <UniqueIdentifier>{798af81b-0245-4a4e-ac02-eea535ce5804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\usart0">
+      <UniqueIdentifier>{e0b4d086-d859-4a44-a1a2-8c9b8bf721cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\gpio">
+      <UniqueIdentifier>{e91a4658-3c80-400c-815a-628ac32c30a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\iocon">
+      <UniqueIdentifier>{a00debdb-a00f-48c1-a375-f03fc5a8648e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\power">
+      <UniqueIdentifier>{6c4a5f63-fa92-4194-b262-0c0d244aeb58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\reset">
+      <UniqueIdentifier>{a6c0ee89-ccb0-4af0-ae28-5806a28f9d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Amazon FreeRTOS kernel">
+      <UniqueIdentifier>{5ce39ba4-9aab-483a-9f3c-1d8f109e0ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\cm33_nonsecure_port">
+      <UniqueIdentifier>{ce6b6f18-c76f-4f3e-a566-fce5dba16ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Amazon FreeRTOS NXP extension">
+      <UniqueIdentifier>{6ed90026-4f1b-4466-a567-90c083b5f01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\common driver">
+      <UniqueIdentifier>{81f6f564-5119-403c-a4db-f186039d5536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\ip3511fs driver(FS)">
+      <UniqueIdentifier>{8e7f5942-b51e-4f3e-978b-a1cd81249f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\phy">
+      <UniqueIdentifier>{3343cf29-eea4-4fc7-b4ac-74917959f1d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\debug_console">
+      <UniqueIdentifier>{5b0e7b34-4ebd-4e17-bcde-da6bdc6534ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{7ab724aa-92b9-421a-957c-42c137b10905}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="freertos\cm33_core0\board.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\clock_config.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\pin_mux.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\usb_device_descriptor.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\virtual_com.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\usb_device_cdc_acm.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\usb_device_class.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos\cm33_core0\usb_device_ch9.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\components\lists\generic_list.c">
+      <Filter>Source files\Device-specific files\lists</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction_free_rtos.c">
+      <Filter>Source files\Device-specific files\osa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_manager.c">
+      <Filter>Source files\Device-specific files\serial_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.c">
+      <Filter>Source files\Device-specific files\serial_manager_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\uart\usart_adapter.c">
+      <Filter>Source files\Device-specific files\usart_adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core0.c">
+      <Filter>Source files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\gcc\startup_LPC55S69_cm33_core0.S">
+      <Filter>Source files\Device-specific files\LPC55S69_startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.c">
+      <Filter>Source files\Device-specific files\clock</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.c">
+      <Filter>Source files\Device-specific files\common0</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.c">
+      <Filter>Source files\Device-specific files\flexcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.c">
+      <Filter>Source files\Device-specific files\usart0</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.c">
+      <Filter>Source files\Device-specific files\gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.c">
+      <Filter>Source files\Device-specific files\power</Filter>
+    </ClCompile>
+    <Library Include="$(BSP_ROOT)\devices\LPC55S69\gcc\libpower_hardabi.a">
+      <Filter>Source files\Device-specific files\power</Filter>
+    </Library>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.c">
+      <Filter>Source files\Device-specific files\reset</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\event_groups.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\list.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\queue.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\stream_buffer.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\tasks.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\timers.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\port.c">
+      <Filter>Source files\Device-specific files\cm33_nonsecure_port</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\portasm.c">
+      <Filter>Source files\Device-specific files\cm33_nonsecure_port</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\MemMang\heap_4.c">
+      <Filter>Source files\Device-specific files\Amazon FreeRTOS heap 4</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\middleware\usb\device\usb_device_dci.c">
+      <Filter>Source files\Device-specific files\common driver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\middleware\usb\device\usb_device_lpcip3511.c">
+      <Filter>Source files\Device-specific files\ip3511fs driver(FS)</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\middleware\usb\phy\usb_phy.c">
+      <Filter>Source files\Device-specific files\phy</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_sbrk.c">
+      <Filter>Source files\Device-specific files\misc_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_assert.c">
+      <Filter>Source files\Device-specific files\assert</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.c">
+      <Filter>Source files\Device-specific files\debug_console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.c">
+      <Filter>Source files\Device-specific files\debug_console</Filter>
+    </ClCompile>
+    <ClInclude Include="freertos\cm33_core0\board.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\clock_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\pin_mux.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\FreeRTOSConfig.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\usb_device_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\usb_device_descriptor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\virtual_com.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\usb_device_cdc_acm.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\usb_device_class.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="freertos\cm33_core0\usb_device_ch9.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang_ltm.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_compiler.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_iccarm.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_version.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv81mml.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mbl.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mml.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv7.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv8.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_cm33.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_core_cm33</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\tz_context.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_core_cm33</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_math.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\lists\generic_list.h">
+      <Filter>Header files\Device-specific files\lists</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction.h">
+      <Filter>Header files\Device-specific files\osa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction_config.h">
+      <Filter>Header files\Device-specific files\osa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\osa\fsl_os_abstraction_free_rtos.h">
+      <Filter>Header files\Device-specific files\osa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_manager.h">
+      <Filter>Header files\Device-specific files\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_internal.h">
+      <Filter>Header files\Device-specific files\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.h">
+      <Filter>Header files\Device-specific files\serial_manager_uart</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\uart\uart.h">
+      <Filter>Header files\Device-specific files\usart_adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\fsl_device_registers.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core0.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core0_features.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core0.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.h">
+      <Filter>Header files\Device-specific files\clock</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.h">
+      <Filter>Header files\Device-specific files\common0</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.h">
+      <Filter>Header files\Device-specific files\flexcomm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.h">
+      <Filter>Header files\Device-specific files\usart0</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.h">
+      <Filter>Header files\Device-specific files\gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_iocon.h">
+      <Filter>Header files\Device-specific files\iocon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.h">
+      <Filter>Header files\Device-specific files\power</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.h">
+      <Filter>Header files\Device-specific files\reset</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\FreeRTOS.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\atomic.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\deprecated_definitions.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\event_groups.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\list.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\message_buffer.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\mpu_prototypes.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\mpu_wrappers.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\portable.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\projdefs.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\queue.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\semphr.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\stack_macros.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\stream_buffer.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\task.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\timers.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\portasm.h">
+      <Filter>Header files\Device-specific files\cm33_nonsecure_port</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\portable\GCC\ARM_CM33_NTZ\non_secure\portmacro.h">
+      <Filter>Header files\Device-specific files\cm33_nonsecure_port</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\rtos\amazon-freertos\freertos_kernel\include\freertos_tasks_c_additions.h">
+      <Filter>Header files\Device-specific files\Amazon FreeRTOS NXP extension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\device\usb_device.h">
+      <Filter>Header files\Device-specific files\common driver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\device\usb_device_dci.h">
+      <Filter>Header files\Device-specific files\common driver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\device\usb_device_lpcip3511.h">
+      <Filter>Header files\Device-specific files\ip3511fs driver(FS)</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\include\usb.h">
+      <Filter>Header files\Device-specific files\ip3511fs driver(FS)</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\include\usb_misc.h">
+      <Filter>Header files\Device-specific files\ip3511fs driver(FS)</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\include\usb_spec.h">
+      <Filter>Header files\Device-specific files\ip3511fs driver(FS)</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\usb\phy\usb_phy.h">
+      <Filter>Header files\Device-specific files\phy</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console_conf.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <None Include="LPCLinkDemo-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="LPCLinkDemo-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>
