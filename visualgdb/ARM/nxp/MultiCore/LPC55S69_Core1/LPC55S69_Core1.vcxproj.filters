@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{d5b1c5f0-7b93-4299-a4ad-441101a9c460}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{e6d2e73e-f81e-4e92-b310-fc237f0e0045}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{01427188-7808-46de-83b3-53cf61870f6b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Shared sources">
+      <UniqueIdentifier>{5dffea9c-56a4-4c0d-9748-cab185d519b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{7f85ba98-8004-4612-a724-0be577f31cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\lists">
+      <UniqueIdentifier>{52e64e63-9e4f-44bc-b0d6-fba61414fc95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\serial_manager">
+      <UniqueIdentifier>{67874abd-1d18-4972-b048-2866b4ff2259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\serial_manager_uart">
+      <UniqueIdentifier>{90037e59-1a08-477a-93ac-e1a92ac9bd20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\usart_adapter">
+      <UniqueIdentifier>{2eaffe1e-fbda-4c82-aa1f-adf46fe0cacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LPC55S69_CMSIS">
+      <UniqueIdentifier>{4c26c3a3-bd3c-4ff3-bc59-2a72147a8a53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LPC55S69_startup">
+      <UniqueIdentifier>{7fde4490-1fc4-4cfb-9e8e-99a744d3858b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\clock">
+      <UniqueIdentifier>{76e14a85-9e0b-4093-80f9-2fd48f87572e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\common0">
+      <UniqueIdentifier>{c56fa7fd-3a6e-4f85-a930-486cbf3a76ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\flexcomm">
+      <UniqueIdentifier>{3090c9f1-e2f7-41ef-a5ab-1cd3cb727b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\usart0">
+      <UniqueIdentifier>{85427044-3b33-450c-bbb4-74938f5778ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\gpio">
+      <UniqueIdentifier>{4fa0be22-1298-4fce-8dbe-de612ab1f864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\power">
+      <UniqueIdentifier>{ec2a7b51-dd83-49f7-8e20-6147d7ac9508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\reset">
+      <UniqueIdentifier>{0e02cf14-c2e4-4a93-9a26-a8635ee94a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\mcmgr">
+      <UniqueIdentifier>{c6eee798-0bf9-49da-947f-bd2c094cd710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\mcmgr_lpc55s69">
+      <UniqueIdentifier>{8803f3fc-a1f1-4e49-a231-b145f0caae58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\misc_utilities">
+      <UniqueIdentifier>{fc107c5a-8c40-4944-b4b0-35aa555f25b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\assert">
+      <UniqueIdentifier>{efbfa824-0759-4ae1-a04c-9bf13219a7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\debug_console">
+      <UniqueIdentifier>{e72ae51a-39ea-4138-84fb-dc21e17939e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{7d0ec19b-5bf0-48d5-9715-bde20f25086a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_common">
+      <UniqueIdentifier>{fb37cbf6-64fb-4406-8b84-47038c611d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_core_cm33">
+      <UniqueIdentifier>{9487bce2-ab3d-4de7-a52d-aa61344b4233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\CMSIS_Include_dsp">
+      <UniqueIdentifier>{a00f8e76-8864-460d-bfc1-75b6fd7f3084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\lists">
+      <UniqueIdentifier>{46350422-0495-4412-bd29-778eebb3e394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\serial_manager">
+      <UniqueIdentifier>{b222ac2d-74ea-4cb6-bd0c-99eeb6777997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\serial_manager_uart">
+      <UniqueIdentifier>{4b29af4a-173c-4cac-95d7-e5538ab73c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\usart_adapter">
+      <UniqueIdentifier>{2b0f2532-1c61-46ef-ae55-b38d4825efaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\LPC55S69_CMSIS">
+      <UniqueIdentifier>{3688b568-e2b6-4aa3-a705-c1ce1af7a0e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\clock">
+      <UniqueIdentifier>{61ec276a-c6a6-4cb7-9a70-162bdf5b2dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\common0">
+      <UniqueIdentifier>{888b65a1-4d40-4c0b-ba35-17ba1ef0068a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\flexcomm">
+      <UniqueIdentifier>{a892504e-af2b-4130-9e35-ab70dc9fa2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\usart0">
+      <UniqueIdentifier>{1ffebd69-94d1-4941-8fcd-9035ffb64bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\gpio">
+      <UniqueIdentifier>{3f7e1e36-5c63-42d6-aab8-2f268aab1da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\iocon">
+      <UniqueIdentifier>{feed1ec5-55b4-4919-9a1c-a2e5b823d2c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\mailbox">
+      <UniqueIdentifier>{bf0d86aa-de43-41ed-a084-06db3dce0373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\power">
+      <UniqueIdentifier>{2fea3e4a-977e-4d1a-97b3-2d29cfea351d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\reset">
+      <UniqueIdentifier>{bfc91a6c-9f87-465c-ade5-249c44fbf82c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\mcmgr">
+      <UniqueIdentifier>{cc5cf5d0-057a-47cf-9ad7-f14192bd2392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\debug_console">
+      <UniqueIdentifier>{87415fcc-5e71-4d93-9931-e0dadb2ef939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{80867606-b8b5-42fa-aca9-f76c32f98907}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="board.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="clock_config.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="pin_mux.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_world_core1.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\components\lists\generic_list.c">
+      <Filter>Source files\Device-specific files\lists</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_manager.c">
+      <Filter>Source files\Device-specific files\serial_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.c">
+      <Filter>Source files\Device-specific files\serial_manager_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\components\uart\usart_adapter.c">
+      <Filter>Source files\Device-specific files\usart_adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core1.c">
+      <Filter>Source files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\gcc\startup_LPC55S69_cm33_core1.S">
+      <Filter>Source files\Device-specific files\LPC55S69_startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.c">
+      <Filter>Source files\Device-specific files\clock</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.c">
+      <Filter>Source files\Device-specific files\common0</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.c">
+      <Filter>Source files\Device-specific files\flexcomm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.c">
+      <Filter>Source files\Device-specific files\usart0</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.c">
+      <Filter>Source files\Device-specific files\gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.c">
+      <Filter>Source files\Device-specific files\power</Filter>
+    </ClCompile>
+    <Library Include="$(BSP_ROOT)\devices\LPC55S69\gcc\libpower_soft.a">
+      <Filter>Source files\Device-specific files\power</Filter>
+    </Library>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.c">
+      <Filter>Source files\Device-specific files\reset</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr.c">
+      <Filter>Source files\Device-specific files\mcmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr_internal_core_api_lpc55s69.c">
+      <Filter>Source files\Device-specific files\mcmgr_lpc55s69</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_sbrk.c">
+      <Filter>Source files\Device-specific files\misc_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_assert.c">
+      <Filter>Source files\Device-specific files\assert</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.c">
+      <Filter>Source files\Device-specific files\debug_console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.c">
+      <Filter>Source files\Device-specific files\debug_console</Filter>
+    </ClCompile>
+    <ClInclude Include="board.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="clock_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="pin_mux.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang_ltm.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_compiler.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_iccarm.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_version.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv81mml.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mbl.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mml.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv7.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv8.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_cm33.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_core_cm33</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\tz_context.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_core_cm33</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_math.h">
+      <Filter>Header files\Device-specific files\CMSIS_Include_dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\lists\generic_list.h">
+      <Filter>Header files\Device-specific files\lists</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_manager.h">
+      <Filter>Header files\Device-specific files\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_internal.h">
+      <Filter>Header files\Device-specific files\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.h">
+      <Filter>Header files\Device-specific files\serial_manager_uart</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\components\uart\uart.h">
+      <Filter>Header files\Device-specific files\usart_adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\fsl_device_registers.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core1.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core1_features.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core1.h">
+      <Filter>Header files\Device-specific files\LPC55S69_CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.h">
+      <Filter>Header files\Device-specific files\clock</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.h">
+      <Filter>Header files\Device-specific files\common0</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.h">
+      <Filter>Header files\Device-specific files\flexcomm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.h">
+      <Filter>Header files\Device-specific files\usart0</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.h">
+      <Filter>Header files\Device-specific files\gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_iocon.h">
+      <Filter>Header files\Device-specific files\iocon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_mailbox.h">
+      <Filter>Header files\Device-specific files\mailbox</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.h">
+      <Filter>Header files\Device-specific files\power</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.h">
+      <Filter>Header files\Device-specific files\reset</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr.h">
+      <Filter>Header files\Device-specific files\mcmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr_internal_core_api.h">
+      <Filter>Header files\Device-specific files\mcmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console_conf.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.h">
+      <Filter>Header files\Device-specific files\debug_console</Filter>
+    </ClInclude>
+    <None Include="LPC55S69_Core1-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="LPC55S69_Core1-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

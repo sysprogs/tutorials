@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+  <ToolchainVersion>
+    <GCC>9.2.1</GCC>
+    <GDB>8.3.0</GDB>
+    <Revision>1</Revision>
+  </ToolchainVersion>
+  <BspID>com.sysprogs.imported.ksdk2x.LPC55S69_CM33_CORE0</BspID>
+  <BspVersion>unknown</BspVersion>
+  <McuID>LPC55S69JBD100_CM33_CORE0</McuID>
+  <MCUDefinitionFile>devices/LPC55S69/LPC55S69_cm33_core0.vgdbdevice</MCUDefinitionFile>
+  <MCUProperties>
+    <Entries>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.arm.floatmode</Key>
+        <Value>-mfloat-abi=hard</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.imported.ksdk2x.linker_script</Key>
+        <Value>devices/LPC55S69/gcc/LPC55S69_cm33_core0_flash.ld</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.toolchainoptions.arm.libctype</Key>
+        <Value>--specs=nano.specs</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.toolchainoptions.arm.syscallspecs</Key>
+        <Value>--specs=nosys.specs</Value>
+      </KeyValue>
+    </Entries>
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>mcu.mak</MCUMakFile>
+  <ReferencedFrameworks>
+    <string>com.sysprogs.ksdk2x_imported.middleware.multicore.mcmgr.lpc55s69.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.mailbox.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.lpc_iocon.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.middleware.multicore.mcmgr.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.common.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.clock.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.power.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.reset.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.devices.LPC55S69_CMSIS.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.devices.LPC55S69_startup.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.flexcomm_usart.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.flexcomm.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.drivers.lpc_gpio.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.utilities.assert.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.utility.debug_console.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.component.usart_adapter.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.component.serial_manager.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.component.lists.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.component.serial_manager_uart.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.Include_core_cm33.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.Include_common.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.Include_dsp.LPC55S69</string>
+    <string>com.sysprogs.ksdk2x_imported.platform.utilities.misc_utilities.LPC55S69</string>
+  </ReferencedFrameworks>
+  <FrameworkProperties>
+    <Entries />
+  </FrameworkProperties>
+  <TestFrameworkProperties>
+    <Entries />
+  </TestFrameworkProperties>
+</EmbeddedProfile>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A39E440B-0496-4E08-92CF-B0B11A58F625}</ProjectGuid>
+    <BSP_ID>com.sysprogs.imported.ksdk2x.LPC55S69_CM33_CORE0</BSP_ID>
+    <BSP_VERSION>unknown</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CLanguageStandard>GNU99</CLanguageStandard>
+      <AdditionalIncludeDirectories>$(BSP_ROOT)/boards/lpcxpresso55s69/multicore_examples/hello_world/cm33_core1;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;CPU_LPC55S69JBD100_cm33_core1;ARM_MATH_CM33;MCMGR_HANDLE_EXCEPTIONS=1;__SEMIHOST_HARDFAULT_DISABLE=1;MULTICORE_APP=1;SERIAL_PORT_TYPE_UART=1</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(BSP_ROOT)/boards/lpcxpresso55s69/multicore_examples/hello_world/cm33_core1/armgcc/LPC55S69_cm33_core1_ram.ld</LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CLanguageStandard>GNU99</CLanguageStandard>
+      <AdditionalIncludeDirectories>$(BSP_ROOT)/boards/lpcxpresso55s69/multicore_examples/hello_world/cm33_core1;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;CPU_LPC55S69JBD100_cm33_core1;ARM_MATH_CM33;MCMGR_HANDLE_EXCEPTIONS=1;__SEMIHOST_HARDFAULT_DISABLE=1;MULTICORE_APP=1;SERIAL_PORT_TYPE_UART=1</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(BSP_ROOT)/boards/lpcxpresso55s69/multicore_examples/hello_world/cm33_core1/armgcc/LPC55S69_cm33_core1_ram.ld</LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="board.c" />
+    <ClCompile Include="clock_config.c" />
+    <ClCompile Include="pin_mux.c" />
+    <ClCompile Include="hello_world_core1.c" />
+    <None Include="mcu.props" />
+    <ClCompile Include="$(BSP_ROOT)\components\lists\generic_list.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_manager.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\components\uart\usart_adapter.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core1.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\gcc\startup_LPC55S69_cm33_core1.S" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.c" />
+    <Library Include="$(BSP_ROOT)\devices\LPC55S69\gcc\libpower_soft.a" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.c" />
+    <ClCompile Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr.c" />
+    <ClCompile Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr_internal_core_api_lpc55s69.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_sbrk.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\fsl_assert.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.c" />
+    <ClCompile Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.c" />
+    <ClInclude Include="board.h" />
+    <ClInclude Include="clock_config.h" />
+    <ClInclude Include="pin_mux.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_armclang_ltm.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_gcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_iccarm.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv81mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mbl.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_armv8mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\mpu_armv8.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\core_cm33.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\tz_context.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_common_tables.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_const_structs.h" />
+    <ClInclude Include="$(BSP_ROOT)\CMSIS\Include\arm_math.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\lists\generic_list.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_manager.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_internal.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\serial_manager\serial_port_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\components\uart\uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\fsl_device_registers.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core1.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\LPC55S69_cm33_core1_features.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\system_LPC55S69_cm33_core1.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_clock.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_common.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_flexcomm.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_usart.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_iocon.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_mailbox.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_power.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\drivers\fsl_reset.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr.h" />
+    <ClInclude Include="$(BSP_ROOT)\middleware\multicore\mcmgr\src\mcmgr_internal_core_api.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\debug_console\fsl_debug_console_conf.h" />
+    <ClInclude Include="$(BSP_ROOT)\devices\LPC55S69\utilities\str\fsl_str.h" />
+    <None Include="LPC55S69_Core1-Debug.vgdbsettings" />
+    <None Include="LPC55S69_Core1-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

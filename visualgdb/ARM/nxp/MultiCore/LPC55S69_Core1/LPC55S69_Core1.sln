@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LPC55S69_Core1", "LPC55S69_Core1.vcxproj", "{A39E440B-0496-4E08-92CF-B0B11A58F625}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A39E440B-0496-4E08-92CF-B0B11A58F625}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{A39E440B-0496-4E08-92CF-B0B11A58F625}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{A39E440B-0496-4E08-92CF-B0B11A58F625}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{A39E440B-0496-4E08-92CF-B0B11A58F625}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {671146ED-A937-4B05-B1B2-255DF1C16C29}
+	EndGlobalSection
+EndGlobal
