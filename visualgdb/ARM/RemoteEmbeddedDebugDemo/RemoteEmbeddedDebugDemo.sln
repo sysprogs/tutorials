@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteEmbeddedDebugDemo", "RemoteEmbeddedDebugDemo.vcxproj", "{10093785-BE86-410B-992A-91DFEE198F86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10093785-BE86-410B-992A-91DFEE198F86}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{10093785-BE86-410B-992A-91DFEE198F86}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{10093785-BE86-410B-992A-91DFEE198F86}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{10093785-BE86-410B-992A-91DFEE198F86}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2407759B-64A2-480B-A1B6-3DFD76F0E9A5}
+	EndGlobalSection
+EndGlobal
