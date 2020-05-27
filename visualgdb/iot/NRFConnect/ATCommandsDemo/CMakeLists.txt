@@ -12,4 +12,5 @@ project(NONE)
 
 # NORDIC SDK APP START
 target_sources(app PRIVATE src/main.c)
+zephyr_compile_definitions(TESTMACRO)
 # NORDIC SDK APP END

@@ -15,7 +15,16 @@ void bsd_recoverable_error_handler(uint32_t err)
 	printk("bsdlib recoverable error: %u\n", err);
 }
 
+void __attribute__((noinline)) SysprogsWaitForDebugger()
+{
+    static volatile int SysprogsDebuggerAttached = 0;
+    while (!SysprogsDebuggerAttached)
+    {
+    }
+}
+
 void main(void)
 {
-	printk("The AT host sample started (with reset fix)\n");
+    SysprogsWaitForDebugger();
+    printk("The AT host sample started (with reset fix)\n");
 }
