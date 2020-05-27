@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ATCommandsDemo", "ATCommandsDemo.vgdbproj", "{2C1D050C-F472-490E-BD6D-4E1599AD2054}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|nrf9160_pca10090ns = Debug|nrf9160_pca10090ns
+		Release|nrf9160_pca10090ns = Release|nrf9160_pca10090ns
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C1D050C-F472-490E-BD6D-4E1599AD2054}.Debug|nrf9160_pca10090ns.ActiveCfg = Debug|nrf9160_pca10090ns
+		{2C1D050C-F472-490E-BD6D-4E1599AD2054}.Debug|nrf9160_pca10090ns.Build.0 = Debug|nrf9160_pca10090ns
+		{2C1D050C-F472-490E-BD6D-4E1599AD2054}.Release|nrf9160_pca10090ns.ActiveCfg = Release|nrf9160_pca10090ns
+		{2C1D050C-F472-490E-BD6D-4E1599AD2054}.Release|nrf9160_pca10090ns.Build.0 = Release|nrf9160_pca10090ns
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DEB5262-4857-4797-A956-B2E39CF209B2}
+	EndGlobalSection
+EndGlobal
