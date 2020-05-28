@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Project xsi:type="com.visualgdb.project.external.nrfconnect">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>Unknown</PathStyle>
+    </CustomSourceDirectories>
+  </Project>
+  <Build xsi:type="com.visualgdb.build.cmake">
+    <BuildLogMode xsi:nil="true" />
+    <ToolchainID>
+      <ID>com.visualgdb.arm-eabi</ID>
+      <Version>
+        <GCC>9.2.1</GCC>
+        <GDB>8.3.0</GDB>
+        <Revision>1</Revision>
+      </Version>
+    </ToolchainID>
+    <RelativeSourceDirectory />
+    <ConfigurationType>DEBUG</ConfigurationType>
+    <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
+    <MakeCommandTemplate>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>$(VISUALGDB_DIR)/ninja.exe</Command>
+      <WorkingDirectory>$(BuildDir)</WorkingDirectory>
+      <BackgroundMode xsi:nil="true" />
+    </MakeCommandTemplate>
+    <CMakeCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>$(SYSPROGS_CMAKE_PATH)</Command>
+      <BackgroundMode xsi:nil="true" />
+    </CMakeCommand>
+    <UpdateSourcesInCMakeFile>true</UpdateSourcesInCMakeFile>
+    <ExportCompileCommands>false</ExportCompileCommands>
+    <DisableToolchainFile>false</DisableToolchainFile>
+    <CMakeMakefileType>Ninja</CMakeMakefileType>
+    <DeployAsRoot>false</DeployAsRoot>
+    <CMakeCleanMode>RemoveBuildDirectory</CMakeCleanMode>
+    <ProjectModeSettings>
+      <ProjectItemSettings>
+        <GroupSourcesByTypes>true</GroupSourcesByTypes>
+        <GroupSourcesByPaths>true</GroupSourcesByPaths>
+        <GroupTargetsByPaths>true</GroupTargetsByPaths>
+        <AutoRefreshProject>true</AutoRefreshProject>
+        <AlwaysConsiderOutdated>false</AlwaysConsiderOutdated>
+        <SortTargetsByName>true</SortTargetsByName>
+        <RedundantTargetMode>HideOuterProjectTargets</RedundantTargetMode>
+        <SortSourcesByName>true</SortSourcesByName>
+        <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
+        <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
+      </ProjectItemSettings>
+      <TargetSpecificSettings />
+      <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
+      <ProjectGUID>932e6fa7-9ac5-4331-859a-c506a32b8378</ProjectGUID>
+      <VirtualFolders />
+      <ConfigurationNameCase>Upper</ConfigurationNameCase>
+      <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
+      <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
+      <NRFConnectExtension>
+        <SDKVersion>v1.2.0</SDKVersion>
+      </NRFConnectExtension>
+    </ProjectModeSettings>
+  </Build>
+  <CustomBuild>
+    <PreSyncActions />
+    <PreBuildActions />
+    <PostBuildActions />
+    <PreCleanActions />
+    <PostCleanActions />
+  </CustomBuild>
+  <CustomDebug>
+    <PreDebugActions />
+    <PostDebugActions />
+    <DebugStopActions />
+    <BreakMode>Default</BreakMode>
+  </CustomDebug>
+  <CustomShortcuts>
+    <Shortcuts />
+    <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
+  </CustomShortcuts>
+  <UserDefinedVariables />
+  <ImportedPropertySheets />
+  <CodeSense>
+    <Enabled>Unknown</Enabled>
+    <ExtraSettings>
+      <HideErrorsInSystemHeaders>true</HideErrorsInSystemHeaders>
+      <SupportLightweightReferenceAnalysis>true</SupportLightweightReferenceAnalysis>
+      <CheckForClangFormatFiles>true</CheckForClangFormatFiles>
+      <FormattingEngine xsi:nil="true" />
+    </ExtraSettings>
+    <CodeAnalyzerSettings>
+      <Enabled>false</Enabled>
+    </CodeAnalyzerSettings>
+  </CodeSense>
+  <Configurations>
+    <VisualGDBConfiguration>
+      <PlatformName>nrf5340_dk_nrf5340_cpunet</PlatformName>
+      <DebugSettingsOverride xsi:type="com.visualgdb.debug.embedded">
+        <AdditionalStartupCommands />
+        <AdditionalGDBSettings>
+          <Features>
+            <DisableAutoDetection>false</DisableAutoDetection>
+            <UseFrameParameter>false</UseFrameParameter>
+            <SimpleValuesFlagSupported>false</SimpleValuesFlagSupported>
+            <ListLocalsSupported>false</ListLocalsSupported>
+            <ByteLevelMemoryCommandsAvailable>false</ByteLevelMemoryCommandsAvailable>
+            <ThreadInfoSupported>false</ThreadInfoSupported>
+            <PendingBreakpointsSupported>false</PendingBreakpointsSupported>
+            <SupportTargetCommand>false</SupportTargetCommand>
+            <ReliableBreakpointNotifications>false</ReliableBreakpointNotifications>
+          </Features>
+          <EnableSmartStepping>false</EnableSmartStepping>
+          <FilterSpuriousStoppedNotifications>false</FilterSpuriousStoppedNotifications>
+          <ForceSingleThreadedMode>false</ForceSingleThreadedMode>
+          <UseAppleExtensions>false</UseAppleExtensions>
+          <CanAcceptCommandsWhileRunning>false</CanAcceptCommandsWhileRunning>
+          <MakeLogFile>false</MakeLogFile>
+          <IgnoreModuleEventsWhileStepping>true</IgnoreModuleEventsWhileStepping>
+          <UseRelativePathsOnly>false</UseRelativePathsOnly>
+          <ExitAction>None</ExitAction>
+          <DisableDisassembly>false</DisableDisassembly>
+          <ExamineMemoryWithXCommand>false</ExamineMemoryWithXCommand>
+          <StepIntoNewInstanceEntry>main</StepIntoNewInstanceEntry>
+          <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
+          <DisableSignals>false</DisableSignals>
+          <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+          <EnableNonStopMode>false</EnableNonStopMode>
+          <MaxBreakpointLimit>0</MaxBreakpointLimit>
+          <EnableVerboseMode>true</EnableVerboseMode>
+        </AdditionalGDBSettings>
+        <DebugMethod>
+          <ID>jlink-jtag</ID>
+          <InterfaceID>com.sysprogs.debug.jlink.jlinksw</InterfaceID>
+          <InterfaceSerialNumber>000960178426</InterfaceSerialNumber>
+          <Configuration xsi:type="com.visualgdb.edp.segger.settings">
+            <CommandLine>-select USB -device $$SYS:MCU_ID$$ -speed auto -if SWD</CommandLine>
+            <ProgramMode>Disabled</ProgramMode>
+            <StartupCommands>
+              <string>target remote :$$SYS:GDB_PORT$$</string>
+              <string>load</string>
+            </StartupCommands>
+            <UseUnreliableLiveMemoryEngine>false</UseUnreliableLiveMemoryEngine>
+            <ProgramFLASHUsingExternalTool>false</ProgramFLASHUsingExternalTool>
+            <PreferredGDBPort>0</PreferredGDBPort>
+          </Configuration>
+        </DebugMethod>
+        <AutoDetectRTOS>true</AutoDetectRTOS>
+        <SemihostingSupport>Auto</SemihostingSupport>
+        <SemihostingPollingDelay>0</SemihostingPollingDelay>
+        <StepIntoEntryPoint>false</StepIntoEntryPoint>
+        <ReloadFirmwareOnReset>false</ReloadFirmwareOnReset>
+        <ValidateEndOfStackAddress>true</ValidateEndOfStackAddress>
+        <StopAtEntryPoint>false</StopAtEntryPoint>
+        <EnableVirtualHalts>true</EnableVirtualHalts>
+        <DynamicAnalysisSettings />
+        <EndOfStackSymbol>_estack</EndOfStackSymbol>
+        <TimestampProviderTicksPerSecond>0</TimestampProviderTicksPerSecond>
+        <KeepConsoleAfterExit>false</KeepConsoleAfterExit>
+        <UnusedStackFillPattern xsi:nil="true" />
+        <CheckInterfaceDrivers>true</CheckInterfaceDrivers>
+      </DebugSettingsOverride>
+      <ProjectSettingsExtension xsi:type="com.visualgdb.project.external.nrfconnect.extension">
+        <BoardName>nrf5340_dk_nrf5340_cpunet</BoardName>
+      </ProjectSettingsExtension>
+    </VisualGDBConfiguration>
+    <VisualGDBConfiguration>
+      <Name>Debug</Name>
+      <BuildSettingsExtension xsi:type="com.sysprogs.nrfconnect.cmake.extension">
+        <ConfigurationOverride>
+          <Entries>
+            <KeyValue>
+              <Key>NO_OPTIMIZATIONS</Key>
+              <Value />
+            </KeyValue>
+            <KeyValue>
+              <Key>THREAD_MONITOR</Key>
+              <Value>y</Value>
+            </KeyValue>
+            <KeyValue>
+              <Key>DEBUG_OPTIMIZATIONS</Key>
+              <Value>y</Value>
+            </KeyValue>
+            <KeyValue>
+              <Key>SIZE_OPTIMIZATIONS</Key>
+              <Value />
+            </KeyValue>
+          </Entries>
+        </ConfigurationOverride>
+      </BuildSettingsExtension>
+    </VisualGDBConfiguration>
+    <VisualGDBConfiguration>
+      <Name>Release</Name>
+      <BuildSettingsExtension xsi:type="com.sysprogs.nrfconnect.cmake.extension" />
+    </VisualGDBConfiguration>
+  </Configurations>
+  <ProgramArgumentsSuggestions />
+</VisualGDBProjectSettings2>

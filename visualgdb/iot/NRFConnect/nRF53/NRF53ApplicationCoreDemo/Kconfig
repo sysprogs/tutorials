@@ -1,0 +1,18 @@
+#
+# Copyright (c) 2018 Nordic Semiconductor
+#
+# SPDX-License-Identifier: LicenseRef-BSD-5-Clause-Nordic
+#
+
+source "$ZEPHYR_BASE/Kconfig.zephyr"
+
+menu "Nordic LED-Button BLE GATT service sample"
+
+config BT_GATT_LBS_SECURITY_ENABLED
+	bool "Enable security"
+	default y
+	select BT_SMP
+	help
+	  "Enable BLE security for the LED-Button service"
+
+endmenu
