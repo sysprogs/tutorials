@@ -1,0 +1,13 @@
+<!-- Add this file to source control in order to automatically restore library dependencies when opening the project on another machine -->
+<ArduinoDependencyCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Dependencies>
+    <Dependency>
+      <Type>Platform</Type>
+      <Key>
+        <Packager>Maixduino</Packager>
+        <Name>k210</Name>
+        <Version>0.3.11</Version>
+      </Key>
+    </Dependency>
+  </Dependencies>
+</ArduinoDependencyCollection>
