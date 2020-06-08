@@ -62,6 +62,7 @@
       </NRFConnectExtension>
     </ProjectModeSettings>
   </Build>
+  <Debug xsi:type="com.visualgdb.debug.embedded"/>
   <CustomBuild>
     <PreSyncActions />
     <PreBuildActions />
