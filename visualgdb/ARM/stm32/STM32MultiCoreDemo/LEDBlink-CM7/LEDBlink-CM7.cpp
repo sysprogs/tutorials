@@ -14,7 +14,7 @@ extern "C"
 int main(void)
 {
     HAL_Init();
-
+    
     __GPIOI_CLK_ENABLE();
     GPIO_InitTypeDef GPIO_InitStructure;
 
