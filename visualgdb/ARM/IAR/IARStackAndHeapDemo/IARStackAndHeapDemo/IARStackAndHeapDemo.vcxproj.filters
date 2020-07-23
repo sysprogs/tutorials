@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
-      <Filter>Source files\Device-specific files</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
