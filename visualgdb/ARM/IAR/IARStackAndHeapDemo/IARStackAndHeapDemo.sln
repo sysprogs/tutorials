@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IARStackAndHeapDemo", "IARStackAndHeapDemo\IARStackAndHeapDemo.vcxproj", "{1F70688A-C8C3-4EB9-9D95-3984A4C56E2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F70688A-C8C3-4EB9-9D95-3984A4C56E2A}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{1F70688A-C8C3-4EB9-9D95-3984A4C56E2A}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{1F70688A-C8C3-4EB9-9D95-3984A4C56E2A}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{1F70688A-C8C3-4EB9-9D95-3984A4C56E2A}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B622818-2A81-492C-AA09-462A93EA70BD}
+	EndGlobalSection
+EndGlobal

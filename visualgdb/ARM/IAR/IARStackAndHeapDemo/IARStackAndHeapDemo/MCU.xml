@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.sysprogs.toolchains.nongnu.iar.arm</ToolchainID>
+  <ToolchainVersion>
+    <GCC>8.x</GCC>
+    <Revision>1</Revision>
+  </ToolchainVersion>
+  <BspID>IAR:arm/ST</BspID>
+  <BspVersion>8.4</BspVersion>
+  <McuID>STM32F407VG</McuID>
+  <MCUDefinitionFile>$$SYS:TOOLCHAIN_ROOT$$/arm/config/debugger/ST/STM32F407.svd</MCUDefinitionFile>
+  <MCUProperties>
+    <Entries />
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>mcu.mak</MCUMakFile>
+  <FrameworkProperties>
+    <Entries />
+  </FrameworkProperties>
+  <TestFrameworkProperties>
+    <Entries />
+  </TestFrameworkProperties>
+</EmbeddedProfile>
