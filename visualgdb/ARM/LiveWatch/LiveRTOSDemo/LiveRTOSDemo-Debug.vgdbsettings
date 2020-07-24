@@ -53,7 +53,6 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
-  <BuildContextDirectory>VisualGDB\VisualGDBCache</BuildContextDirectory>
   <Debug xsi:type="com.visualgdb.debug.embedded">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>

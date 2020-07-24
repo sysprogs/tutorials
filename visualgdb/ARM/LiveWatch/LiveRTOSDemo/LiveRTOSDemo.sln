@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LiveRTOSDemo", "LiveRTOSDemo.vcxproj", "{EF4237A5-AD4C-4E6E-AAF2-3777FC7565CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LiveRTOSDemo", "LiveRTOSDemo.vcxproj", "{915FF07D-155E-441D-941B-67AF8D066001}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|VisualGDB = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF4237A5-AD4C-4E6E-AAF2-3777FC7565CD}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
-		{EF4237A5-AD4C-4E6E-AAF2-3777FC7565CD}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
-		{EF4237A5-AD4C-4E6E-AAF2-3777FC7565CD}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
-		{EF4237A5-AD4C-4E6E-AAF2-3777FC7565CD}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{915FF07D-155E-441D-941B-67AF8D066001}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{915FF07D-155E-441D-941B-67AF8D066001}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{915FF07D-155E-441D-941B-67AF8D066001}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{915FF07D-155E-441D-941B-67AF8D066001}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FF532618-E479-46EF-B280-6F6140BDFE0F}
+		SolutionGuid = {07DB5083-8F89-4FAC-B792-299CE26E4C2E}
 	EndGlobalSection
 EndGlobal

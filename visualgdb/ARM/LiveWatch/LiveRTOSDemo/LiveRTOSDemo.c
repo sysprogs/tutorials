@@ -105,10 +105,15 @@ static void LED_Thread1(void const *argument)
   
 	for (;;)
 	{
-		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
+        char *test = (char *)pvPortMalloc(16);
+        memset(test, 0x55, 16);
+
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
 		osDelay(2000);
-		
-		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+
+        vPortFree(test);
+
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
 		osThreadSuspend(LEDThread2Handle);
 		osDelay(2000);
 		
@@ -121,6 +126,17 @@ static void LED_Thread1(void const *argument)
   * @param  argument not used
   * @retval None
   */
+
+void RecursionTest(int level)
+{
+    volatile int x[5];
+    x[0]++;
+    if (level > 0)
+        RecursionTest(level - 1);
+    else
+	    osDelay(200);
+}
+
 static void LED_Thread2(void const *argument)
 {
 	uint32_t count;
@@ -128,9 +144,12 @@ static void LED_Thread2(void const *argument)
   
 	for (;;)
 	{
-		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-		osDelay(200);
-	}
+        RecursionTest(1);
+        RecursionTest(2);
+        RecursionTest(3);
+        RecursionTest(4);
+        RecursionTest(5);
+    }
 }
 
 #ifdef  USE_FULL_ASSERT

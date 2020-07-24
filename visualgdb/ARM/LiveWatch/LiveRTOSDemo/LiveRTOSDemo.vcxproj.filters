@@ -2,43 +2,43 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source files">
-      <UniqueIdentifier>{9888188d-d8b9-46ca-ae9b-ace7affeb91b}</UniqueIdentifier>
+      <UniqueIdentifier>{c404f8cc-263e-4d98-9aa3-2b35d20ea239}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header files">
-      <UniqueIdentifier>{c4c70019-88e6-4480-ab69-1f4180e2fe09}</UniqueIdentifier>
+      <UniqueIdentifier>{a2d1947b-2be2-4c49-b1f6-8e010c55f960}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource files">
-      <UniqueIdentifier>{cba0c007-b199-4593-b1d2-2e24969f2ccd}</UniqueIdentifier>
+      <UniqueIdentifier>{2006a897-0c00-4b4b-a773-e64a7a0695bb}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Source files\Device-specific files">
-      <UniqueIdentifier>{a4d24575-1ccd-4349-9b4e-02568f99de88}</UniqueIdentifier>
+      <UniqueIdentifier>{5cd39624-24fe-4f80-ba05-6bf4ad2e1263}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\Device-specific files\FreeRTOS">
-      <UniqueIdentifier>{a071054b-b65b-4a46-b401-28e0520eef65}</UniqueIdentifier>
+      <UniqueIdentifier>{70e16676-ac40-4c82-bafd-f41a146221ba}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\Device-specific files\HAL">
-      <UniqueIdentifier>{d0ad4e8a-c3a8-4e42-aed3-0cf70c918249}</UniqueIdentifier>
+      <UniqueIdentifier>{f7d1140c-eeda-4c93-b8ee-5de79b49ad9a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\Device-specific files\LL">
-      <UniqueIdentifier>{9d8813d1-4035-4d09-93a2-d3fd91f43a70}</UniqueIdentifier>
+      <UniqueIdentifier>{24d7cdbc-4640-49f3-bf62-637f8d32d144}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files">
-      <UniqueIdentifier>{eafd4406-a19f-4a13-a090-989cba51442e}</UniqueIdentifier>
+      <UniqueIdentifier>{a7f34ec1-69d7-49a8-9159-7fbcabf79e64}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files\FreeRTOS">
-      <UniqueIdentifier>{6275c9df-0532-4c48-929d-f521c7306663}</UniqueIdentifier>
+      <UniqueIdentifier>{6f440e23-e85a-492b-bb57-c7240e0a4d63}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files\HAL">
-      <UniqueIdentifier>{76593c6f-668b-42a7-90d3-0edaaf5c80c8}</UniqueIdentifier>
+      <UniqueIdentifier>{6b966e37-bd48-472f-8239-bc974928e87b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files\LL">
-      <UniqueIdentifier>{40907ad8-ec12-4b20-99d4-32f58d37d609}</UniqueIdentifier>
+      <UniqueIdentifier>{82354710-96ef-416d-a9a3-3575cc790b9f}</UniqueIdentifier>
     </Filter>
     <Filter Include="VisualGDB settings">
-      <UniqueIdentifier>{843c77a3-9f8c-410c-bb1a-d48a030ecf21}</UniqueIdentifier>
+      <UniqueIdentifier>{e92e7c6a-c60b-4c5b-bf5c-2662636a935a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +166,9 @@
       <Filter>Source files\Device-specific files\HAL</Filter>
     </ClCompile>
     <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_fmpi2c_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_fmpsmbus.c">
       <Filter>Source files\Device-specific files\HAL</Filter>
     </ClCompile>
     <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
@@ -313,6 +316,9 @@
       <Filter>Source files\Device-specific files\LL</Filter>
     </ClCompile>
     <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fmc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fmpi2c.c">
       <Filter>Source files\Device-specific files\LL</Filter>
     </ClCompile>
     <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c">
@@ -493,6 +499,9 @@
       <Filter>Header files\Device-specific files\HAL</Filter>
     </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_fmpi2c_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_fmpsmbus.h">
       <Filter>Header files\Device-specific files\HAL</Filter>
     </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h">
@@ -727,6 +736,9 @@
       <Filter>Header files\Device-specific files\LL</Filter>
     </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmpi2c.h">
       <Filter>Header files\Device-specific files\LL</Filter>
     </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fsmc.h">
