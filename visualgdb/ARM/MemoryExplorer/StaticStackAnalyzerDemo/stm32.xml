@@ -2,12 +2,12 @@
 <EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
   <ToolchainVersion>
-    <GCC>7.2.0</GCC>
-    <GDB>8.0.1</GDB>
-    <Revision>3</Revision>
+    <GCC>9.3.1</GCC>
+    <GDB>8.3.1</GDB>
+    <Revision>1</Revision>
   </ToolchainVersion>
   <BspID>com.sysprogs.arm.stm32</BspID>
-  <BspVersion>2018.08</BspVersion>
+  <BspVersion>2020.01</BspVersion>
   <McuID>STM32F407VG</McuID>
   <MCUDefinitionFile>STM32F4xxxx/DeviceDefinitions/stm32f407xx.xml</MCUDefinitionFile>
   <MCUProperties>
@@ -38,6 +38,7 @@
   <ReferencedFrameworks>
     <string>com.sysprogs.arm.stm32.hal</string>
     <string>com.sysprogs.arm.stm32.freertos</string>
+    <string>com.sysprogs.arm.stm32.STM32F4_ll</string>
   </ReferencedFrameworks>
   <FrameworkProperties>
     <Entries>
@@ -48,6 +49,17 @@
       <KeyValue>
         <Key>com.sysprogs.bspoptions.stm32.freertos.portcore</Key>
         <Value>CM3</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.stm32.freertos.cmsis</Key>
+        <Value>CMSIS_RTOS</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.stm32.legacy_hal_src</Key>
+        <Value />
+      </KeyValue>
+      <KeyValue>
+        <Key>com.sysprogs.bspoptions.stm32.ll_driver</Key>
       </KeyValue>
     </Entries>
   </FrameworkProperties>
