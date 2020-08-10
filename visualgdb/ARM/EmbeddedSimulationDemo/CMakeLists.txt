@@ -23,3 +23,10 @@ add_bsp_based_executable(NAME EmbeddedSimulationDemo
 if(SIMULATION)
 	set_source_files_properties(system_stm32f4xx.c PROPERTIES HEADER_FILE_ONLY TRUE)
 endif()
+
+add_bsp_based_executable(NAME AnotherTestExecutable
+	SOURCES AnotherTestExecutable.cpp
+	GENERATE_BIN
+	GENERATE_MAP
+	BUILD_UNIT_TESTS
+	EXCLUDED_PLATFORMS Hardware)
