@@ -1,5 +1,6 @@
 #include <OSAL.h>
 
+void DoSleep();
 
 int main(void)
 {
@@ -8,8 +9,8 @@ int main(void)
 	for (;;)
 	{
     	led_on();
-    	delay(500);
+    	DoSleep();
     	led_off();
-    	delay(500);
+    	DoSleep();
 	}
 }

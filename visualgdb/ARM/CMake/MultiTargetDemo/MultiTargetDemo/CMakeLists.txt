@@ -13,10 +13,13 @@ add_bsp_based_executable(NAME MultiTargetDemo
 	GENERATE_BIN
 	GENERATE_MAP)
 
-target_link_libraries(MultiTargetDemo PRIVATE OSAL)
+target_link_libraries(MultiTargetDemo PRIVATE OSAL DemoLibrary)
 
 if(SIMULATION)
 add_subdirectory(OSAL/Win32)
 else()
 add_subdirectory(OSAL/STM32)
 endif()
+
+
+add_subdirectory(libs)
