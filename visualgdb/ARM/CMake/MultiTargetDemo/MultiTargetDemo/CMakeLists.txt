@@ -8,7 +8,11 @@ find_bsp(ID com.sysprogs.arm.stm32
 	FRAMEWORKS com.sysprogs.arm.stm32.hal com.sysprogs.arm.stm32.ll
 	HWREGISTER_LIST_FILE STM32F4xxxx/DeviceDefinitions/stm32f407xx.xml)
 
+bsp_include_directories(OSAL/STM32)
 add_bsp_based_executable(NAME MultiTargetDemo
-	SOURCES MultiTargetDemo.cpp system_stm32f4xx.c stm32f4xx_hal_conf.h
+	SOURCES MultiTargetDemo.cpp
 	GENERATE_BIN
 	GENERATE_MAP)
+
+target_link_libraries(MultiTargetDemo PRIVATE OSAL)
+add_subdirectory(OSAL/STM32)
