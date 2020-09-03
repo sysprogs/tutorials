@@ -7,6 +7,7 @@
       <PathStyle>MinGWUnixSlash</PathStyle>
       <LocalDirForAbsolutePaths>$(ToolchainDir)</LocalDirForAbsolutePaths>
     </CustomSourceDirectories>
+    <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
     <MainSourceDirectory>$(ProjectDir)</MainSourceDirectory>
     <ExportAdvancedBuildVariables>false</ExportAdvancedBuildVariables>
     <MemoryListSource>DeviceDefinition</MemoryListSource>
@@ -56,6 +57,7 @@
         <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
+      <TargetSpecificSettings />
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
       <ProjectGUID>396899ce-1e5d-4571-861d-c19d288f2051</ProjectGUID>
       <VirtualFolders />
@@ -82,6 +84,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -94,6 +97,120 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
+  <Configurations>
+    <VisualGDBConfiguration>
+      <PlatformName>Hardware</PlatformName>
+    </VisualGDBConfiguration>
+    <VisualGDBConfiguration>
+      <PlatformName>Simulation</PlatformName>
+      <ProjectSettingsOverride xsi:type="com.visualgdb.project.windows">
+        <CustomSourceDirectories>
+          <Directories />
+          <PathStyle>Unknown</PathStyle>
+        </CustomSourceDirectories>
+        <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
+        <MainSourceDirectory>$(ProjectDir)</MainSourceDirectory>
+      </ProjectSettingsOverride>
+      <BuildSettingsOverride xsi:type="com.visualgdb.build.cmake">
+        <BuildLogMode xsi:nil="true" />
+        <ToolchainID>
+          <ID>com.visualgdb.mingw32</ID>
+          <Version>
+            <GCC>9.1.0</GCC>
+            <GDB>8.3</GDB>
+            <Revision>1</Revision>
+          </Version>
+        </ToolchainID>
+        <RelativeSourceDirectory />
+        <ConfigurationType>DEBUG</ConfigurationType>
+        <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
+        <MakeCommandTemplate>
+          <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+          <Command>$(VISUALGDB_DIR)/ninja.exe</Command>
+          <WorkingDirectory>$(BuildDir)</WorkingDirectory>
+          <BackgroundMode xsi:nil="true" />
+        </MakeCommandTemplate>
+        <CMakeCommand>
+          <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+          <Command>$(SYSPROGS_CMAKE_PATH)</Command>
+          <BackgroundMode xsi:nil="true" />
+        </CMakeCommand>
+        <UpdateSourcesInCMakeFile>true</UpdateSourcesInCMakeFile>
+        <ExportCompileCommands>false</ExportCompileCommands>
+        <DisableToolchainFile>false</DisableToolchainFile>
+        <CMakeMakefileType>Ninja</CMakeMakefileType>
+        <DeployAsRoot>false</DeployAsRoot>
+        <CMakeCleanMode>RemoveBuildDirectory</CMakeCleanMode>
+        <UseCCache>false</UseCCache>
+        <ProjectModeSettings>
+          <ProjectItemSettings>
+            <GroupSourcesByTypes>true</GroupSourcesByTypes>
+            <GroupSourcesByPaths>true</GroupSourcesByPaths>
+            <GroupTargetsByPaths>true</GroupTargetsByPaths>
+            <FollowCMakeSourceGroups>false</FollowCMakeSourceGroups>
+            <AutoRefreshProject>true</AutoRefreshProject>
+            <AlwaysConsiderOutdated>false</AlwaysConsiderOutdated>
+            <SortTargetsByName>true</SortTargetsByName>
+            <RedundantTargetMode>HideOuterProjectTargets</RedundantTargetMode>
+            <SortSourcesByName>true</SortSourcesByName>
+            <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
+            <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
+          </ProjectItemSettings>
+          <TargetSpecificSettings />
+          <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
+          <ProjectGUID>396899ce-1e5d-4571-861d-c19d288f2051</ProjectGUID>
+          <VirtualFolders />
+          <ConfigurationNameCase>Upper</ConfigurationNameCase>
+          <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
+          <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
+        </ProjectModeSettings>
+      </BuildSettingsOverride>
+      <DebugSettingsOverride xsi:type="com.visualgdb.debug.local">
+        <AdditionalStartupCommands />
+        <AdditionalGDBSettings>
+          <Features>
+            <DisableAutoDetection>false</DisableAutoDetection>
+            <UseFrameParameter>false</UseFrameParameter>
+            <SimpleValuesFlagSupported>false</SimpleValuesFlagSupported>
+            <ListLocalsSupported>false</ListLocalsSupported>
+            <ByteLevelMemoryCommandsAvailable>false</ByteLevelMemoryCommandsAvailable>
+            <ThreadInfoSupported>false</ThreadInfoSupported>
+            <PendingBreakpointsSupported>false</PendingBreakpointsSupported>
+            <SupportTargetCommand>false</SupportTargetCommand>
+            <ReliableBreakpointNotifications>false</ReliableBreakpointNotifications>
+          </Features>
+          <EnableSmartStepping>false</EnableSmartStepping>
+          <FilterSpuriousStoppedNotifications>false</FilterSpuriousStoppedNotifications>
+          <ForceSingleThreadedMode>false</ForceSingleThreadedMode>
+          <UseAppleExtensions>false</UseAppleExtensions>
+          <CanAcceptCommandsWhileRunning>false</CanAcceptCommandsWhileRunning>
+          <MakeLogFile>false</MakeLogFile>
+          <IgnoreModuleEventsWhileStepping>true</IgnoreModuleEventsWhileStepping>
+          <UseRelativePathsOnly>false</UseRelativePathsOnly>
+          <ExitAction>None</ExitAction>
+          <DisableDisassembly>false</DisableDisassembly>
+          <ExamineMemoryWithXCommand>false</ExamineMemoryWithXCommand>
+          <StepIntoNewInstanceEntry>main</StepIntoNewInstanceEntry>
+          <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
+          <DisableSignals>false</DisableSignals>
+          <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+          <EnableNonStopMode>false</EnableNonStopMode>
+          <MaxBreakpointLimit>0</MaxBreakpointLimit>
+          <EnableVerboseMode>true</EnableVerboseMode>
+        </AdditionalGDBSettings>
+        <LaunchGDBSettings xsi:type="GDBLaunchParametersNewInstance">
+          <DebuggedProgram>$(SelectedCMakeTarget)</DebuggedProgram>
+          <GDBServerPort>2000</GDBServerPort>
+          <ProgramArguments>$(SelectedCMakeTargetArgs)</ProgramArguments>
+          <WorkingDirectory>$(SelectedCMakeTargetLaunchDir)</WorkingDirectory>
+          <ArgumentEscapingMode>Auto</ArgumentEscapingMode>
+        </LaunchGDBSettings>
+        <GenerateCtrlBreakInsteadOfCtrlC>false</GenerateCtrlBreakInsteadOfCtrlC>
+        <SuppressArgumentVariablesCheck>false</SuppressArgumentVariablesCheck>
+      </DebugSettingsOverride>
+    </VisualGDBConfiguration>
+  </Configurations>
+  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.embedded">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>

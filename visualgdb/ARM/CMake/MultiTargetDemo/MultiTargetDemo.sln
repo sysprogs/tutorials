@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
@@ -7,20 +7,32 @@ Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "MultiTargetDemo", "MultiTar
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|VisualGDB = Debug|VisualGDB
-		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
-		Release|VisualGDB = Release|VisualGDB
-		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+		Debug|Hardware = Debug|Hardware
+		MinSizeRel|Hardware = MinSizeRel|Hardware
+		Release|Hardware = Release|Hardware
+		RelWithDebInfo|Hardware = RelWithDebInfo|Hardware
+		Debug|Simulation = Debug|Simulation
+		MinSizeRel|Simulation = MinSizeRel|Simulation
+		Release|Simulation = Release|Simulation
+		RelWithDebInfo|Simulation = RelWithDebInfo|Simulation
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{396899CE-1E5D-4571-861D-C19D288F2051}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.Release|VisualGDB.Build.0 = Release|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
-		{396899CE-1E5D-4571-861D-C19D288F2051}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Debug|Hardware.ActiveCfg = Debug|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Debug|Hardware.Build.0 = Debug|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.MinSizeRel|Hardware.ActiveCfg = MinSizeRel|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.MinSizeRel|Hardware.Build.0 = MinSizeRel|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Release|Hardware.ActiveCfg = Release|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Release|Hardware.Build.0 = Release|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.RelWithDebInfo|Hardware.ActiveCfg = RelWithDebInfo|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.RelWithDebInfo|Hardware.Build.0 = RelWithDebInfo|Hardware
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Debug|Simulation.ActiveCfg = Debug|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Debug|Simulation.Build.0 = Debug|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.MinSizeRel|Simulation.ActiveCfg = MinSizeRel|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.MinSizeRel|Simulation.Build.0 = MinSizeRel|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Release|Simulation.ActiveCfg = Release|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.Release|Simulation.Build.0 = Release|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.RelWithDebInfo|Simulation.ActiveCfg = RelWithDebInfo|Simulation
+		{396899CE-1E5D-4571-861D-C19D288F2051}.RelWithDebInfo|Simulation.Build.0 = RelWithDebInfo|Simulation
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
