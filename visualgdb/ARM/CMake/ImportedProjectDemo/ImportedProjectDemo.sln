@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ImportedProjectDemo", "ImportedProjectDemo.vgdbcmake", "{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}"
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ImportedProjectDemo", "ImportedProjectDemo.vgdbcmake", "{D5C5E98F-F3BB-4C91-930F-E41964659EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +13,19 @@ Global
 		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.Release|VisualGDB.Build.0 = Release|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
-		{0C7DA0E8-44EC-47B0-97B3-8699F34FDC36}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{D5C5E98F-F3BB-4C91-930F-E41964659EE6}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {47616DB8-B19D-4AB0-BCE7-A080B40A3D63}
+		SolutionGuid = {D8A65634-F189-49FA-9884-DD962E45CBD6}
 	EndGlobalSection
 EndGlobal
