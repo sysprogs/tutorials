@@ -57,7 +57,7 @@
     </CMakeCommand>
     <UpdateSourcesInCMakeFile>false</UpdateSourcesInCMakeFile>
     <ExportCompileCommands>true</ExportCompileCommands>
-    <DisableToolchainFile>false</DisableToolchainFile>
+    <DisableToolchainFile>true</DisableToolchainFile>
     <DeployAsRoot>false</DeployAsRoot>
     <CMakeCleanMode>RemoveBuildDirectory</CMakeCleanMode>
     <UseCCache>false</UseCCache>
@@ -76,7 +76,7 @@
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
-      <ProjectGUID>d5c5e98f-f3bb-4c91-930f-e41964659ee6</ProjectGUID>
+      <ProjectGUID>d707a8d2-6fff-448f-a0cb-8ec23bb472bf</ProjectGUID>
       <VirtualFolders />
       <ConfigurationNameCase>Upper</ConfigurationNameCase>
       <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
