@@ -8,7 +8,7 @@
       <LocalDirForAbsolutePaths>$(ToolchainDir)</LocalDirForAbsolutePaths>
     </CustomSourceDirectories>
     <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
-    <MainSourceDirectory>C:\tutorials\visualgdb\ARM\CMake\ImportedProjectDemo\ExistingProject</MainSourceDirectory>
+    <MainSourceDirectory>$(ProjectDir)\ExistingProject</MainSourceDirectory>
     <ExportAdvancedBuildVariables>false</ExportAdvancedBuildVariables>
     <EmbeddedProfileFile>stm32.xml</EmbeddedProfileFile>
     <MemoryListSource>DeviceDefinition</MemoryListSource>
@@ -48,7 +48,7 @@
         <HostName>BuildMachine</HostName>
         <Transport>BuiltinShortcut</Transport>
       </RemoteHost>
-      <Command>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\CMake\bin\cmake.exe</Command>
+      <Command>$(SYSPROGS_CMAKE_PATH)</Command>
       <Environment>
         <Records />
         <EnvironmentSetupFiles />
