@@ -1,0 +1,4 @@
+on
+wait 1000
+off
+wait 500
