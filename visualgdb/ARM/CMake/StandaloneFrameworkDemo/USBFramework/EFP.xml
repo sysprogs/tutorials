@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<EmbeddedFrameworkPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PackageID>com.sysprogs.arm.stm32.usbdev.STM32F4</PackageID>
+  <PackageDescription>STM32 USB Device Library</PackageDescription>
+  <PackageVersion>1.0</PackageVersion>
+  <IsStandAlone>true</IsStandAlone>
+  <Frameworks>
+    <EmbeddedFramework>
+      <ID>com.sysprogs.arm.stm32.usbdev.STM32F4</ID>
+      <ClassID>com.sysprogs.arm.stm32.usbdev</ClassID>
+      <UserFriendlyName>STM32 USB Device Library</UserFriendlyName>
+      <AdditionalSourceFiles>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/AUDIO/Src/usbd_audio.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/BillBoard/Src/usbd_billboard.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CDC/Src/usbd_cdc.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_ECM/Src/usbd_cdc_ecm.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_RNDIS/Src/usbd_cdc_rndis.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CustomHID/Src/usbd_customhid.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/DFU/Src/usbd_dfu.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/HID/Src/usbd_hid.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc_bot.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc_data.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc_scsi.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Src/usbd_core.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Src/usbd_ctlreq.c</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Src/usbd_ioreq.c</string>
+      </AdditionalSourceFiles>
+      <AdditionalHeaderFiles>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/AUDIO/Inc/usbd_audio.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/BillBoard/Inc/usbd_billboard.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CDC/Inc/usbd_cdc.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_ECM/Inc/usbd_cdc_ecm.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_RNDIS/Inc/usbd_cdc_rndis.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/CustomHID/Inc/usbd_customhid.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/DFU/Inc/usbd_dfu.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/HID/Inc/usbd_hid.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc_bot.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc_data.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc_scsi.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Inc/usbd_core.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Inc/usbd_ctlreq.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Inc/usbd_def.h</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Inc/usbd_ioreq.h</string>
+      </AdditionalHeaderFiles>
+      <AdditionalIncludeDirs>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Core/Inc</string>
+        <string>$$SYS:FRAMEWORK_ROOT$$/Class/$$com.sysprogs.bspoptions.stm32.usb.devclass$$/Inc</string>
+      </AdditionalIncludeDirs>
+      <AdditionalPreprocessorMacros>
+        <string>USE_USB_$$com.sysprogs.bspoptions.stm32.usb.speed$$</string>
+      </AdditionalPreprocessorMacros>
+      <ConfigurableProperties>
+        <PropertyGroups>
+          <PropertyGroup>
+            <Name>USB Device</Name>
+            <UniqueID>com.sysprogs.bspoptions.stm32.usb.</UniqueID>
+            <Properties>
+              <PropertyEntry xsi:type="Enumerated">
+                <Name>USB Device Class</Name>
+                <UniqueID>devclass</UniqueID>
+                <OmitPrefixIfEmpty>false</OmitPrefixIfEmpty>
+                <SuggestionList>
+                  <Suggestion>
+                    <UserFriendlyName>Audio Device</UserFriendlyName>
+                    <InternalValue>AUDIO</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Billboard Device</UserFriendlyName>
+                    <InternalValue>BillBoard</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Communications Device (CDC)</UserFriendlyName>
+                    <InternalValue>CDC</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Ethernet Control Model (ECM)</UserFriendlyName>
+                    <InternalValue>CDC_ECM</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Remote NDIS (RNDIS)</UserFriendlyName>
+                    <InternalValue>CDC_RNDIS</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Custom Human Interface Device (CustomHID)</UserFriendlyName>
+                    <InternalValue>CustomHID</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Device Firmware Update (DFU)</UserFriendlyName>
+                    <InternalValue>DFU</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Human Interface Device (HID)</UserFriendlyName>
+                    <InternalValue>HID</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>Mass Storage (MSC)</UserFriendlyName>
+                    <InternalValue>MSC</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>None</UserFriendlyName>
+                    <InternalValue>none</InternalValue>
+                  </Suggestion>
+                </SuggestionList>
+                <DefaultEntryIndex>2</DefaultEntryIndex>
+                <AllowFreeEntry>false</AllowFreeEntry>
+              </PropertyEntry>
+              <PropertyEntry xsi:type="Enumerated">
+                <Name>USB Device Speed</Name>
+                <UniqueID>speed</UniqueID>
+                <OmitPrefixIfEmpty>false</OmitPrefixIfEmpty>
+                <SuggestionList>
+                  <Suggestion>
+                    <UserFriendlyName>USB 2.0 Full Speed</UserFriendlyName>
+                    <InternalValue>FS</InternalValue>
+                  </Suggestion>
+                  <Suggestion>
+                    <UserFriendlyName>USB 2.0 High Speed</UserFriendlyName>
+                    <InternalValue>HS</InternalValue>
+                  </Suggestion>
+                </SuggestionList>
+                <DefaultEntryIndex>0</DefaultEntryIndex>
+                <AllowFreeEntry>false</AllowFreeEntry>
+              </PropertyEntry>
+            </Properties>
+            <CollapsedByDefault>false</CollapsedByDefault>
+          </PropertyGroup>
+        </PropertyGroups>
+      </ConfigurableProperties>
+      <RequiredFrameworks>
+        <string>com.sysprogs.arm.stm32.hal</string>
+      </RequiredFrameworks>
+      <MCUFilterRegex>^STM32F4.*</MCUFilterRegex>
+      <DefaultEnabled>false</DefaultEnabled>
+      <ProjectFolderName>USB Device</ProjectFolderName>
+    </EmbeddedFramework>
+  </Frameworks>
+  <FileConditions>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>AUDIO</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/AUDIO/Inc/usbd_audio.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>AUDIO</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/AUDIO/Src/usbd_audio.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>BillBoard</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/BillBoard/Inc/usbd_billboard.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>BillBoard</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/BillBoard/Src/usbd_billboard.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CDC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CDC/Inc/usbd_cdc.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CDC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CDC/Src/usbd_cdc.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CDC_ECM</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_ECM/Inc/usbd_cdc_ecm.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CDC_ECM</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_ECM/Src/usbd_cdc_ecm.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CDC_RNDIS</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_RNDIS/Inc/usbd_cdc_rndis.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CDC_RNDIS</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CDC_RNDIS/Src/usbd_cdc_rndis.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CustomHID</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CustomHID/Inc/usbd_customhid.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>CustomHID</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/CustomHID/Src/usbd_customhid.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>DFU</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/DFU/Inc/usbd_dfu.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>DFU</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/DFU/Src/usbd_dfu.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>HID</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/HID/Inc/usbd_hid.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>HID</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/HID/Src/usbd_hid.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc_bot.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc_data.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Inc/usbd_msc_scsi.h</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc_bot.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc_data.c</FilePath>
+    </FileCondition>
+    <FileCondition>
+      <ConditionToInclude xsi:type="Equals">
+        <Expression>$$com.sysprogs.bspoptions.stm32.usb.devclass$$</Expression>
+        <ExpectedValue>MSC</ExpectedValue>
+        <IgnoreCase>false</IgnoreCase>
+      </ConditionToInclude>
+      <FilePath>$$SYS:FRAMEWORK_ROOT$$/Class/MSC/Src/usbd_msc_scsi.c</FilePath>
+    </FileCondition>
+  </FileConditions>
+</EmbeddedFrameworkPackage>
