@@ -7,19 +7,19 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
-		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
 		Release|VisualGDB = Release|VisualGDB
-		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+		Debug|Linux = Debug|Linux
+		Release|Linux = Release|Linux
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7686072A-5084-4976-A481-8E209B62044E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
 		{7686072A-5084-4976-A481-8E209B62044E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
-		{7686072A-5084-4976-A481-8E209B62044E}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
-		{7686072A-5084-4976-A481-8E209B62044E}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
 		{7686072A-5084-4976-A481-8E209B62044E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{7686072A-5084-4976-A481-8E209B62044E}.Release|VisualGDB.Build.0 = Release|VisualGDB
-		{7686072A-5084-4976-A481-8E209B62044E}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
-		{7686072A-5084-4976-A481-8E209B62044E}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{7686072A-5084-4976-A481-8E209B62044E}.Debug|Linux.ActiveCfg = Debug|Linux
+		{7686072A-5084-4976-A481-8E209B62044E}.Debug|Linux.Build.0 = Debug|Linux
+		{7686072A-5084-4976-A481-8E209B62044E}.Release|Linux.ActiveCfg = Release|Linux
+		{7686072A-5084-4976-A481-8E209B62044E}.Release|Linux.Build.0 = Release|Linux
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
