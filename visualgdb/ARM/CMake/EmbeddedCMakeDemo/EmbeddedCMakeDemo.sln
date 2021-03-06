@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "EmbeddedCMakeDemo", "EmbeddedCMakeDemo.vgdbcmake", "{B94A04DE-3B4D-4FA0-8CE6-532799903E84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{B94A04DE-3B4D-4FA0-8CE6-532799903E84}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38C67EF8-D7D0-4D84-AD87-71271326656E}
+	EndGlobalSection
+EndGlobal

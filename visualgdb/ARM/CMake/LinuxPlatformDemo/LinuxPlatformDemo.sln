@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "LinuxPlatformDemo", "LinuxPlatformDemo.vgdbcmake", "{7686072A-5084-4976-A481-8E209B62044E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		Debug|Linux = Debug|Linux
+		Release|Linux = Release|Linux
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7686072A-5084-4976-A481-8E209B62044E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{7686072A-5084-4976-A481-8E209B62044E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{7686072A-5084-4976-A481-8E209B62044E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{7686072A-5084-4976-A481-8E209B62044E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{7686072A-5084-4976-A481-8E209B62044E}.Debug|Linux.ActiveCfg = Debug|Linux
+		{7686072A-5084-4976-A481-8E209B62044E}.Debug|Linux.Build.0 = Debug|Linux
+		{7686072A-5084-4976-A481-8E209B62044E}.Release|Linux.ActiveCfg = Release|Linux
+		{7686072A-5084-4976-A481-8E209B62044E}.Release|Linux.Build.0 = Release|Linux
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB79336F-51EC-40DB-80F3-AD3018FE985A}
+	EndGlobalSection
+EndGlobal
