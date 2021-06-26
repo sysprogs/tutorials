@@ -14,7 +14,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{CF653EAD-DD63-46CE-A707-E8BBACCE5CF6}</ProjectGuid>
     <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
-    <BSP_VERSION>2019.12</BSP_VERSION>
+    <BSP_VERSION>2021.02</BSP_VERSION>
     <InPlaceBSPSubdir />
     <RelativeBSPPath />
   </PropertyGroup>
@@ -34,18 +34,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <GNUConfigurationType>Debug</GNUConfigurationType>
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
-    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
-    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <Link>
       <LinkerScript>STM32H747XIHx_FLASH_CM7.ld</LinkerScript>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>CM7/Inc/;Common/Inc/;Common/Inc/openamp/;$(BSP_ROOT)/VendorSamples/H7/Drivers/BSP/STM32H747I-Discovery;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include;$(BSP_ROOT)/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>CM7/Inc/;Common/Inc/;Common/Inc/openamp/;$(BSP_ROOT)/VendorSamples/H7/Drivers/BSP/STM32H747I-DISCO;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include;$(BSP_ROOT)/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;CORE_CM7;VIRTIO_MASTER_ONLY;NO_ATOMIC_64_SUPPORT;METAL_MAX_DEVICE_REGIONS=2;METAL_INTERNAL;RPMSG_BUFFER_SIZE=100;STM32H747xx</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -54,7 +54,7 @@
       <LinkerScript>STM32H747XIHx_FLASH_CM7.ld</LinkerScript>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>CM7/Inc/;Common/Inc/;Common/Inc/openamp/;$(BSP_ROOT)/VendorSamples/H7/Drivers/BSP/STM32H747I-Discovery;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include;$(BSP_ROOT)/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>CM7/Inc/;Common/Inc/;Common/Inc/openamp/;$(BSP_ROOT)/VendorSamples/H7/Drivers/BSP/STM32H747I-DISCO;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include;$(BSP_ROOT)/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/open-amp/lib/include;$(BSP_ROOT)/VendorSamples/H7/Middlewares/Third_Party/OpenAMP/libmetal/lib/include;$(BSP_ROOT)/STM32H7xxxx/CMSIS_HAL/Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;CORE_CM7;VIRTIO_MASTER_ONLY;NO_ATOMIC_64_SUPPORT;METAL_MAX_DEVICE_REGIONS=2;METAL_INTERNAL;RPMSG_BUFFER_SIZE=100;STM32H747xx</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -72,7 +72,7 @@
     <ClCompile Include="Common\Src\mbox_hsem.c" />
     <ClCompile Include="Common\Src\openamp.c" />
     <ClCompile Include="Common\Src\rsc_table.c" />
-    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Drivers\BSP\STM32H747I-Discovery\stm32h747i_discovery.c" />
+    <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Drivers\BSP\STM32H747I-DISCO\stm32h747i_discovery.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c" />
@@ -85,6 +85,8 @@
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c" />
     <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\system\generic\condition.c" />
     <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\device.c" />
     <ClCompile Include="$(BSP_ROOT)\VendorSamples\H7\Middlewares\Third_Party\OpenAMP\libmetal\lib\init.c" />

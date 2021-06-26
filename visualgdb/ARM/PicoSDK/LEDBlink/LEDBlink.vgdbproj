@@ -1,30 +1,72 @@
 <?xml version="1.0"?>
 <VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ConfigurationName>Debug</ConfigurationName>
-  <Project xsi:type="com.visualgdb.project.embedded">
+  <Project xsi:type="com.visualgdb.project.external.raspberry_pi.pico">
     <CustomSourceDirectories>
       <Directories />
-      <PathStyle>MinGWUnixSlash</PathStyle>
-      <LocalDirForAbsolutePaths>$(ToolchainDir)</LocalDirForAbsolutePaths>
+      <PathStyle>Unknown</PathStyle>
     </CustomSourceDirectories>
     <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
-    <MainSourceDirectory>$(ProjectDir)</MainSourceDirectory>
-    <ExportAdvancedBuildVariables>false</ExportAdvancedBuildVariables>
-    <SkipImportedProjectChecks>false</SkipImportedProjectChecks>
-    <EmbeddedProfileFile>stm32.xml</EmbeddedProfileFile>
-    <MemoryListSource>DeviceDefinition</MemoryListSource>
   </Project>
-  <Build xsi:type="com.visualgdb.build.msbuild">
+  <Build xsi:type="com.visualgdb.build.cmake">
     <BuildLogMode xsi:nil="true" />
     <ToolchainID>
+      <ID>com.visualgdb.arm-eabi</ID>
       <Version>
-        <Revision>0</Revision>
+        <GCC>9.3.1</GCC>
+        <GDB>9.2.0</GDB>
+        <Revision>2</Revision>
       </Version>
     </ToolchainID>
-    <ProjectFile>OpenAMPDemo_M4.vcxproj</ProjectFile>
-    <ParallelJobCount>0</ParallelJobCount>
-    <SuppressDirectoryChangeMessages>true</SuppressDirectoryChangeMessages>
-    <BuildAsRoot>false</BuildAsRoot>
+    <RelativeSourceDirectory />
+    <ConfigurationType>DEBUG</ConfigurationType>
+    <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
+    <MakeCommandTemplate>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>$(VISUALGDB_DIR)/ninja.exe</Command>
+      <WorkingDirectory>$(BuildDir)</WorkingDirectory>
+      <BackgroundMode xsi:nil="true" />
+    </MakeCommandTemplate>
+    <CMakeCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>$(SYSPROGS_CMAKE_PATH)</Command>
+      <BackgroundMode xsi:nil="true" />
+    </CMakeCommand>
+    <UpdateSourcesInCMakeFile>true</UpdateSourcesInCMakeFile>
+    <ExportCompileCommands>false</ExportCompileCommands>
+    <DisableToolchainFile>false</DisableToolchainFile>
+    <CMakeMakefileType>Ninja</CMakeMakefileType>
+    <DeployAsRoot>false</DeployAsRoot>
+    <CMakeCleanMode>RemoveBuildDirectory</CMakeCleanMode>
+    <UseCCache>false</UseCCache>
+    <ProjectModeSettings>
+      <ProjectItemSettings>
+        <GroupSourcesByTypes>true</GroupSourcesByTypes>
+        <GroupSourcesByPaths>true</GroupSourcesByPaths>
+        <GroupTargetsByPaths>true</GroupTargetsByPaths>
+        <FollowCMakeSourceGroups>false</FollowCMakeSourceGroups>
+        <AutoRefreshProject>true</AutoRefreshProject>
+        <AlwaysConsiderOutdated>false</AlwaysConsiderOutdated>
+        <SortTargetsByName>true</SortTargetsByName>
+        <RedundantTargetMode>HideOuterProjectTargets</RedundantTargetMode>
+        <SortSourcesByName>true</SortSourcesByName>
+        <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
+        <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
+      </ProjectItemSettings>
+      <TargetSpecificSettings />
+      <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
+      <ProjectGUID>3addeeb3-962a-4129-a729-aca379eeb6e5</ProjectGUID>
+      <VirtualFolders />
+      <ConfigurationNameCase>Upper</ConfigurationNameCase>
+      <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
+      <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
+      <Extension xsi:type="com.visualgdb.project.external.raspberry_pi.pico.extension.cmake">
+        <SDK>
+          <Source>Package</Source>
+          <Version>1.0.1</Version>
+        </SDK>
+        <UnoptimizeDebugBuilds>true</UnoptimizeDebugBuilds>
+      </Extension>
+    </ProjectModeSettings>
   </Build>
   <CustomBuild>
     <PreSyncActions />
@@ -57,7 +99,6 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
-  <BuildContextDirectory>VisualGDB\VisualGDBCache</BuildContextDirectory>
   <Configurations />
   <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.embedded">
@@ -94,11 +135,11 @@
       <EnableVerboseMode>true</EnableVerboseMode>
     </AdditionalGDBSettings>
     <DebugMethod>
-      <ID>com.sysprogs.arm.openocd.st</ID>
-      <InterfaceID>stlink-st</InterfaceID>
-      <InterfaceSerialNumber>003B00433137511339383538</InterfaceSerialNumber>
+      <ID>com.sysprogs.arm.openocd</ID>
+      <InterfaceID>olimex-arm-usb-ocd-h</InterfaceID>
+      <InterfaceSerialNumber>OLZ6HS42</InterfaceSerialNumber>
       <Configuration xsi:type="com.visualgdb.edp.openocd.settings">
-        <CommandLine>-f interface/stlink-dap.cfg --set "CHIPNAME $$SYS:MCU_ID$$Xx" -f target/stm32h7x_dual_core.cfg -c init -c "reset init"</CommandLine>
+        <CommandLine>-f interface/ftdi/olimex-arm-usb-ocd-h.cfg -c "adapter speed 3000" -f transport/olimex-arm-jtag-swd.cfg -c "transport select swd" -f target/rp2040.cfg -c init -c "reset init"</CommandLine>
         <ExtraParameters>
           <Frequency xsi:nil="true" />
           <BoostedFrequency xsi:nil="true" />
@@ -110,13 +151,14 @@
           <string>set remotetimeout 60</string>
           <string>target remote :$$SYS:GDB_PORT$$</string>
           <string>mon halt</string>
+          <string>mon reset init</string>
           <string>load</string>
         </StartupCommands>
         <ProgramFLASHUsingExternalTool>false</ProgramFLASHUsingExternalTool>
         <PreferredGDBPort>0</PreferredGDBPort>
         <PreferredTelnetPort>0</PreferredTelnetPort>
         <AlwaysPassSerialNumber>false</AlwaysPassSerialNumber>
-        <SelectedCoreIndex>1</SelectedCoreIndex>
+        <SelectedCoreIndex xsi:nil="true" />
       </Configuration>
     </DebugMethod>
     <AutoDetectRTOS>true</AutoDetectRTOS>
