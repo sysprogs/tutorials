@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "BlueNRG_LP_Demo", "BlueNRG_LP_Demo.vgdbcmake", "{B2BEB710-CB35-46E7-81A2-66A308670E4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{B2BEB710-CB35-46E7-81A2-66A308670E4D}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89EF4632-18A9-4692-B877-F3031D19CDFE}
+	EndGlobalSection
+EndGlobal
