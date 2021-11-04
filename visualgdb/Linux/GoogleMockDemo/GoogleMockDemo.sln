@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "GoogleMockDemo", "GoogleMockDemo.vgdbcmake", "{36F39809-DCCD-4F87-BF80-104B36CE4243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{36F39809-DCCD-4F87-BF80-104B36CE4243}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA8DAFE8-AF57-44A8-AA3B-1BFE903E54DC}
+	EndGlobalSection
+EndGlobal
