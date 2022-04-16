@@ -7,6 +7,7 @@ find_bsp(
 	VERSION 3.3.0
 	MCU R7FA2E1A92DFM
 	FRAMEWORKS
+		com.renesas.arm.Renesas.HAL_Drivers.r_adc
 		com.renesas.arm.Arm.CMSIS.CMSIS5.CoreM
 		com.renesas.arm.Renesas.Common.fsp_common
 		com.renesas.arm.Renesas.BSP.device.mcu
@@ -39,5 +40,6 @@ add_bsp_based_executable(
 		ra_gen/main.cpp
 		ra_gen/vector_data.cpp
 		ra_gen/vector_data.h
+		ra_cfg/fsp_cfg/r_adc_cfg.h
 	GENERATE_BIN
 	GENERATE_MAP)
