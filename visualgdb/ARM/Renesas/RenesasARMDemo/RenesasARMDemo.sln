@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "RenesasARMDemo", "RenesasARMDemo.vgdbcmake", "{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{FF972F6B-2BF6-4853-82AD-D520E5F55E7D}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74B93152-E553-4B7C-926C-9890985489C3}
+	EndGlobalSection
+EndGlobal
