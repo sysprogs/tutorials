@@ -7,15 +7,16 @@ find_bsp(
 	VERSION 3.3.0
 	MCU R7FA2E1A92DFM
 	FRAMEWORKS
-		com.renesas.arm.Renesas.Common.fsp_common
-		com.renesas.arm.Renesas.HAL_Drivers.r_ioport
 		com.renesas.arm.Arm.CMSIS.CMSIS5.CoreM
-		com.renesas.arm.Renesas.BSP.Board.default_board
+		com.renesas.arm.Renesas.Common.fsp_common
 		com.renesas.arm.Renesas.BSP.device.mcu
 		com.renesas.arm.Renesas.BSP.device.family
 		com.renesas.arm.Renesas.BSP.fsp.family
+		com.renesas.arm.Renesas.HAL_Drivers.r_ioport
+		com.renesas.arm.Renesas.BSP.Board.default_board
 	HWREGISTER_LIST_FILE DeviceDefinitions/R7FA2E1A9.xml
-	DISABLE_GNU_EXTENSIONS)
+	DISABLE_GNU_EXTENSIONS
+	FWCONFIGURATION "com.renesas.ra.device.pins.mode.p000=(uint32_t) IOPORT_CFG_PORT_DIRECTION_OUTPUT | (uint32_t) IOPORT_CFG_PORT_OUTPUT_HIGH")
 
 add_bsp_based_executable(
 	NAME RenesasARMDemo
