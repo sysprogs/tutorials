@@ -7,24 +7,6 @@ pico_sdk_init()
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
-add_executable(picow_freertos_iperf_server_nosys
-        picow_freertos_iperf.c
-        )
-target_compile_definitions(picow_freertos_iperf_server_nosys PRIVATE
-        WIFI_SSID=\"${WIFI_SSID}\"
-        WIFI_PASSWORD=\"${WIFI_PASSWORD}\"
-        )
-target_include_directories(picow_freertos_iperf_server_nosys PRIVATE
-        ${CMAKE_CURRENT_LIST_DIR}
-        ${CMAKE_CURRENT_LIST_DIR}/../.. # for our common lwipopts
-        )
-target_link_libraries(picow_freertos_iperf_server_nosys
-        pico_cyw43_arch_lwip_threadsafe_background
-        pico_stdlib
-        pico_lwip_iperf
-        FreeRTOS-Kernel-Heap4 # FreeRTOS kernel and dynamic heap
-        )
-pico_add_extra_outputs(picow_freertos_iperf_server_nosys)
 
 add_executable(picow_freertos_iperf_server_sys
         picow_freertos_iperf.c
