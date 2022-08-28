@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "FreeRTOSDemo", "FreeRTOSDemo.vgdbproj", "{B817FF8F-AF46-4A1D-9837-F07626121CC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{B817FF8F-AF46-4A1D-9837-F07626121CC5}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6375938-3D64-4A0B-8CC2-928D8D15DD24}
+	EndGlobalSection
+EndGlobal
