@@ -17,6 +17,7 @@
         <Revision>1</Revision>
       </Version>
     </ToolchainID>
+    <RelativeSourceDirectory />
     <ConfigurationType>DEBUG</ConfigurationType>
     <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
     <MakeCommandTemplate>
@@ -51,6 +52,7 @@
         <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
+      <TargetSpecificSettings />
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
       <ProjectGUID>b817ff8f-af46-4a1d-9837-f07626121cc5</ProjectGUID>
       <VirtualFolders />
@@ -68,6 +70,14 @@
           <Password>sysprogs</Password>
         </Configuration>
         <UnoptimizeDebugBuilds>true</UnoptimizeDebugBuilds>
+        <ReferencedFrameworks>
+          <IDs>
+            <string>com.sysprogs.embedded.semihosting_and_profiler</string>
+          </IDs>
+          <Config>
+            <Entries />
+          </Config>
+        </ReferencedFrameworks>
       </Extension>
     </ProjectModeSettings>
   </Build>
@@ -89,6 +99,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -101,6 +112,8 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
+  <Configurations />
+  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.embedded">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>

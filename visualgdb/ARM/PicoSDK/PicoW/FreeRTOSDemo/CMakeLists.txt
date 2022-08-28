@@ -2,9 +2,13 @@ cmake_minimum_required(VERSION 3.12)
 include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
 
 project(FreeRTOSDemo C CXX ASM)
+include(PicoSDKConfig.cmake)
 add_subdirectory("${PICO_SDK_PATH}/FreeRTOS/portable/ThirdParty/GCC/RP2040" FREERTOS_KERNEL)
 pico_sdk_init()
 
+if(DEFINED SYSPROGS_FRAMEWORKS_FILE)
+include(${SYSPROGS_FRAMEWORKS_FILE})
+endif()
 SET(CMAKE_C_USE_RESPONSE_FILE_FOR_OBJECTS 1)
 
 set(CMAKE_C_STANDARD 11)
@@ -25,6 +29,7 @@ target_link_libraries(tcp_demo
         pico_cyw43_arch_lwip_sys_freertos
         pico_stdlib
         pico_lwip_iperf
-        FreeRTOS-Kernel-Heap4)
+        FreeRTOS-Kernel-Heap4
+        Profiler)
 
 pico_add_extra_outputs(tcp_demo)
