@@ -6,6 +6,7 @@
 #include "lwip/netif.h"
 
 #include "FreeRTOS.h"
+#include "semphr.h"
 #include "task.h"
 
 #include <lwip/sockets.h>
@@ -64,14 +65,26 @@ static int handle_single_command(int conn_sock)
     return 0;
 }
 
-static void handle_connection(int conn_sock)
+const int kConnectionThreadCount = 3;
+static xSemaphoreHandle s_ConnectionSemaphore;
+
+static void do_handle_connection(void *arg)
 {
+    int conn_sock = (int)arg;
     while (!handle_single_command(conn_sock))
     {
-        
     }
 
     closesocket(conn_sock);
+    xSemaphoreGive(s_ConnectionSemaphore);
+    vTaskDelete(NULL);
+}
+
+static void handle_connection(int conn_sock)
+{
+    TaskHandle_t task;
+    xSemaphoreTake(s_ConnectionSemaphore, portMAX_DELAY);
+    xTaskCreate(do_handle_connection, "Connection Thread", configMINIMAL_STACK_SIZE, (void *)conn_sock, TEST_TASK_PRIORITY, &task);
 }
 
 static void run_server()
@@ -97,7 +110,7 @@ static void run_server()
         return;
     }
 
-    if (listen(server_sock, 1) < 0)
+    if (listen(server_sock, kConnectionThreadCount * 2) < 0)
     {
         printf("Unable to listen on socket: error %d\n", errno);
         return;
@@ -110,13 +123,8 @@ static void run_server()
         struct sockaddr_storage remote_addr;
         socklen_t len = sizeof(remote_addr);
         int conn_sock = accept(server_sock, (struct sockaddr *)&remote_addr, &len);
-        if (conn_sock < 0)
-        {
-            printf("Unable to accept incoming connection: error %d\n", errno);
-            return;
-        }
-
-        handle_connection(conn_sock);
+        if (conn_sock >= 0)
+            handle_connection(conn_sock);
     }
 }
 
@@ -142,6 +150,7 @@ static void main_task(__unused void *params)
 
     run_server();
     cyw43_arch_deinit();
+    vTaskDelete(NULL);
 }
 
 int main(void)
@@ -150,5 +159,7 @@ int main(void)
 
     TaskHandle_t task;
     xTaskCreate(main_task, "MainThread", configMINIMAL_STACK_SIZE, NULL, TEST_TASK_PRIORITY, &task);
+    s_ConnectionSemaphore = xSemaphoreCreateCounting(kConnectionThreadCount, kConnectionThreadCount);
+
     vTaskStartScheduler();
 }
