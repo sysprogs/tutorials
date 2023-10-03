@@ -10,5 +10,15 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
-add_executable(Qt5CMakeDemo Qt5CMakeDemo.cpp MainWindow.cpp MainWindow.ui)
+qt_add_resources(ALL_RESOURCES test.qrc)
+
+add_executable(Qt5CMakeDemo
+	Qt5CMakeDemo.cpp
+	MainWindow.cpp
+	MainWindow.ui
+	${ALL_RESOURCES}
+	NewDialog.cpp
+	NewDialog.h
+	NewDialog.ui)
+
 target_link_libraries(Qt5CMakeDemo Qt5::Widgets "${LIBRARIES_FROM_REFERENCES}")

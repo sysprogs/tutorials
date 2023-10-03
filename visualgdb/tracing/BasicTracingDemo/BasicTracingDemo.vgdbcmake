@@ -183,9 +183,10 @@
       <TracingDriverConfiguration>
         <InstructionSet>THUMB2</InstructionSet>
       </TracingDriverConfiguration>
-      <WorkArea xsi:type="AtEndOfRAM">
-        <EndOfStackSymbol>_estack</EndOfStackSymbol>
-        <WorkAreaSize>4096</WorkAreaSize>
+      <WorkArea xsi:type="AfterData">
+        <EndSymbolName>end</EndSymbolName>
+        <LastSectionName>.bss</LastSectionName>
+        <WorkAreaSize>16384</WorkAreaSize>
       </WorkArea>
       <StaticTracePrograms xsi:type="AfterSection">
         <SectionName>.text</SectionName>
