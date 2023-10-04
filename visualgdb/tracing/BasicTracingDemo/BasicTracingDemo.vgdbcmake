@@ -18,9 +18,9 @@
     <ToolchainID>
       <ID>com.visualgdb.arm-eabi</ID>
       <Version>
-        <GCC>10.3.1</GCC>
-        <GDB>10.2.90</GDB>
-        <Revision>1</Revision>
+        <GCC>12.2.1</GCC>
+        <GDB>12.2</GDB>
+        <Revision>2</Revision>
       </Version>
     </ToolchainID>
     <RelativeSourceDirectory />
@@ -186,7 +186,6 @@
       <WorkArea xsi:type="AfterData">
         <EndSymbolName>end</EndSymbolName>
         <LastSectionName>.bss</LastSectionName>
-        <WorkAreaSize>16384</WorkAreaSize>
       </WorkArea>
       <StaticTracePrograms xsi:type="AfterSection">
         <SectionName>.text</SectionName>
@@ -202,7 +201,14 @@
         <LastSyscall>192</LastSyscall>
         <InterruptVectorTableSymbol>g_pfnVectors</InterruptVectorTableSymbol>
       </TracepointMechanism>
+      <TraceProgramOptimization>Size</TraceProgramOptimization>
+      <OutputMode>NonBlocking</OutputMode>
+      <AssumeFramePointerIsValid>true</AssumeFramePointerIsValid>
+      <InstrumentWithNoFeasibleTracepoints>false</InstrumentWithNoFeasibleTracepoints>
       <MaximumStringLength>255</MaximumStringLength>
+      <DeferVectorTablePatching>true</DeferVectorTablePatching>
+      <ShowAdvancedConfiguration>false</ShowAdvancedConfiguration>
+      <WorkAreaSize>4096</WorkAreaSize>
     </SoftwareTracingSettings>
     <CheckInterfaceDrivers>true</CheckInterfaceDrivers>
   </Debug>
