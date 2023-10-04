@@ -1,0 +1,1 @@
+"%VISUALGDB_DIR%\VisualGDB.exe" /trace FreeRTOSTracingDemo.vgdbcmake /traceconfig:TracepointSets\UARTFunctions.xml /tracereport:UARTFunctions.vgdbtrace /xmltracereport:UARTFunctions.xml /targetpath:build\VisualGDB\Debug\FreeRTOSTracingDemo
