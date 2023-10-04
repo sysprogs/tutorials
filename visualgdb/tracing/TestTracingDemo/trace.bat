@@ -1,0 +1,1 @@
+"%VISUALGDB_DIR%\VisualGDB.exe" /runtests TestTracingDemo.vgdbcmake /output:TestTracingDemo.xml /traceconfig:TracepointSets\MathFunctions.xml /tracereport:MathFunctions.vgdbtrace /xmltracereport:MathFunctions.xml /targetpath:build\VisualGDB\Debug\TestTracingDemo

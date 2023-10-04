@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<TestRunReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TestRuns>
+    <TestRun>
+      <TestID>DemoTestGroup::MathTest</TestID>
+      <Output />
+      <TestLocation>E:\tutorials\visualgdb\tracing\TestTracingDemo\TestTracingDemoTests.cpp:67</TestLocation>
+      <TestName>DemoTestGroup::MathTest</TestName>
+      <Outcome>Succeeded</Outcome>
+      <Duration>5</Duration>
+      <Details />
+    </TestRun>
+  </TestRuns>
+  <Name>TestTracingDemo</Name>
+</TestRunReport>
