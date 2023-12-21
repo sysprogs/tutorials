@@ -103,7 +103,7 @@ static void LED_Thread1(void const *argument)
     	tmp = g_Sum;
     	g_Sum = tmp + 1;
     	
-    	if (g_Sum != (g_Counter1 + g_Counter2))
+    	if (((g_Counter1 + g_Counter2) - g_Sum) > 1)
         	asm("bkpt 255");
 	}
 }
@@ -117,7 +117,7 @@ static void LED_Thread2(void const *argument)
     	tmp = g_Sum;
     	g_Sum = tmp + 1;
     	
-    	if (g_Sum != (g_Counter1 + g_Counter2))
+    	if (((g_Counter1 + g_Counter2) - g_Sum) > 1)
         	asm("bkpt 255");
 	}
 }

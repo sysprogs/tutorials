@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "FastEventTracingDemo", "FastEventTracingDemo.vgdbcmake", "{48075B00-6A58-49B0-BA23-C8A82F288001}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{48075B00-6A58-49B0-BA23-C8A82F288001}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

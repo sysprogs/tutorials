@@ -8,15 +8,13 @@ set(_core_includes
 	E:/SDKs/atmel-software-package/target/common
 	E:/SDKs/atmel-software-package/target/sam9xx5
 	E:/SDKs/atmel-software-package/drivers
-	E:/SDKs/atmel-software-package/lib
-	"")
+	E:/SDKs/atmel-software-package/lib)
 
 set(_core_defines
 	printf=iprintf
 	TRACE_LEVEL=5
 	VARIANT_DDRAM
 	CONFIG_ARCH_ARMV5TE
-	""
 	CONFIG_ARCH_ARM
 	CONFIG_SOC_SAM9XX5
 	CONFIG_CHIP_SAM9G25
