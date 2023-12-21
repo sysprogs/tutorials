@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<TestRunReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TestRuns>
+    <TestRun>
+      <TestID>DemoTestGroup::SuccessfulTest2</TestID>
+      <Output>
+        <string>Hello from Test #2.</string>
+      </Output>
+      <TestLocation>E:\tutorials\visualgdb\ARM\UnitTests\EmbeddedCppUTestDemo\EmbeddedCppUTestDemoTests.cpp:26</TestLocation>
+      <TestName>DemoTestGroup::SuccessfulTest2</TestName>
+      <Outcome>Succeeded</Outcome>
+      <Duration>8</Duration>
+      <Details />
+    </TestRun>
+    <TestRun>
+      <TestID>DemoTestGroup::SuccessfulTest1</TestID>
+      <Output>
+        <string>
+../../../EmbeddedCppUTestDemoTests.cpp:22 Hello from Test #1.</string>
+      </Output>
+      <TestLocation>E:\tutorials\visualgdb\ARM\UnitTests\EmbeddedCppUTestDemo\EmbeddedCppUTestDemoTests.cpp:19</TestLocation>
+      <TestName>DemoTestGroup::SuccessfulTest1</TestName>
+      <Outcome>Succeeded</Outcome>
+      <Duration>0</Duration>
+      <Details />
+    </TestRun>
+    <TestRun>
+      <TestID>DemoTestGroup::FailingTest</TestID>
+      <Output>
+        <string>
+../../../EmbeddedCppUTestDemoTests.cpp:16: error: Failure in TEST(DemoTestGroup, FailingTest)
+	expected &lt;1 0x1&gt;
+	but was  &lt;2 0x2&gt;
+
+.</string>
+      </Output>
+      <TestLocation>E:\tutorials\visualgdb\ARM\UnitTests\EmbeddedCppUTestDemo\EmbeddedCppUTestDemoTests.cpp:13</TestLocation>
+      <TestName>DemoTestGroup::FailingTest</TestName>
+      <Outcome>Failed</Outcome>
+      <Duration>159</Duration>
+      <Details>
+        <TestObject xsi:type="CallStack">
+          <Frames>
+            <CodeLocation>
+              <File>E:\tutorials\visualgdb\ARM\UnitTests\EmbeddedCppUTestDemo\EmbeddedCppUTestDemoTests.cpp</File>
+              <Function>TEST_DemoTestGroup_FailingTest_Test::testBody()</Function>
+              <Line>16</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\Utest.cpp</File>
+              <Function>helperDoTestBody</Function>
+              <Line>93</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\Platforms\Embedded\UtestPlatformEmbedded.cpp</File>
+              <Function>PlatformSpecificSetJmpImplementation</Function>
+              <Line>144</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\Utest.cpp</File>
+              <Function>Utest::run()</Function>
+              <Line>599</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\Utest.cpp</File>
+              <Function>UtestShell::runOneTestInCurrentProcess(TestPlugin*, TestResult&amp;)</Function>
+              <Line>211</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\Utest.cpp</File>
+              <Function>helperDoRunOneTestInCurrentProcess</Function>
+              <Line>118</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\Platforms\Embedded\UtestPlatformEmbedded.cpp</File>
+              <Function>PlatformSpecificSetJmpImplementation</Function>
+              <Line>144</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\Utest.cpp</File>
+              <Function>UtestShell::runOneTest(TestPlugin*, TestResult&amp;)</Function>
+              <Line>185</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\TestRegistry.cpp</File>
+              <Function>TestRegistry::runAllTests(TestResult&amp;)</Function>
+              <Line>87</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\CommandLineTestRunner.cpp</File>
+              <Function>CommandLineTestRunner::runAllTests()</Function>
+              <Line>124</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\CommandLineTestRunner.cpp</File>
+              <Function>CommandLineTestRunner::runAllTestsMain()</Function>
+              <Line>83</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>C:\Users\virtual.SYSPROGS\AppData\Local\VisualGDB\TestFrameworks\com.sysprogs.unittest.CppUTest\src\CppUTest\CommandLineTestRunner.cpp</File>
+              <Function>CommandLineTestRunner::RunAllTests(int, char const**)</Function>
+              <Line>52</Line>
+            </CodeLocation>
+            <CodeLocation>
+              <File>E:\tutorials\visualgdb\ARM\UnitTests\EmbeddedCppUTestDemo\EmbeddedCppUTestDemo.cpp</File>
+              <Function>main</Function>
+              <Line>18</Line>
+            </CodeLocation>
+          </Frames>
+        </TestObject>
+        <TestObject xsi:type="ErrorSummary">
+          <Summary>expected &lt;1 0x1&gt;
+	but was  &lt;2 0x2&gt;</Summary>
+        </TestObject>
+      </Details>
+    </TestRun>
+  </TestRuns>
+  <Name>EmbeddedCppUTestDemo</Name>
+</TestRunReport>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "EmbeddedCppUTestDemo", "EmbeddedCppUTestDemo.vgdbcmake", "{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{AAAE5519-3158-4CB9-9185-A3FA15D1FE06}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
