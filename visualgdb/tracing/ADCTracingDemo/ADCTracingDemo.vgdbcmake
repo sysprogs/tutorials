@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <VisualGDBProjectSettings2 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <ConfigurationName>Debug</ConfigurationName>
   <Project xsi:type="com.visualgdb.project.embedded">
     <CustomSourceDirectories>
       <Directories />
@@ -59,6 +58,7 @@
         <BuildAllTargetsInSubdir>false</BuildAllTargetsInSubdir>
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
+      <TargetSpecificSettings />
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
       <ProjectGUID>45444f3f-92de-4a64-840e-56949d0d329a</ProjectGUID>
       <VirtualFolders />
@@ -85,6 +85,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -97,6 +98,8 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
+  <Configurations />
+  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.embedded">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>
@@ -178,8 +181,27 @@
     <SoftwareTracingSettings>
       <TraceWhileDebugging>true</TraceWhileDebugging>
       <AutoStart>false</AutoStart>
+      <TracingDriverID>com.sysprogs.tracing.driver.arm_cortex</TracingDriverID>
+      <TracingDriverConfiguration>
+        <InstructionSet>THUMB2</InstructionSet>
+      </TracingDriverConfiguration>
+      <WorkArea xsi:type="AtEndOfRAM">
+        <EndOfStackSymbol>_estack</EndOfStackSymbol>
+      </WorkArea>
+      <StaticTracePrograms xsi:type="AfterSection">
+        <SectionName>.text</SectionName>
+        <AddressLimit>18446744073709551615</AddressLimit>
+        <SectionGap>1048576</SectionGap>
+        <MaxSize>1048576</MaxSize>
+        <Alignment>64</Alignment>
+      </StaticTracePrograms>
       <DynamicProgramAreaSize>0</DynamicProgramAreaSize>
       <SkipInitiallyDisabledTracepoints>false</SkipInitiallyDisabledTracepoints>
+      <TracepointMechanism xsi:type="SystemCalls">
+        <FirstSyscall>128</FirstSyscall>
+        <LastSyscall>192</LastSyscall>
+        <InterruptVectorTableSymbol>g_pfnVectors</InterruptVectorTableSymbol>
+      </TracepointMechanism>
       <TraceProgramOptimization>Size</TraceProgramOptimization>
       <OutputMode>NonBlocking</OutputMode>
       <AssumeFramePointerIsValid>true</AssumeFramePointerIsValid>
@@ -187,7 +209,7 @@
       <MaximumStringLength>255</MaximumStringLength>
       <DeferVectorTablePatching>true</DeferVectorTablePatching>
       <ShowAdvancedConfiguration>false</ShowAdvancedConfiguration>
-      <WorkAreaSize>4096</WorkAreaSize>
+      <WorkAreaSize>32768</WorkAreaSize>
     </SoftwareTracingSettings>
     <FLASHPatcher>
       <ID>com.sysprogs.flash.stm32</ID>

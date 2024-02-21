@@ -19,6 +19,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <math.h>
 
 /** @addtogroup STM32F4xx_HAL_Examples
   * @{
@@ -41,6 +42,8 @@ __IO uint16_t uhADCxConvertedValue = 0;
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
+
+__IO uint16_t g_ConvertedData[512];
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -111,7 +114,7 @@ int main(void)
   /*       (IT by DMA end of transfer), select sampling time and ADC clock    */
   /*       with sufficient duration to not create an overhead situation in    */
   /*        IRQHandler. */ 
-  if(HAL_ADC_Start_DMA(&AdcHandle, (uint32_t*)&uhADCxConvertedValue, 1) != HAL_OK)
+  if (HAL_ADC_Start_DMA(&AdcHandle, (uint32_t*)g_ConvertedData, sizeof(g_ConvertedData) / sizeof(g_ConvertedData[0])) != HAL_OK)
   {
     /* Start Conversation Error */
     Error_Handler(); 
@@ -198,17 +201,44 @@ static void Error_Handler(void)
   }
 }
 
-/**
-  * @brief  Conversion complete callback in non blocking mode 
-  * @param  AdcHandle : AdcHandle handle
-  * @note   This example shows a simple way to report end of conversion, and 
-  *         you can add your own implementation.    
-  * @retval None
-  */
+int __errno;
+
+static void ProcessDataBlock(volatile uint16_t *pData, int count)
+{
+    int sum = 0;
+    for (int i = 0; i < count; i++)
+        sum += pData[i];
+	
+    int mean = sum / count;
+    int deviationSquareSum = 0;
+
+    for (int i = 0; i < count; i++)
+    {
+        int deviation = pData[i] - mean;
+        deviationSquareSum += (deviation * deviation);
+    }
+	
+    int rootMeanSquareDeviation = (int)sqrt(deviationSquareSum);
+	
+    if (rootMeanSquareDeviation > 150)
+    {
+        BSP_LED_Toggle(LED5);
+    }
+}
+
+enum
+{
+    kHalfBufferSize = sizeof(g_ConvertedData) / sizeof(g_ConvertedData[0]) / 2
+};
+
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle)
 {
-  /* Turn LED4 on: Transfer process is correct */
-  BSP_LED_On(LED4);
+    ProcessDataBlock(g_ConvertedData + kHalfBufferSize, kHalfBufferSize);
+}
+
+void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef *AdcHandle)
+{
+    ProcessDataBlock(g_ConvertedData, kHalfBufferSize);
 }
 
 #ifdef  USE_FULL_ASSERT
