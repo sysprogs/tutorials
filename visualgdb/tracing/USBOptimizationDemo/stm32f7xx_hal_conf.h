@@ -1,14 +1,12 @@
 /**
   ******************************************************************************
-  * @file    stm32f7xx_hal_conf_template.h
+  * @file    USB_Device/MSC_Standalone/Inc/stm32f7xx_hal_conf.h
   * @author  MCD Application Team
-  * @brief   HAL configuration template file. 
-  *          This file should be copied to the application folder and renamed
-  *          to stm32f7xx_hal_conf.h.
+  * @brief   HAL configuration file.
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2017 STMicroelectronics.
+  * Copyright (c) 2016 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -16,7 +14,7 @@
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
-  */ 
+  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32F7xx_HAL_CONF_H
@@ -34,55 +32,53 @@
   * @brief This is the list of modules to be used in the HAL driver 
   */
 #define HAL_MODULE_ENABLED  
-#define HAL_ADC_MODULE_ENABLED  
-#define HAL_CAN_MODULE_ENABLED
+/* #define HAL_ADC_MODULE_ENABLED */
+/* #define HAL_CAN_MODULE_ENABLED */
 /* #define HAL_CAN_LEGACY_MODULE_ENABLED */
-#define HAL_CEC_MODULE_ENABLED  
-#define HAL_CRC_MODULE_ENABLED  
-#define HAL_CRYP_MODULE_ENABLED  
-#define HAL_DAC_MODULE_ENABLED  
-#define HAL_DCMI_MODULE_ENABLED 
+/* #define HAL_CEC_MODULE_ENABLED */
+/* #define HAL_CRC_MODULE_ENABLED */
+/* #define HAL_CRYP_MODULE_ENABLED */
+/* #define HAL_DAC_MODULE_ENABLED */
+/* #define HAL_DCMI_MODULE_ENABLED*/
 #define HAL_DMA_MODULE_ENABLED
-#define HAL_DMA2D_MODULE_ENABLED 
-#define HAL_ETH_MODULE_ENABLED
-/* #define HAL_ETH_LEGACY_MODULE_ENABLED */
-#define HAL_EXTI_MODULE_ENABLED 
-#define HAL_FLASH_MODULE_ENABLED 
-#define HAL_NAND_MODULE_ENABLED
-#define HAL_NOR_MODULE_ENABLED
-#define HAL_SRAM_MODULE_ENABLED
-#define HAL_SDRAM_MODULE_ENABLED
-#define HAL_HASH_MODULE_ENABLED  
+/* #define HAL_DMA2D_MODULE_ENABLED */
+/* #define HAL_ETH_MODULE_ENABLED */
+#define HAL_FLASH_MODULE_ENABLED
+/* #define HAL_NAND_MODULE_ENABLED */
+/* #define HAL_NOR_MODULE_ENABLED */
+/* #define HAL_SRAM_MODULE_ENABLED */
+/* #define HAL_SDRAM_MODULE_ENABLED */
+/* #define HAL_HASH_MODULE_ENABLED */
 #define HAL_GPIO_MODULE_ENABLED
 #define HAL_I2C_MODULE_ENABLED
-#define HAL_I2S_MODULE_ENABLED   
-#define HAL_IWDG_MODULE_ENABLED 
-#define HAL_LPTIM_MODULE_ENABLED
-#define HAL_LTDC_MODULE_ENABLED 
+/* #define HAL_I2S_MODULE_ENABLED */
+/* #define HAL_IWDG_MODULE_ENABLED */
+/* #define HAL_LPTIM_MODULE_ENABLED */
+/* #define HAL_LTDC_MODULE_ENABLED */
 #define HAL_PWR_MODULE_ENABLED
-#define HAL_QSPI_MODULE_ENABLED   
+/* #define HAL_QSPI_MODULE_ENABLED */
 #define HAL_RCC_MODULE_ENABLED 
-#define HAL_RNG_MODULE_ENABLED   
-#define HAL_RTC_MODULE_ENABLED
-#define HAL_SAI_MODULE_ENABLED   
-#define HAL_SD_MODULE_ENABLED  
-#define HAL_SPDIFRX_MODULE_ENABLED
-#define HAL_SPI_MODULE_ENABLED   
-#define HAL_TIM_MODULE_ENABLED   
-#define HAL_UART_MODULE_ENABLED 
-#define HAL_USART_MODULE_ENABLED 
-#define HAL_IRDA_MODULE_ENABLED 
-#define HAL_SMARTCARD_MODULE_ENABLED 
-#define HAL_WWDG_MODULE_ENABLED  
+/* #define HAL_RNG_MODULE_ENABLED */
+/* #define HAL_RTC_MODULE_ENABLED */
+/* #define HAL_SAI_MODULE_ENABLED */
+#define HAL_SD_MODULE_ENABLED
+/* #define HAL_SPDIFRX_MODULE_ENABLED */
+/* #define HAL_SPI_MODULE_ENABLED */
+/* #define HAL_TIM_MODULE_ENABLED */
+#define HAL_UART_MODULE_ENABLED
+/* #define HAL_USART_MODULE_ENABLED */
+/* #define HAL_IRDA_MODULE_ENABLED */
+/* #define HAL_SMARTCARD_MODULE_ENABLED */
+/* #define HAL_WWDG_MODULE_ENABLED */
 #define HAL_CORTEX_MODULE_ENABLED
-#define HAL_PCD_MODULE_ENABLED
-#define HAL_HCD_MODULE_ENABLED
-#define HAL_DFSDM_MODULE_ENABLED
-#define HAL_DSI_MODULE_ENABLED
-#define HAL_JPEG_MODULE_ENABLED
-#define HAL_MDIOS_MODULE_ENABLED
-#define HAL_SMBUS_MODULE_ENABLED
-#define HAL_MMC_MODULE_ENABLED
+#define HAL_PCD_MODULE_ENABLED */
+/* #define HAL_HCD_MODULE_ENABLED */
+/* #define HAL_DFSDM_MODULE_ENABLED */
+/* #define HAL_DSI_MODULE_ENABLED */
+/* #define HAL_JPEG_MODULE_ENABLED */
+/* #define HAL_MDIOS_MODULE_ENABLED */
+/* #define HAL_SMBUS_MODULE_ENABLED */
+/* #define HAL_MMC_MODULE_ENABLED */
 
 
 /* ########################## HSE/HSI Values adaptation ##################### */
@@ -112,7 +108,7 @@
   * @brief Internal Low Speed oscillator (LSI) value.
   */
 #if !defined  (LSI_VALUE) 
- #define LSI_VALUE  32000U                  /*!< LSI Typical Value in Hz*/
+  #define LSI_VALUE  32000U                  /*!< LSI Typical Value in Hz*/
 #endif /* LSI_VALUE */                      /*!< Value of the Internal Low Speed oscillator in Hz
                                              The real value may vary depending on the variations
                                              in voltage and temperature.  */
@@ -144,10 +140,10 @@
   * @brief This is the HAL system configuration section
   */     
 #define  VDD_VALUE                    3300U /*!< Value of VDD in mv */
-#define  TICK_INT_PRIORITY            0x0FU /*!< tick interrupt priority */
+#define  TICK_INT_PRIORITY            0U /*!< tick interrupt priority */
 #define  USE_RTOS                     0U
-#define  PREFETCH_ENABLE              1U /* To enable prefetch */
-#define  ART_ACCELERATOR_ENABLE       1U /* To enable ART Accelerator */
+#define  PREFETCH_ENABLE              1U
+#define  ART_ACCELERATOR_ENABLE       1U /* To enable instruction cache and prefetch */
 
 #define  USE_HAL_ADC_REGISTER_CALLBACKS         0U /* ADC register callback disabled       */
 #define  USE_HAL_CAN_REGISTER_CALLBACKS         0U /* CAN register callback disabled       */
@@ -193,7 +189,7 @@
   * @brief Uncomment the line below to expanse the "assert_param" macro in the 
   *        HAL drivers code
   */
-/* #define USE_FULL_ASSERT    1 */
+/* #define USE_FULL_ASSERT    1U */
 
 /* ################## Ethernet peripheral configuration ##################### */
 
@@ -218,7 +214,7 @@
 /* DP83848 PHY Address*/ 
 #define DP83848_PHY_ADDRESS             0x01U
 /* PHY Reset delay these values are based on a 1 ms Systick interrupt*/ 
-#define PHY_RESET_DELAY                 0x000000FFU
+#define PHY_RESET_DELAY                 (0x000000FFU)
 /* PHY Configuration delay */
 #define PHY_CONFIG_DELAY                0x00000FFFU
 
@@ -227,8 +223,8 @@
 
 /* Section 3: Common PHY Registers */
 
-#define PHY_BCR                         ((uint16_t)0x00U)    /*!< Transceiver Basic Control Register   */
-#define PHY_BSR                         ((uint16_t)0x01U)    /*!< Transceiver Basic Status Register    */
+#define PHY_BCR                         ((uint16_t)0x0000U)    /*!< Transceiver Basic Control Register   */
+#define PHY_BSR                         ((uint16_t)0x0001U)    /*!< Transceiver Basic Status Register    */
  
 #define PHY_RESET                       ((uint16_t)0x8000U)  /*!< PHY Reset */
 #define PHY_LOOPBACK                    ((uint16_t)0x4000U)  /*!< Select loop-back mode */
@@ -247,9 +243,9 @@
   
 /* Section 4: Extended PHY Registers */
 
-#define PHY_SR                          ((uint16_t)0x10U)    /*!< PHY status register Offset                      */
-#define PHY_MICR                        ((uint16_t)0x11U)    /*!< MII Interrupt Control Register                  */
-#define PHY_MISR                        ((uint16_t)0x12U)    /*!< MII Interrupt Status and Misc. Control Register */
+#define PHY_SR                          ((uint16_t)0x0010U)    /*!< PHY status register Offset                      */
+#define PHY_MICR                        ((uint16_t)0x0011U)    /*!< MII Interrupt Control Register                  */
+#define PHY_MISR                        ((uint16_t)0x0012U)    /*!< MII Interrupt Status and Misc. Control Register */
  
 #define PHY_LINK_STATUS                 ((uint16_t)0x0001U)  /*!< PHY Link mask                                   */
 #define PHY_SPEED_STATUS                ((uint16_t)0x0002U)  /*!< PHY Speed mask                                  */
@@ -330,14 +326,6 @@
 #ifdef HAL_ETH_MODULE_ENABLED
   #include "stm32f7xx_hal_eth.h"
 #endif /* HAL_ETH_MODULE_ENABLED */
-
-#ifdef HAL_ETH_LEGACY_MODULE_ENABLED
-  #include "stm32f7xx_hal_eth_legacy.h"
-#endif /* HAL_ETH_LEGACY_MODULE_ENABLED */
-
-#ifdef HAL_EXTI_MODULE_ENABLED
-  #include "stm32f7xx_hal_exti.h"
-#endif /* HAL_EXTI_MODULE_ENABLED */
 
 #ifdef HAL_FLASH_MODULE_ENABLED
   #include "stm32f7xx_hal_flash.h"
@@ -475,7 +463,7 @@
 #ifdef  USE_FULL_ASSERT
 /**
   * @brief  The assert_param macro is used for function's parameters check.
-  * @param  expr If expr is false, it calls assert_failed function
+  * @param  expr: If expr is false, it calls assert_failed function
   *         which reports the name of the source file and the source
   *         line number of the call that failed. 
   *         If expr is true, it returns no value.
@@ -495,5 +483,4 @@
 
 #endif /* __STM32F7xx_HAL_CONF_H */
  
-
 
