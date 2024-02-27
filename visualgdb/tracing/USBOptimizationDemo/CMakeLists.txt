@@ -6,9 +6,10 @@ find_bsp(
 	ID com.sysprogs.arm.stm32
 	VERSION 2023.07
 	MCU STM32F746NG
-	FRAMEWORKS com.sysprogs.arm.stm32.hal com.sysprogs.arm.stm32.ll com.sysprogs.arm.stm32.usbdev
+	FRAMEWORKS com.sysprogs.arm.stm32.usbdev com.sysprogs.arm.stm32.hal com.sysprogs.arm.stm32.ll
 	HWREGISTER_LIST_FILE STM32F7xxxx/DeviceDefinitions/stm32f746xx.xml
-	DISABLE_GNU_EXTENSIONS)
+	DISABLE_GNU_EXTENSIONS
+	FWCONFIGURATION com.sysprogs.bspoptions.stm32.usb.speed=HS)
 
 add_bsp_based_executable(
 	NAME USBOptimizationDemo
