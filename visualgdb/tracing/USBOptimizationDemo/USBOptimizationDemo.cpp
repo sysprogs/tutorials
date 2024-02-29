@@ -102,14 +102,15 @@ int main(void)
 	USBD_RegisterClass(&USBD_Device, &USBD_CDC);
 	USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_USBOptimizationDemo_fops);
 	USBD_Start(&USBD_Device);
+    
+    static char data[512];
 
-	char byte;
-	for (;;)
-	{
-		if (VCP_read(&byte, 1) != 1)
-			continue;
-		VCP_write("\r\nYou typed ", 12);
-		VCP_write(&byte, 1);
-		VCP_write("\r\n", 2);
-	}
+    while (!USBD_Device.pClassData)
+        asm("nop");
+    
+    
+    for (;;)
+    {
+        VCP_write(&data, sizeof(data));
+    }
 }

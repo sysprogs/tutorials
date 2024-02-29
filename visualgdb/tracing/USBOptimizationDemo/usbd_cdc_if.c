@@ -263,6 +263,13 @@ enum { kMaxOutPacketSize = CDC_DATA_HS_OUT_PACKET_SIZE };
 enum { kMaxOutPacketSize = CDC_DATA_FS_OUT_PACKET_SIZE };
 #endif
 
+static volatile long g_IdleCounter;
+
+void __attribute__((noinline, optimize("O3"))) benchmark()
+{
+    g_IdleCounter++;
+}
+
 int VCP_write(const void *pBuffer, int size)
 {
     if (size > kMaxOutPacketSize)
@@ -282,12 +289,14 @@ int VCP_write(const void *pBuffer, int size)
 
 	USBD_CDC_HandleTypeDef *pCDC =
 	        (USBD_CDC_HandleTypeDef *)USBD_Device.pClassData;
-	while (pCDC->TxState) {} //Wait for previous transfer
+	while (pCDC->TxState) {
+    	benchmark();
+	}
 
 	USBD_CDC_SetTxBuffer(&USBD_Device, (uint8_t *)pBuffer, size);
 	if (USBD_CDC_TransmitPacket(&USBD_Device) != USBD_OK)
 		return 0;
 
-	while (pCDC->TxState) {} //Wait until transfer is done
+	//while (pCDC->TxState) {} //Wait until transfer is done
 	return size;
 }

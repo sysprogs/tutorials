@@ -338,7 +338,7 @@ USBD_StatusTypeDef USBD_LL_Init(USBD_HandleTypeDef *pdev)
   not allow sending data from non word-aligned addresses.
   For this specific application, it is advised to not enable this option
   unless required. */
-  hpcd.Init.dma_enable = 0;
+  hpcd.Init.dma_enable = 1;
   hpcd.Init.low_power_enable = 0;
   hpcd.Init.lpm_enable = 0;
   hpcd.Init.phy_itface = PCD_PHY_ULPI; 

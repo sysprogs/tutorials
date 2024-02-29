@@ -11,6 +11,10 @@ find_bsp(
 	DISABLE_GNU_EXTENSIONS
 	FWCONFIGURATION com.sysprogs.bspoptions.stm32.usb.speed=HS)
 
+if (${CMAKE_BUILD_TYPE} STREQUAL RELWITHDEBINFO)
+	bsp_compile_flags(-flto -O3)
+endif()
+
 add_bsp_based_executable(
 	NAME USBOptimizationDemo
 	SOURCES
