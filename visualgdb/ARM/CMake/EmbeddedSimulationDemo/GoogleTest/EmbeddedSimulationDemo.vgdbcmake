@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ConfigurationName>Debug</ConfigurationName>
+<VisualGDBProjectSettings2 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Project xsi:type="com.visualgdb.project.embedded">
     <CustomSourceDirectories>
       <Directories />
@@ -10,16 +9,18 @@
     <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
     <MainSourceDirectory>$(ProjectDir)</MainSourceDirectory>
     <ExportAdvancedBuildVariables>false</ExportAdvancedBuildVariables>
+    <SkipImportedProjectChecks>false</SkipImportedProjectChecks>
     <MemoryListSource>DeviceDefinition</MemoryListSource>
+    <TroubleshootGeneratedConfigurationFiles>false</TroubleshootGeneratedConfigurationFiles>
   </Project>
   <Build xsi:type="com.visualgdb.build.cmake">
     <BuildLogMode xsi:nil="true" />
     <ToolchainID>
       <ID>com.visualgdb.arm-eabi</ID>
       <Version>
-        <GCC>9.3.1</GCC>
-        <GDB>9.2.0</GDB>
-        <Revision>2</Revision>
+        <GCC>10.3.1</GCC>
+        <GDB>10.2.90</GDB>
+        <Revision>1</Revision>
       </Version>
     </ToolchainID>
     <RelativeSourceDirectory />
@@ -64,7 +65,9 @@
       <ConfigurationNameCase>Upper</ConfigurationNameCase>
       <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
       <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
+      <DetectMissingSolutionConfigurations>false</DetectMissingSolutionConfigurations>
     </ProjectModeSettings>
+    <LoadCMakePresets>false</LoadCMakePresets>
   </Build>
   <CustomBuild>
     <PreSyncActions />
@@ -114,11 +117,11 @@
       <BuildSettingsOverride xsi:type="com.visualgdb.build.cmake">
         <BuildLogMode xsi:nil="true" />
         <ToolchainID>
-          <ID>com.sysprogs.imported.mingw</ID>
+          <ID>com.visualgdb.mingw32</ID>
           <Version>
-            <GCC>7.2.0</GCC>
-            <GDB>8.0.1</GDB>
-            <Revision>0</Revision>
+            <GCC>12.2.0</GCC>
+            <GDB>12.1</GDB>
+            <Revision>1</Revision>
           </Version>
         </ToolchainID>
         <RelativeSourceDirectory />
@@ -126,12 +129,20 @@
         <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
         <MakeCommandTemplate>
           <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+          <RemoteHost>
+            <HostName>BuildMachine</HostName>
+            <Transport>BuiltinShortcut</Transport>
+          </RemoteHost>
           <Command>$(VISUALGDB_DIR)/ninja.exe</Command>
           <WorkingDirectory>$(BuildDir)</WorkingDirectory>
           <BackgroundMode xsi:nil="true" />
         </MakeCommandTemplate>
         <CMakeCommand>
           <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+          <RemoteHost>
+            <HostName>BuildMachine</HostName>
+            <Transport>BuiltinShortcut</Transport>
+          </RemoteHost>
           <Command>$(SYSPROGS_CMAKE_PATH)</Command>
           <BackgroundMode xsi:nil="true" />
         </CMakeCommand>
@@ -163,7 +174,9 @@
           <ConfigurationNameCase>Upper</ConfigurationNameCase>
           <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
           <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
+          <DetectMissingSolutionConfigurations>false</DetectMissingSolutionConfigurations>
         </ProjectModeSettings>
+        <LoadCMakePresets>false</LoadCMakePresets>
       </BuildSettingsOverride>
       <DebugSettingsOverride xsi:type="com.visualgdb.debug.local">
         <AdditionalStartupCommands />
@@ -194,9 +207,13 @@
           <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
           <DisableSignals>false</DisableSignals>
           <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+          <AsyncModeSupportsBreakpoints>true</AsyncModeSupportsBreakpoints>
+          <TemporaryBreakConsolidationTimeout>0</TemporaryBreakConsolidationTimeout>
           <EnableNonStopMode>false</EnableNonStopMode>
           <MaxBreakpointLimit>0</MaxBreakpointLimit>
           <EnableVerboseMode>true</EnableVerboseMode>
+          <EnablePrettyPrinters>false</EnablePrettyPrinters>
+          <EnableAbsolutePathReporting>true</EnableAbsolutePathReporting>
         </AdditionalGDBSettings>
         <LaunchGDBSettings xsi:type="GDBLaunchParametersNewInstance">
           <DebuggedProgram>$(SelectedCMakeTarget)</DebuggedProgram>
@@ -240,9 +257,13 @@
       <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
       <DisableSignals>false</DisableSignals>
       <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+      <AsyncModeSupportsBreakpoints>true</AsyncModeSupportsBreakpoints>
+      <TemporaryBreakConsolidationTimeout>0</TemporaryBreakConsolidationTimeout>
       <EnableNonStopMode>false</EnableNonStopMode>
       <MaxBreakpointLimit>0</MaxBreakpointLimit>
       <EnableVerboseMode>true</EnableVerboseMode>
+      <EnablePrettyPrinters>false</EnablePrettyPrinters>
+      <EnableAbsolutePathReporting>true</EnableAbsolutePathReporting>
     </AdditionalGDBSettings>
     <DebugMethod>
       <ID>com.sysprogs.arm.openocd</ID>
