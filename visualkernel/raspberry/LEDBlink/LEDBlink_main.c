@@ -86,7 +86,12 @@ static int __init LedBlinkModule_init(void)
     result = mod_timer(&s_BlinkTimer, jiffies + msecs_to_jiffies(s_BlinkPeriod));
     BUG_ON(result < 0);
 
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)
+    s_pDeviceClass = class_create("LedBlink");
+#else
     s_pDeviceClass = class_create(THIS_MODULE, "LedBlink");
+#endif
+
     BUG_ON(IS_ERR(s_pDeviceClass));
 
     s_pDeviceObject = device_create(s_pDeviceClass, NULL, 0, NULL, "LedBlink");
