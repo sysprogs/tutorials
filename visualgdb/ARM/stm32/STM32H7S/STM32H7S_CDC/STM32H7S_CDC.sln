@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "STM32H7S_CDC", "STM32H7S_CDC\STM32H7S_CDC.vgdbcmake", "{F6ADDC36-FF13-4330-9708-345618AAA19F}"
+EndProject
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "STM32H7S_App", "STM32H7S_App\STM32H7S_App.vgdbcmake", "{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{F6ADDC36-FF13-4330-9708-345618AAA19F}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{4EDC2A24-6F16-4AE8-8ECD-03295C435D7B}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
