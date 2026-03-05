@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95 d18.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "ESP32EncoderDemo", "ESP32EncoderDemo.vgdbproj", "{08DEF619-EDFA-45AC-8D77-C799532EE720}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		Tests (Debug)|VisualGDB = Tests (Debug)|VisualGDB
+		Tests (Release)|VisualGDB = Tests (Release)|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Tests (Debug)|VisualGDB.ActiveCfg = Tests (Debug)|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Tests (Debug)|VisualGDB.Build.0 = Tests (Debug)|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Tests (Release)|VisualGDB.ActiveCfg = Tests (Release)|VisualGDB
+		{08DEF619-EDFA-45AC-8D77-C799532EE720}.Tests (Release)|VisualGDB.Build.0 = Tests (Release)|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F4C60FE-996D-41FA-9E0E-5D60B42DA7C2}
+	EndGlobalSection
+EndGlobal
