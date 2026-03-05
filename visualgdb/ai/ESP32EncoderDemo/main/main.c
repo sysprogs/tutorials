@@ -24,6 +24,8 @@
 #include "esp_check.h"
 #include <time.h>
 #include <sys/time.h>
+#include <driver/gpio.h>
+#include "RotaryEncoder.h"
 #if !CONFIG_IDF_TARGET_LINUX
 #include <esp_wifi.h>
 #include <esp_system.h>
@@ -315,12 +317,12 @@ static esp_err_t any_handler(httpd_req_t *req)
 }
 
 static const httpd_uri_t any = {
-    .uri       = "/any",
-    .method    = HTTP_ANY,
-    .handler   = any_handler,
-    /* Let's pass response string in user
-     * context to demonstrate it's usage */
-    .user_ctx  = "Hello World!"
+	.uri       = "/any",
+	.method    = HTTP_ANY,
+	.handler   = any_handler,
+	/* Let's pass response string in user
+	 * context to demonstrate its usage */
+	.user_ctx  = "Hello World!"
 };
 
 /* This handler allows the custom error handling functionality to be
@@ -393,6 +395,65 @@ static const httpd_uri_t ctrl = {
     .user_ctx  = NULL
 };
 
+static struct RotaryEncoder s_Encoder;
+
+static esp_err_t root_get_handler(httpd_req_t *req)
+{
+	/* HTML page that contains a <div> to display the encoder value and a
+	   JavaScript loop that continuously fetches the /encoderval endpoint
+	   without any delay between requests. */
+	static const char page[] =
+		"<!DOCTYPE html>"
+		"<html>"
+		"<head><title>Encoder Value</title></head>"
+		"<body>"
+		"<div id=\"val\">Loading...</div>"
+		"<script>"
+		"async function loop() {"
+		"  while (true) {"
+		"    try {"
+		"      const resp = await fetch('/encoderval');"
+		"      const txt = await resp.text();"
+		"      document.getElementById('val').innerText = txt;"
+		"    } catch(e) {"
+		"      console.error('fetch error', e);"
+		"    }"
+		"  }"
+		"}"
+		"loop();"
+		"</script>"
+		"</body>"
+		"</html>";
+
+	httpd_resp_set_hdr(req, "Content-Type", "text/html");
+	httpd_resp_send(req, page, HTTPD_RESP_USE_STRLEN);
+	return ESP_OK;
+}
+
+static const httpd_uri_t root = {
+	.uri       = "/",
+	.method    = HTTP_GET,
+	.handler   = root_get_handler,
+	.user_ctx  = NULL
+};
+
+static esp_err_t encoderval_handler(httpd_req_t *req)
+{
+	char resp[32];
+	int pos = s_Encoder.EncoderPosition;
+	snprintf(resp, sizeof(resp), "%d", pos);
+	httpd_resp_set_hdr(req, "Content-Type", "text/plain");
+	httpd_resp_send(req, resp, HTTPD_RESP_USE_STRLEN);
+	return ESP_OK;
+}
+
+static const httpd_uri_t encoderval = {
+	.uri       = "/encoderval",
+	.method    = HTTP_GET,
+	.handler   = encoderval_handler,
+	.user_ctx  = NULL
+};
+
 #if CONFIG_EXAMPLE_ENABLE_SSE_HANDLER
 /* An HTTP GET handler for SSE */
 static esp_err_t sse_handler(httpd_req_t *req)
@@ -429,37 +490,39 @@ static const httpd_uri_t sse = {
 
 static httpd_handle_t start_webserver(void)
 {
-    httpd_handle_t server = NULL;
-    httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+	httpd_handle_t server = NULL;
+	httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 #if CONFIG_IDF_TARGET_LINUX
-    // Setting port as 8001 when building for Linux. Port 80 can be used only by a privileged user in linux.
-    // So when a unprivileged user tries to run the application, it throws bind error and the server is not started.
-    // Port 8001 can be used by an unprivileged user as well. So the application will not throw bind error and the
-    // server will be started.
-    config.server_port = 8001;
+	// Setting port as 8001 when building for Linux. Port 80 can be used only by a privileged user in linux.
+	// So when a unprivileged user tries to run the application, it throws bind error and the server is not started.
+	// Port 8001 can be used by an unprivileged user as well. So the application will not throw bind error and the
+	// server will be started.
+	config.server_port = 8001;
 #endif // !CONFIG_IDF_TARGET_LINUX
-    config.lru_purge_enable = true;
+	config.lru_purge_enable = true;
 
-    // Start the httpd server
-    ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
-    if (httpd_start(&server, &config) == ESP_OK) {
-        // Set URI handlers
-        ESP_LOGI(TAG, "Registering URI handlers");
-        httpd_register_uri_handler(server, &hello);
-        httpd_register_uri_handler(server, &echo);
-        httpd_register_uri_handler(server, &ctrl);
-        httpd_register_uri_handler(server, &any);
+	// Start the httpd server
+	ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
+	if (httpd_start(&server, &config) == ESP_OK) {
+		// Set URI handlers
+		ESP_LOGI(TAG, "Registering URI handlers");
+		httpd_register_uri_handler(server, &root);          // Register root handler
+		httpd_register_uri_handler(server, &encoderval);   // Register /encoderval handler
+		httpd_register_uri_handler(server, &hello);
+		httpd_register_uri_handler(server, &echo);
+		httpd_register_uri_handler(server, &ctrl);
+		httpd_register_uri_handler(server, &any);
 #if CONFIG_EXAMPLE_ENABLE_SSE_HANDLER
-        httpd_register_uri_handler(server, &sse); // Register SSE handler
+		httpd_register_uri_handler(server, &sse); // Register SSE handler
 #endif
 #if CONFIG_EXAMPLE_BASIC_AUTH
-        httpd_register_basic_auth(server);
+		httpd_register_basic_auth(server);
 #endif
-        return server;
-    }
+		return server;
+	}
 
-    ESP_LOGI(TAG, "Error starting server!");
-    return NULL;
+	ESP_LOGI(TAG, "Error starting server!");
+	return NULL;
 }
 
 #if !CONFIG_IDF_TARGET_LINUX
@@ -492,40 +555,46 @@ static void connect_handler(void* arg, esp_event_base_t event_base,
         *server = start_webserver();
     }
 }
+
 #endif // !CONFIG_IDF_TARGET_LINUX
 
 void app_main(void)
 {
-    static httpd_handle_t server = NULL;
+	static httpd_handle_t server = NULL;
 
-    ESP_ERROR_CHECK(nvs_flash_init());
-    ESP_ERROR_CHECK(esp_netif_init());
-    ESP_ERROR_CHECK(esp_event_loop_create_default());
+	ESP_ERROR_CHECK(nvs_flash_init());
+	ESP_ERROR_CHECK(esp_netif_init());
+	ESP_ERROR_CHECK(esp_event_loop_create_default());
 
-    /* This helper function configures Wi-Fi or Ethernet, as selected in menuconfig.
-     * Read "Establishing Wi-Fi or Ethernet Connection" section in
-     * examples/protocols/README.md for more information about this function.
-     */
-    ESP_ERROR_CHECK(example_connect());
+	// Initialise rotary encoder and verify success
+	esp_err_t enc_err = RotaryEncoder_Init(&s_Encoder, 19, 22);
+	ESP_ERROR_CHECK(enc_err);
 
-    /* Register event handlers to stop the server when Wi-Fi or Ethernet is disconnected,
-     * and re-start it upon connection.
-     */
+	/* This helper function configures Wi-Fi or Ethernet, as selected in menuconfig.
+	 * Read "Establishing Wi-Fi or Ethernet Connection" section in
+	 * examples/protocols/README.md for more information about this function.
+	 */
+	ESP_ERROR_CHECK(example_connect());
+
+	/* Register event handlers to stop the server when Wi-Fi or Ethernet is disconnected,
+	 * and re-start it upon connection.
+	 */
 #if !CONFIG_IDF_TARGET_LINUX
 #ifdef CONFIG_EXAMPLE_CONNECT_WIFI
-    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &connect_handler, &server));
-    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, &disconnect_handler, &server));
+	ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &connect_handler, &server));
+	ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, &disconnect_handler, &server));
 #endif // CONFIG_EXAMPLE_CONNECT_WIFI
 #ifdef CONFIG_EXAMPLE_CONNECT_ETHERNET
-    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, &connect_handler, &server));
-    ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ETHERNET_EVENT_DISCONNECTED, &disconnect_handler, &server));
+	ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, &connect_handler, &server));
+	ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ETHERNET_EVENT_DISCONNECTED, &disconnect_handler, &server));
 #endif // CONFIG_EXAMPLE_CONNECT_ETHERNET
 #endif // !CONFIG_IDF_TARGET_LINUX
 
-    /* Start the server for the first time */
-    server = start_webserver();
+	/* Start the server for the first time */
+	server = start_webserver();
 
-    while (server) {
-        sleep(5);
-    }
+	while (server) {
+		//printf("POS=%d\n", s_Encoder.EncoderPosition);
+		usleep(100000);
+	} 
 }

@@ -4,9 +4,10 @@ idf_build_get_property(target IDF_TARGET)
 if(${target} STREQUAL "linux")
     list(APPEND requires esp_stubs protocol_examples_common)
 else()
-    list(APPEND requires esp_wifi esp_eth)
+    list(APPEND requires esp_wifi esp_eth esp_driver_gpio)
 endif()
 
-idf_component_register(SRCS "main.c"
+idf_component_register(
+                    SRCS "main.c" RotaryEncoder.c
                     INCLUDE_DIRS "."
                     PRIV_REQUIRES ${requires})

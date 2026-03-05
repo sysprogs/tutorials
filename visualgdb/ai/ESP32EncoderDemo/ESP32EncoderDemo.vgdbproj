@@ -90,6 +90,9 @@
     <DebugStopActions />
     <BreakMode>Default</BreakMode>
   </CustomDebug>
+  <SmartTerminalSettings>
+    <Environments />
+  </SmartTerminalSettings>
   <CustomShortcuts>
     <Shortcuts />
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
